@@ -7,8 +7,8 @@ BASE_DIR = Path(__file__).resolve().parent
 
 # Ollama
 OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
-LLM_MODEL = os.getenv("LLM_MODEL", "qwen2.5:1.5b")
-EMBED_MODEL = os.getenv("EMBED_MODEL", "nomic-embed-text")
+LLM_MODEL = os.getenv("LLM_MODEL", "ministral-3:8b")
+EMBED_MODEL = os.getenv("EMBED_MODEL", "bge-m3")
 
 # Base vectorielle (ChromaDB persistante sur disque)
 CHROMA_DIR = Path(os.getenv("CHROMA_DIR", BASE_DIR / "chroma_db"))
