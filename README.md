@@ -75,6 +75,8 @@ Pour recharger après modification de l'histoire : `python clean.py` puis `pytho
 
 ## Endpoints
 
+## Hello 
+
 | Méthode | Route     | Rôle                                                   |
 |---------|-----------|--------------------------------------------------------|
 | GET     | `/health` | Nombre de morceaux en base et modèles utilisés         |
