@@ -8,8 +8,10 @@ Swagger : http://localhost:8000/docs
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
+
 import config
 import rag
+import json
 
 SYSTEM_PROMPT = """Tu es le moteur d'analyse de Givaudan Scent Journey. Tu ne dialogues jamais avec l'utilisateur et tu ne poses aucune question.
 Tu reçois un récit (texte, voix transcrite, description de photo, images choisies, produit visé).
@@ -50,7 +52,7 @@ class Source(BaseModel):
 
 class AskResponse(BaseModel):
     question: str
-    answer: str
+    answer: dict | str
     model: str
     sources: list[Source]
 
@@ -92,13 +94,18 @@ def ask(req: AskRequest):
     context = "\n\n---\n\n".join(f"[{s.chapter}]\n{s.text}" for s in sources)
     messages = [
         {"role": "system", "content": SYSTEM_PROMPT},
-        {"role": "user", "content": f"Extraits de l'histoire :\n\n{context}\n\nQuestion : {req.question}"},
+        {"role": "user", "content": f"Extraits de la base Scent Journey :\n\n{context}\n\nQuestion : {req.question}"},
     ]
     try:
         answer = rag.chat(messages)
     except Exception as exc:  # Ollama injoignable, modèle absent...
         raise HTTPException(502, f"Erreur Ollama : {exc}") from exc
-    return AskResponse(question=req.question, answer=answer.strip(), model=config.LLM_MODEL, sources=sources)
+    cleaned = answer.strip().strip("`").removeprefix("json").strip()
+    try:
+        answer = json.loads(cleaned)
+    except json.JSONDecodeError:
+        answer = cleaned
+    return AskResponse(question=req.question, answer=answer, model=config.LLM_MODEL, sources=sources)
 
 
 if __name__ == "__main__":
