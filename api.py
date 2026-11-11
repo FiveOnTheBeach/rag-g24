@@ -13,6 +13,10 @@ import config
 import rag
 import json
 
+from fastapi import UploadFile, File, Form
+import tempfile
+from photo_vers_texte import analyser_photo, construire_question
+
 SYSTEM_PROMPT = """Tu es le moteur d'analyse de Givaudan Scent Journey. Tu ne dialogues jamais avec l'utilisateur et tu ne poses aucune question.
 Tu reçois un récit (texte, voix transcrite, description de photo, images choisies, produit visé).
 En t'appuyant UNIQUEMENT sur le contexte fourni, réponds par un JSON valide, sans texte autour :
@@ -29,7 +33,8 @@ En t'appuyant UNIQUEMENT sur le contexte fourni, réponds par un JSON valide, sa
  "informations_manquantes": [],
  "brief": ""
 }
-Règles : n'utilise que des ingrédients et références présents dans le contexte, n'invente aucune source, les pourcentages de la roue font 100. Si le récit est vague, propose le profil le plus probable et remplis "informations_manquantes"."""
+Règles : n'utilise que des ingrédients et références présents dans le contexte, n'invente aucune source, les pourcentages de la roue font 100. Si le récit est vague, propose le profil le plus probable et remplis "informations_manquantes".
+Les familles de la roue doivent être exactement celles du catalogue : Floral, Fruity, Citrus, Herbal - Agrestic, Woody, Green, Ambery, Spicy, Musky, Leather - Moss, Gourmand, Aldehydic, Marine. Aucune autre."""
 
 app = FastAPI(
     title="Story RAG API",
@@ -106,6 +111,16 @@ def ask(req: AskRequest):
     except json.JSONDecodeError:
         answer = cleaned
     return AskResponse(question=req.question, answer=answer, model=config.LLM_MODEL, sources=sources)
+
+@app.post("/ask_photo")
+async def ask_photo(photo: UploadFile = File(...), recit: str = Form("")):
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".jpg") as tmp:
+        tmp.write(await photo.read())
+        chemin = tmp.name
+    description = analyser_photo(chemin)
+    question = construire_question(description, recit)
+    reponse = ask(AskRequest(question=question))
+    return {"description_photo": description, "resultat": reponse}
 
 
 if __name__ == "__main__":
