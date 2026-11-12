@@ -5,7 +5,9 @@ Lancement :
 Swagger : http://localhost:8000/docs
 """
 
-from fastapi import FastAPI, HTTPException
+import secrets
+
+from fastapi import Depends, FastAPI, Header, HTTPException
 from pydantic import BaseModel, Field
 
 
@@ -74,6 +76,18 @@ En t'appuyant UNIQUEMENT sur le contexte fourni, réponds par un JSON valide, sa
 Règles : n'utilise que des ingrédients et références présents dans le contexte, n'invente aucune source, les pourcentages de la roue font 100. Si le récit est vague, propose le profil le plus probable et remplis "informations_manquantes".
 Les familles de la roue doivent être exactement celles du catalogue : Floral, Fruity, Citrus, Herbal - Agrestic, Woody, Green, Ambery, Spicy, Musky, Leather - Moss, Gourmand, Aldehydic, Marine. Aucune autre."""
 
+if not config.API_KEY:
+    raise RuntimeError(
+        "API_KEY manquante : crée un fichier .env avec API_KEY=… "
+        "puis lance `uvicorn api:app --port 8000 --env-file .env`"
+    )
+
+
+def verifier_cle(x_api_key: str = Header("", description="La clé d'API partagée avec les tech-leads")):
+    """Refuse l'appel si l'en-tête X-API-Key est absent ou faux."""
+    if not secrets.compare_digest(x_api_key, config.API_KEY):
+        raise HTTPException(401, "Clé d'API invalide")
+    
 app = FastAPI(
     title="Story RAG API",
     description="Pose des questions sur l'histoire chargée dans la base vectorielle. "
@@ -124,13 +138,13 @@ def health():
     }
 
 
-@app.post("/search", response_model=list[Source], tags=["histoire"])
+@app.post("/search", response_model=list[Source], tags=["histoire"], dependencies=[Depends(verifier_cle)])
 def search(req: AskRequest):
     """Retourne seulement les passages pertinents (sans appeler le LLM)."""
     return retrieve(req.question, req.top_k)
 
 
-@app.post("/ask", response_model=AskResponse, tags=["histoire"])
+@app.post("/ask", response_model=AskResponse, tags=["histoire"],dependencies=[Depends(verifier_cle)])
 def ask(req: AskRequest):
     """Répond à une question sur l'histoire à partir des passages retrouvés."""
     sources = retrieve(req.question, req.top_k)
@@ -151,7 +165,7 @@ def ask(req: AskRequest):
     answer = verifier(answer)
     return AskResponse(question=req.question, answer=answer, model=config.LLM_MODEL, sources=sources)
 
-@app.post("/ask_photo")
+@app.post("/ask_photo", dependencies=[Depends(verifier_cle)])
 async def ask_photo(photo: UploadFile = File(...), recit: str = Form("")):
     with tempfile.NamedTemporaryFile(delete=False, suffix=".jpg") as tmp:
         tmp.write(await photo.read())

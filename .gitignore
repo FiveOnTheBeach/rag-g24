@@ -20,3 +20,5 @@ __pycache__/
 .idea/
 .DS_Store
 Thumbs.db
+
+API_KEY=0ebdee4cded8eeacc348d7cc14ac45dc

@@ -13,7 +13,7 @@ import urllib.request
 
 import ollama
 
-VISION_MODEL = "qwen2.5vl:3b"   # vérifier avec : ollama show <modele>  -> ligne "vision"
+VISION_MODEL = "qwen2.5vl:7b"   # vérifier avec : ollama show <modele>  -> ligne "vision"
 
 PROMPT = """Tu analyses une photo de souvenir pour aider à créer un parfum.
 Décris UNIQUEMENT ce que tu vois, sans inventer. Réponds en JSON avec ces clés :

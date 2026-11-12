@@ -19,6 +19,7 @@ COLLECTION_NAME = os.getenv("COLLECTION_NAME", "story")
 STORY_PATH = Path(os.getenv("STORY_PATH", BASE_DIR / "base_scent_journey.txt"))
 CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "800"))  # en caractères
 CHUNK_OVERLAP_PARAGRAPHS = int(os.getenv("CHUNK_OVERLAP_PARAGRAPHS", "1"))
+API_KEY = os.getenv("API_KEY", "") 
 
 # Recherche
 TOP_K = int(os.getenv("TOP_K", "4"))
