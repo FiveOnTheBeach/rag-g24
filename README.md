@@ -463,9 +463,4 @@ Ces temps ont été mesurés sur des réponses courtes. Une analyse Scent Journe
 - **Traces de l'ancien exemple.** Certains textes parlent encore d'« histoire » : le titre et la description du Swagger, la collection `story`, les docstrings d'`ingest.py`. Ça n'a pas d'effet sur le fonctionnement.
 - **Les ingrédients proposés sont des pistes.** Le profil est construit à partir des notes olfactives du catalogue et de la base. Il doit être **validé par un parfumeur Givaudan** : les sources scientifiques ne citent pas ces ingrédients.
 
----
-
-## Équipe
-
-Équipe Data/IA du groupe 24 · HETIC, Master Tech-Lead/CTO · Givaudan AI Innovation Challenge 2026.
 ````
