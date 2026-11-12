@@ -207,7 +207,8 @@ Sorties brutes de l'API, sans aucune retouche (12/11/2026, ministral-3:8b).
 
 #### Photo : repas en terrasse (`POST /ask_photo`, sans récit)
 
-GLISSE_LA_PHOTO_ICI
+<img width="736" height="1104" alt="617b81c536049ebda84a587c2581031b" src="https://github.com/user-attachments/assets/705c6a30-2e7e-4476-b741-f4af1be8c1c8" />
+
 
 | Étape | Ce que l'API a renvoyé |
 |---|---|
