@@ -1,0 +1,148 @@
+{
+  "route": "POST /ask_photo",
+  "date": "2026-11-12",
+  "modele": "ministral-3:8b",
+  "entree": {
+    "photo": "evaluation_LLM/ask_photo/photo_test/plage.jpg",
+    "recit": ""
+  },
+  "description_photo": {
+    "lieu": "plage",
+    "pays_ou_culture_visible": "inconnu",
+    "moment": "inconnu",
+    "meteo": "soleil",
+    "elements_visibles": [
+      "palmier",
+      "mer"
+    ],
+    "ambiance": "calme",
+    "odeurs_probables": [
+      "sable",
+      "mer",
+      "soleil"
+    ]
+  },
+  "answer": {
+    "comprehension": {
+      "lieu": "plage",
+      "moment": "été (implicite par le soleil et l'ambiance de vacances)",
+      "meteo": "soleil",
+      "emotion": "calme, nostalgie, liberté",
+      "elements": [
+        "palmier",
+        "mer",
+        "sable",
+        "soleil",
+        "ambiance insulaire"
+      ]
+    },
+    "signature": {
+      "nom": "Évasion Tropicale Marine",
+      "description": "Une composition évoquant une plage ensoleillée exotique, mêlant fraîcheur marine, douceur tropicale et nostalgie estivale, avec des notes de sable chaud et de palmier."
+    },
+    "roue": [
+      {
+        "famille": "Marine",
+        "pourcentage": 30
+      },
+      {
+        "famille": "Fruity",
+        "pourcentage": 20
+      },
+      {
+        "famille": "Floral",
+        "pourcentage": 20
+      },
+      {
+        "famille": "Green",
+        "pourcentage": 10
+      },
+      {
+        "famille": "Woody",
+        "pourcentage": 10
+      },
+      {
+        "famille": "Ambery",
+        "pourcentage": 5
+      },
+      {
+        "famille": "Herbal - Agrestic",
+        "pourcentage": 5
+      }
+    ],
+    "profil": {
+      "tete": [
+        {
+          "ingredient": "Ultrazur™",
+          "reference": "21218823",
+          "raison": "Note marine fraîche et ozonic pour évoquer l'embrun et l'air marin, renforçant la sensation de plage ensoleillée.",
+          "sources": [
+            "S043",
+            "S044",
+            "S047",
+            "S039"
+          ]
+        },
+        {
+          "ingredient": "Stemone™",
+          "reference": "9023501",
+          "raison": "Note verte et fraîche pour évoquer l'air marin et une touche de végétation tropicale légère.",
+          "sources": [
+            "S246"
+          ]
+        }
+      ],
+      "coeur": [
+        {
+          "ingredient": "Methyl Laitone 10%/DPG",
+          "reference": "6978468",
+          "raison": "Note lactonique et crémeuse pour évoquer la douceur du sable chaud et une touche cocoon, typique des vacances.",
+          "sources": [
+            "S236",
+            "S237"
+          ]
+        },
+        {
+          "ingredient": "Aurantiol™ Pure",
+          "reference": "2365901",
+          "raison": "Note florale douce (fleur d'oranger) pour évoquer une touche ensoleillée et insulaire, rappelant les vacances d'enfance.",
+          "sources": [
+            "S236",
+            "S237"
+          ]
+        }
+      ],
+      "fond": [
+        {
+          "ingredient": "Adoxal",
+          "reference": "1028001",
+          "raison": "Note marine puissante et fraîche pour ancrer la composition dans une ambiance maritime profonde et nostalgique.",
+          "sources": [
+            "S043",
+            "S044",
+            "S045"
+          ]
+        },
+        {
+          "ingredient": "Sclarene 80%/DPG",
+          "reference": "8892308",
+          "raison": "Note boisée et légèrement ambrée pour évoquer une touche de terre tropicale et de profondeur, rappelant les sous-bois ou les palmiers.",
+          "sources": [
+            "S100",
+            "S105"
+          ]
+        }
+      ]
+    },
+    "limites_catalogue": [
+      "pas de notes spécifiques pour le palmier ou le sable chaud (hors suggestions implicites via les ingrédients choisis)"
+    ],
+    "informations_manquantes": [
+      "Précision sur la culture exacte (pour affiner les notes exotiques éventuelles, bien que le catalogue ne propose pas de notes spécifiques à une culture précise).",
+      "Éléments sensoriels supplémentaires (comme des notes gourmandes ou sucrées pour renforcer l'aspect insulaire).",
+      "Contexte émotionnel plus détaillé (par exemple, si l'ambiance doit être plus nostalgique ou plus moderne)."
+    ],
+    "brief": "Créer une fragrance évoquant une plage ensoleillée exotique, mêlant fraîcheur marine (marin, ozonic), douceur tropicale (lactonique, florale), et une touche de nostalgie estivale. La composition doit intégrer des notes de sable chaud et de palmier via des ingrédients frais et boisés, avec une base marine profonde pour ancrer l'ambiance. Éviter les notes trop sucrées ou gourmandes, privilégier une harmonie entre fraîcheur et douceur."
+  },
+  "duree_secondes": 108.5
+}

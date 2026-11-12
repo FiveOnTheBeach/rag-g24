@@ -14,6 +14,21 @@ Document de synthèse de la brique Data/IA. Chaque chiffre renvoie à un fichier
 5. compose un **profil tête / cœur / fond**, uniquement avec des ingrédients du catalogue Givaudan, chacun justifié par des sources ;
 6. rédige un **brief** pour le parfumeur, avec les limites du catalogue et les informations manquantes.
 
+**Exemple réel : une photo de plage.** Run du 12/11/2026, ministral-3:8b + qwen2.5vl, 108 s.
+
+<img src="evaluation_LLM/ask_photo/photo_test/plage.jpg" alt="Photo de plage envoyée à /ask_photo" width="320">
+
+| Étape | Résultat |
+|---|---|
+| Ce que voit le modèle de vision | plage · soleil · palmier, mer · ambiance calme |
+| Signature | **Évasion Tropicale Marine** : une plage ensoleillée exotique, fraîcheur marine, douceur tropicale et nostalgie estivale |
+| Roue | Marine 30 % · Fruity 20 % · Floral 20 % · Green 10 % · Woody 10 % · Ambery 5 % · Herbal 5 % |
+| Profil (tête) | Ultrazur™, Stemone™ |
+
+Résultat complet : [exemple_photo_plage.json](docs/exemples/exemple_photo_plage.json) (bouton de téléchargement en haut à droite du fichier sur GitHub).
+
+**Exemple réel : un souvenir en texte.** « J'étais en Thaïlande après la pluie, j'étais triste » → **Mélancolie des Temples**. Résultat complet : [exemple_texte_thailande.json](docs/exemples/exemple_texte_thailande.json).
+
 **Vocabulaire.** Chaque terme a un seul sens dans ce document.
 
 | Terme | Sens |
