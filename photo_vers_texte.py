@@ -16,14 +16,15 @@ import ollama
 VISION_MODEL = "qwen2.5vl:7b"   # vérifier avec : ollama show <modele>  -> ligne "vision"
 
 PROMPT = """Tu analyses une photo de souvenir pour aider à créer un parfum.
-Décris UNIQUEMENT ce que tu vois, sans inventer. Réponds en JSON avec ces clés :
-"lieu" (ex : plage, temple, forêt, rue de ville, cuisine),
-"pays_ou_culture_visible" (seulement si c'est évident, sinon "inconnu"),
-"moment" (matin, soir, nuit, inconnu),
-"meteo" (soleil, pluie, après la pluie, neige, inconnu),
-"elements_visibles" (liste : fleurs, arbres, nourriture, encens, mer...),
-"ambiance" (calme, festive, mélancolique, énergique...),
-"odeurs_probables" (liste d'odeurs que ces éléments peuvent dégager)."""
+Décris UNIQUEMENT ce que tu vois, sans inventer. Réponds en JSON avec ces clés.
+Chaque valeur fait 2 à 4 mots maximum, pas de phrase.
+"lieu" (ex : "forêt tropicale"),
+"pays_ou_culture_visible" (ex : "Thaïlande", sinon "inconnu"),
+"moment" (ex : "fin d'après-midi"),
+"meteo" (ex : "après la pluie"),
+"elements_visibles" (liste de 5 éléments maximum, 1 à 3 mots chacun),
+"ambiance" (ex : "calme mélancolique"),
+"odeurs_probables" (liste de 5 odeurs maximum, 1 à 3 mots chacune)."""
 
 
 def analyser_photo(chemin_photo: str) -> dict:

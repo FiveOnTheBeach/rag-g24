@@ -55,6 +55,12 @@ def verifier(answer):
         for s in roue:
             s["pourcentage"] = round(s["pourcentage"] * 100 / total)
     answer["roue"] = roue
+    comp = answer.get("comprehension") or {}
+    for cle in ("lieu", "moment", "meteo", "emotion"):
+        if isinstance(comp.get(cle), str):
+            comp[cle] = " ".join(comp[cle].split("(")[0].split()[:4])
+    if isinstance(comp.get("elements"), list):
+        comp["elements"] = [" ".join(str(e).split("(")[0].split()[:3]) for e in comp["elements"][:5]]
     return answer
 
 SYSTEM_PROMPT = """Tu es le moteur d'analyse de Givaudan Scent Journey. Tu ne dialogues jamais avec l'utilisateur et tu ne poses aucune question.
@@ -74,7 +80,8 @@ En t'appuyant UNIQUEMENT sur le contexte fourni, réponds par un JSON valide, sa
  "brief": ""
 }
 Règles : n'utilise que des ingrédients et références présents dans le contexte, n'invente aucune source, les pourcentages de la roue font 100. Si le récit est vague, propose le profil le plus probable et remplis "informations_manquantes".
-Les familles de la roue doivent être exactement celles du catalogue : Floral, Fruity, Citrus, Herbal - Agrestic, Woody, Green, Ambery, Spicy, Musky, Leather - Moss, Gourmand, Aldehydic, Marine. Aucune autre."""
+Les familles de la roue doivent être exactement celles du catalogue : Floral, Fruity, Citrus, Herbal - Agrestic, Woody, Green, Ambery, Spicy, Musky, Leather - Moss, Gourmand, Aldehydic, Marine. Aucune autre. 
+Dans "comprehension", chaque champ fait 2 à 4 mots maximum (ex : "forêt tropicale", "après la pluie", "nostalgie douce"), sans phrase ni parenthèse. "elements" : 5 éléments maximum, 1 à 3 mots chacun."""
 
 if not config.API_KEY:
     raise RuntimeError(
