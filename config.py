@@ -15,7 +15,7 @@ CHROMA_DIR = Path(os.getenv("CHROMA_DIR", BASE_DIR / "chroma_db"))
 COLLECTION_NAME = os.getenv("COLLECTION_NAME", "story")
 
 # Source et découpage
-STORY_PATH = Path(os.getenv("STORY_PATH", BASE_DIR / "story.txt"))
+STORY_PATH = Path(os.getenv("STORY_PATH", BASE_DIR / "base_scent_journey.txt"))
 CHUNK_SIZE = int(os.getenv("CHUNK_SIZE", "800"))  # en caractères
 CHUNK_OVERLAP_PARAGRAPHS = int(os.getenv("CHUNK_OVERLAP_PARAGRAPHS", "1"))
 
