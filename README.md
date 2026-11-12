@@ -205,20 +205,19 @@ Appel sans clé d'API : **refusé (HTTP 401)**.
 
 Sorties brutes de l'API, sans aucune retouche (12/11/2026, ministral-3:8b).
 
-#### Photo : repas en terrasse (`POST /ask_photo`, sans récit)
+#### Photo : un marché aux fruits (`POST /ask_photo`, sans récit)
 
-<img width="736" height="1104" alt="617b81c536049ebda84a587c2581031b" src="https://github.com/user-attachments/assets/705c6a30-2e7e-4476-b741-f4af1be8c1c8" />
-
+<img src="docs/exemples/marche_fruits.jpg" alt="Photo envoyée : marché aux fruits vu du dessus" width="320">
 
 | Étape | Ce que l'API a renvoyé |
 |---|---|
-| Vision (`description_photo`) | terrasse · Italie · midi · solaire · olives, tomates, fromage, citron, pain · odeurs probables : olives, fromage, citron, pain, herbes |
-| Compréhension | terrasse italienne · midi ensoleillé · soleil éclatant · joie conviviale |
-| Signature | **Apéritif Méditerranéen** : « Évocation d'un repas ensoleillé en plein air, alliant fraîcheur acidulée et richesse gourmande. » |
-| Roue | Gourmand 35 % · Citrus 25 % · Herbal - Agrestic 20 % · Floral 10 % · Woody 10 % |
-| Profil | tête : Aurantiol™ Pure · cœur : Amyl Salicylate, Limetol · fond : Sclarene 80%/DPG |
-| Limites et manques | pas de note d'olive ni de fromage dans le catalogue |
-| Passages retrouvés (`sources`) | 4 passages du chapitre 2, scores 0,64 à 0,66 : cuisine du pays natal, air marin, crème solaire, mousson, forêt de conifères |
+| Vision (`description_photo`) | marché · culture inconnue · jour · solaire · bananes, oranges, pamplemousses, mangues, pommes · ambiance « vivace » · odeurs probables : fruité, citronné, épicé, sucré, terreux |
+| Compréhension | marché tropical · jour ensoleillé · solaire · vivacité joyeuse · bananes, oranges, mangues, pommes, terre humide |
+| Signature | **Éclats Tropicaux** : « Un mélange vibrant de fruits mûrs et d'épices douces, évoquant l'énergie d'un marché ensoleillé en climat chaud. » |
+| Roue | Fruity 40 % · Citrus 25 % · Gourmand 15 % · Herbal - Agrestic 10 % · Spicy 10 % |
+| Profil | tête : Frutonile, Ultrazur™ · cœur : Methyl Laitone 10%/DPG, Aurantiol™ Pure, Methyl Tuberate Pure · fond : Butyl Quinoline Secondary, Paradisamide™ |
+| Limites et manques | pas de banane dans le catalogue · notes épicées et intensité terreuse à préciser |
+| Passages retrouvés (`sources`) | 4 passages du chapitre 2, scores 0,69 à 0,74 : air marin et crème solaire, crème solaire et forêt, orage et mousson tropicale, café et Noël |
 
 <details>
 <summary>Voir la réponse complète de l'API</summary>
@@ -226,97 +225,113 @@ Sorties brutes de l'API, sans aucune retouche (12/11/2026, ministral-3:8b).
 ```json
 {
   "description_photo": {
-    "lieu": "terrasse",
-    "pays_ou_culture_visible": "Italie",
-    "moment": "midi",
+    "lieu": "marché",
+    "pays_ou_culture_visible": "inconnu",
+    "moment": "jour",
     "meteo": "solaire",
-    "elements_visibles": ["olives", "tomates", "fromage", "citron", "pain"],
-    "ambiance": "sunny",
-    "odeurs_probables": ["olives", "fromage", "citron", "pain", "herbes"]
+    "elements_visibles": ["bananes", "oranges", "pamplemousses", "mangues", "pommes"],
+    "ambiance": "vivace",
+    "odeurs_probables": ["fruité", "citronné", "épicé", "sucré", "terreux"]
   },
   "resultat": {
-    "question": "Ce que montre la photo : lieu terrasse, culture Italie, moment midi, météo solaire, éléments olives, tomates, fromage, citron, pain, ambiance sunny, odeurs probables olives, fromage, citron, pain, herbes.\nPropose un profil olfactif (tête, cœur, fond) avec des ingrédients du catalogue Givaudan présents dans la base, en citant les sources (S001...).",
+    "question": "Ce que montre la photo : lieu marché, culture inconnu, moment jour, météo solaire, éléments bananes, oranges, pamplemousses, mangues, pommes, ambiance vivace, odeurs probables fruité, citronné, épicé, sucré, terreux.\nPropose un profil olfactif (tête, cœur, fond) avec des ingrédients du catalogue Givaudan présents dans la base, en citant les sources (S001...).",
     "answer": {
       "comprehension": {
-        "lieu": "terrasse italienne",
-        "moment": "midi ensoleillé",
-        "meteo": "soleil éclatant",
-        "emotion": "joie conviviale",
-        "elements": ["olives", "tomates", "fromage", "citron", "pain"]
+        "lieu": "marché tropical",
+        "moment": "jour ensoleillé",
+        "meteo": "solaire",
+        "emotion": "vivacité joyeuse",
+        "elements": ["bananes", "oranges", "mangues", "pommes", "terre humide"]
       },
       "signature": {
-        "nom": "Apéritif Méditerranéen",
-        "description": "Évocation d’un repas ensoleillé en plein air, alliant fraîcheur acidulée et richesse gourmande."
+        "nom": "Éclats Tropicaux",
+        "description": "Un mélange vibrant de fruits mûrs et d’épices douces, évoquant l’énergie d’un marché ensoleillé en climat chaud."
       },
       "roue": [
-        { "famille": "Gourmand", "pourcentage": 35 },
+        { "famille": "Fruity", "pourcentage": 40 },
         { "famille": "Citrus", "pourcentage": 25 },
-        { "famille": "Herbal - Agrestic", "pourcentage": 20 },
-        { "famille": "Floral", "pourcentage": 10 },
-        { "famille": "Woody", "pourcentage": 10 }
+        { "famille": "Gourmand", "pourcentage": 15 },
+        { "famille": "Herbal - Agrestic", "pourcentage": 10 },
+        { "famille": "Spicy", "pourcentage": 10 }
       ],
       "profil": {
         "tête": [
           {
-            "ingredient": "Aurantiol™ Pure",
-            "reference": "2365901",
-            "raison": "note fraîche et florale du citron pour évoquer l’acidité et la lumière méditerranéenne",
+            "ingredient": "Frutonile",
+            "reference": "1461553",
+            "raison": "note peach lactonique pour fraîcheur fruitée",
             "sources": ["S236", "S237"]
+          },
+          {
+            "ingredient": "Ultrazur™",
+            "reference": "21218823",
+            "raison": "ozonicité citronnée pour vivacité",
+            "sources": ["S043", "S048"]
           }
         ],
         "coeur": [
           {
-            "ingredient": "Amyl Salicylate",
-            "reference": "8810001",
-            "raison": "équilibre entre douceur balsamique et notes fruitées pour le côté gourmand et généreux",
+            "ingredient": "Methyl Laitone 10%/DPG",
+            "reference": "6978468",
+            "raison": "coco lactonique pour fond fruité crémeux",
+            "sources": ["S236", "S239"]
+          },
+          {
+            "ingredient": "Aurantiol™ Pure",
+            "reference": "2365901",
+            "raison": "fleur d’oranger pour équilibre floral",
             "sources": ["S236", "S237"]
           },
           {
-            "ingredient": "Limetol",
-            "reference": "4523001",
-            "raison": "notes herbales et camphrées pour rappeler les herbes fraîches et le pain grillé",
-            "sources": ["S100"]
+            "ingredient": "Methyl Tuberate Pure",
+            "reference": "9411003",
+            "raison": "tuberose lactonique pour douceur sucrée",
+            "sources": ["S246"]
           }
         ],
         "fond": [
           {
-            "ingredient": "Sclarene 80%/DPG",
-            "reference": "8892308",
-            "raison": "profondeur boisée et légèrement ambrée pour ancrer l’ensemble dans une ambiance terrienne et chaleureuse",
-            "sources": ["S100"]
+            "ingredient": "Butyl Quinoline Secondary",
+            "reference": "3005003",
+            "raison": "notes terreuses et boisées pour ancrage",
+            "sources": ["S246"]
+          },
+          {
+            "ingredient": "Paradisamide™",
+            "reference": "0025633",
+            "raison": "fruits tropicaux pour profondeur exotique",
+            "sources": ["S246"]
           }
         ],
         "tete": []
       },
-      "limites_catalogue": [
-        "pas de notes spécifiques pour olives ou fromage (ex. : parmesan, mozzarella)"
-      ],
+      "limites_catalogue": ["pas de banane"],
       "informations_manquantes": [
-        "notes précises pour le fromage (ex. : lactone pour le crémeux) ou les olives (ex. : notes salées/umami)"
+        "notes épicées précises (clou de girofle, gingembre), intensité terreuse exacte"
       ],
-      "brief": "Créer une fragrance évoquant une terrasse italienne ensoleillée, centrée sur des notes de citron, pain grillé, herbes et fromage, avec une touche gourmande et une profondeur boisée subtile."
+      "brief": "Créer un parfum vibrant pour marché tropical, alliant fraîcheur fruitée (peach, coco, oranges) et douceur lactonique, avec une touche terreuse discrète pour ancrage. Éviter la banane. Sources : S043, S048, S236, S237, S239, S246."
     },
     "model": "ministral-3:8b",
     "sources": [
       {
         "chapter": "Chapitre 2 : Associations odeur – ressenti (vue d'ensemble)",
-        "text": "Odeur : Cuisine du pays natal. Notes ou molécules : plats familiaux (ex. refogado portugais). Ressentis associés : réconfort, identité, mal du pays. Contexte typique : Migration, éloignement. Sources : S258 S260 S261. Ingrédients Givaudan proposés : aucun. Limite du catalogue : dépend du plat : à préciser avec le client.\n\nOdeur : Draps propres, matin calme. Notes ou molécules : iris, muguet, musc (Replica Lazy Sunday Morning). Ressentis associés : douceur, calme du dimanche. Contexte typique : Réveil lent. Sources : S173. Ingrédients Givaudan proposés : Irisone™ Alpha (réf. 6030003, Floral : Floral, Orris, Violet, Woody); Isoraldeine™ 95 (réf. 6281753, Floral : Floral, Orris, Woody, Fruity); Florhydral™ (réf. 8754243, Floral : Floral, Green, Muguet, Fresh, Powerful); Silvial™ (réf. 0012543, Floral : Floral, Muguet, Powerful, Fresh); Cervolide (réf. 7225001, Musky : Musky, Powdery); Musk R1 (réf. 7289001, Musky : Musky, Powdery).",
-        "score": 0.6622
-      },
-      {
-        "chapter": "Chapitre 2 : Associations odeur – ressenti (vue d'ensemble)",
         "text": "Odeur : Air marin, plage. Notes ou molécules : sulfure de diméthyle (DMS), bromophénols, embruns. Ressentis associés : vacances, liberté, nostalgie. Contexte typique : Bord de mer, été. Sources : S043 S044 S045 S046 S047. Ingrédients Givaudan proposés : Adoxal (réf. 1028001, Marine : Marine, Aldehydic, Floral, Fresh, Powerful); Ultrazur™ (réf. 21218823, Marine : Marine, Ozonic, Citrus, Fresh, Ambery).\n\nOdeur : Crème solaire. Notes ou molécules : gamma-nonalactone (coco), banane, fleur d'oranger. Ressentis associés : insouciance, enfance, bonheur de l'été. Contexte typique : Plage, piscine, vacances d'enfance. Sources : S236 S237 S239 S242 S128. Ingrédients Givaudan proposés : Methyl Laitone 10%/DPG (réf. 6978468, Fruity : Fruity, Coconut milk, Lactonic, Creamy); Aurantiol™ Pure (réf. 2365901, Floral : Floral, Orange blossom, Linden blossom); Amyl Salicylate (réf. 8810001, Floral : Floral, Sweet, Aromatic, Balsamic); Frutonile (réf. 1461553, Fruity : Fruity, Peach, Lactonic). Limite du catalogue : pas de banane.",
-        "score": 0.6534
-      },
-      {
-        "chapter": "Chapitre 2 : Associations odeur – ressenti (vue d'ensemble)",
-        "text": "Odeur : Air avant l'orage. Notes ou molécules : ozone. Ressentis associés : tension, électricité, anticipation. Contexte typique : Orage d'été, air métallique. Sources : S039 S048 S252. Ingrédients Givaudan proposés : Ultrazur™ (réf. 21218823, Marine : Marine, Ozonic, Citrus, Fresh, Ambery); Adoxal (réf. 1028001, Marine : Marine, Aldehydic, Floral, Fresh, Powerful).\n\nOdeur : Mousson tropicale. Notes ou molécules : terre humide, sous-bois mouillé, frangipanier, jacquier, bitume chaud. Ressentis associés : cocooning, exotisme, mystère, romance. Contexte typique : Asie du Sud et du Sud-Est (Vietnam, Inde, Thaïlande). Sources : S246 S247. Ingrédients Givaudan proposés : Butyl Quinoline Secondary (réf. 3005003, Leather - Moss : Leathery, Green, Woody, Earthy, Powerful); Stemone™ (réf. 9023501, Green : Green, Natural, Leafy, Fresh); Methyl Tuberate Pure (réf. 9411003, Floral : Floral, Tuberose, Lactonic); Paradisamide™ (réf. 0025633, Fruity : Tropical fruity, Guava, Grapefruit, Rhubarb, Cassis). Limite du catalogue : pas de frangipanier ni de jacquier.",
-        "score": 0.6413
+        "score": 0.735
       },
       {
         "chapter": "Chapitre 2 : Associations odeur – ressenti (vue d'ensemble)",
         "text": "Odeur : Crème solaire. Notes ou molécules : gamma-nonalactone (coco), banane, fleur d'oranger. Ressentis associés : insouciance, enfance, bonheur de l'été. Contexte typique : Plage, piscine, vacances d'enfance. Sources : S236 S237 S239 S242 S128. Ingrédients Givaudan proposés : Methyl Laitone 10%/DPG (réf. 6978468, Fruity : Fruity, Coconut milk, Lactonic, Creamy); Aurantiol™ Pure (réf. 2365901, Floral : Floral, Orange blossom, Linden blossom); Amyl Salicylate (réf. 8810001, Floral : Floral, Sweet, Aromatic, Balsamic); Frutonile (réf. 1461553, Fruity : Fruity, Peach, Lactonic). Limite du catalogue : pas de banane.\n\nOdeur : Forêt de conifères. Notes ou molécules : α-pinène, limonène (phytoncides). Ressentis associés : calme, baisse du stress, vitalité. Contexte typique : Bain de forêt (shinrin-yoku). Sources : S100 S099 S105 S104 S102. Ingrédients Givaudan proposés : Linalool Oxide (réf. 7852501, Herbal - Agrestic : Herbal, Pine, Floral, Fresh); Limetol (réf. 4523001, Herbal - Agrestic : Herbal, Camphor, Woody, Lime); Sclarene 80%/DPG (réf. 8892308, Woody : Woody, Dry, Ambery); Isopropyl Quinoline (réf. 2390003, Leather - Moss : Leathery, Woody, Moss); Orcinyl 3 (réf. 6638701, Leather - Moss : Leathery, Oakmoss, Sweet, Phenolic).",
-        "score": 0.6398
+        "score": 0.7184
+      },
+      {
+        "chapter": "Chapitre 2 : Associations odeur – ressenti (vue d'ensemble)",
+        "text": "Odeur : Air avant l'orage. Notes ou molécules : ozone. Ressentis associés : tension, électricité, anticipation. Contexte typique : Orage d'été, air métallique. Sources : S039 S048 S252. Ingrédients Givaudan proposés : Ultrazur™ (réf. 21218823, Marine : Marine, Ozonic, Citrus, Fresh, Ambery); Adoxal (réf. 1028001, Marine : Marine, Aldehydic, Floral, Fresh, Powerful).\n\nOdeur : Mousson tropicale. Notes ou molécules : terre humide, sous-bois mouillé, frangipanier, jacquier, bitume chaud. Ressentis associés : cocooning, exotisme, mystère, romance. Contexte typique : Asie du Sud et du Sud-Est (Vietnam, Inde, Thaïlande). Sources : S246 S247. Ingrédients Givaudan proposés : Butyl Quinoline Secondary (réf. 3005003, Leather - Moss : Leathery, Green, Woody, Earthy, Powerful); Stemone™ (réf. 9023501, Green : Green, Natural, Leafy, Fresh); Methyl Tuberate Pure (réf. 9411003, Floral : Floral, Tuberose, Lactonic); Paradisamide™ (réf. 0025633, Fruity : Tropical fruity, Guava, Grapefruit, Rhubarb, Cassis). Limite du catalogue : pas de frangipanier ni de jacquier.",
+        "score": 0.696
+      },
+      {
+        "chapter": "Chapitre 2 : Associations odeur – ressenti (vue d'ensemble)",
+        "text": "Odeur : Café. Notes ou molécules : arômes torréfiés. Ressentis associés : vigilance, énergie (en partie par attente). Contexte typique : Matin, travail. Sources : S276 S277. Ingrédients Givaudan proposés : Levistamel 25%/TEC (réf. 5845733, Gourmand : Gourmand, Caramel, Liquorice, Balsamic); Kephalis (réf. 6378003, Woody : Woody, Ambery, Tobacco, Rich). Limite du catalogue : pas de note café : approximation caramel/tabac.\n\nOdeur : Noël. Notes ou molécules : pin, cannelle, clou de girofle, vin chaud, pain d'épices. Ressentis associés : joie, nostalgie, cocooning, esprit festif. Contexte typique : Fêtes de fin d'année en famille. Sources : S200 S202 S201 S203. Ingrédients Givaudan proposés : Linalool Oxide (réf. 7852501, Herbal - Agrestic : Herbal, Pine, Floral, Fresh); Methyl Diantilis™ (réf. 6906203, Spicy : Spicy, Carnation, Vanilla, Sweet); Creosol (réf. 4198003, Spicy : Spicy, Vanilla, Balsam); Levistamel 25%/TEC (réf. 5845733, Gourmand : Gourmand, Caramel, Liquorice, Balsamic); Tangerinol (réf. 9177303, Citrus : Citrus, Bitter, Fruity, Fresh). Limite du catalogue : pas de cannelle ni de pain d'épices.",
+        "score": 0.6948
       }
     ]
   }
@@ -327,10 +342,12 @@ Sorties brutes de l'API, sans aucune retouche (12/11/2026, ministral-3:8b).
 
 **Ce que montre cet exemple.**
 
-- **Vision correcte mais partielle :** les aliments principaux sont reconnus, mais pas le spritz à l'orange, le romarin ni le basilic ; `ambiance` est renvoyée en anglais (« sunny »).
-- **Recherche peu pertinente :** aucun des 4 passages ne parle de cuisine méditerranéenne, car la base n'a pas de chapitre sur l'Italie. Aurantiol™ Pure est justifié par le citron, mais cite les sources de la crème solaire (S236, S237).
-- **Roue et profil incohérents :** Gourmand pèse 35 % de la roue, mais aucun ingrédient du profil n'est de la famille Gourmand (Amyl Salicylate est Floral).
-- **Clé mal écrite :** le modèle a rangé la note de tête sous `"tête"` (avec accent) et laissé `"tete"` vide. `verifier()` ne contrôle que `"tete"`, et l'application web lit `"tete"` : la note de tête est perdue côté application.
+- **Vision juste sur l'essentiel :** le lieu (marché) et les principaux fruits sont reconnus. En revanche, les citrons verts, les melons, les tomates et le marchand ne sont pas cités, et deux informations ne se voient pas sur la photo : la météo (« solaire ») et les odeurs « épicé » et « terreux ».
+- **Ajout du modèle :** les pamplemousses disparaissent de la compréhension, et « terre humide » apparaît, alors que rien sur la photo ne l'indique. Ça vient du passage « mousson tropicale » retrouvé par la recherche.
+- **Recherche hors sujet :** aucun des 4 passages ne parle d'un marché aux fruits. Le profil s'appuie surtout sur le passage « crème solaire » (S236, S237, S239), cité pour justifier des notes de fruits.
+- **Roue et profil incohérents :** Citrus, Gourmand, Herbal et Spicy font 60 % de la roue, mais aucun ingrédient du profil n'appartient à ces familles. À l'inverse, le profil contient du Marine (Ultrazur™), du Floral (Aurantiol™ Pure, Methyl Tuberate Pure) et du Leather - Moss (Butyl Quinoline Secondary), absents de la roue. Seuls 3 ingrédients sur 7 sont dans une famille de la roue.
+- **Clé `"tête"` mal écrite, à nouveau :** les 2 notes de tête sont rangées sous `"tête"` (avec accent) et `"tete"` reste vide. C'est le cas pour les deux photos testées : l'application web, qui lit `"tete"`, perd systématiquement la note de tête.
+- **Point positif :** la limite du catalogue est signalée honnêtement (« pas de banane »), et le brief liste ses sources.
 
 #### Texte : « L'odeur du marché de Thaïlande après une averse » (`POST /ask`)
 
