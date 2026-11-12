@@ -207,7 +207,8 @@ Sorties brutes de l'API, sans aucune retouche (12/11/2026, ministral-3:8b).
 
 #### Photo : repas en terrasse (`POST /ask_photo`, sans récit)
 
-GLISSE_LA_PHOTO_ICI
+<img width="736" height="1104" alt="617b81c536049ebda84a587c2581031b" src="https://github.com/user-attachments/assets/705c6a30-2e7e-4476-b741-f4af1be8c1c8" />
+
 
 | Étape | Ce que l'API a renvoyé |
 |---|---|
@@ -337,7 +338,151 @@ GLISSE_LA_PHOTO_ICI
 <summary>Voir la réponse complète de l'API</summary>
 
 ```json
-COLLE_ICI_LA_REPONSE_DE_L_API
+{
+  "question": "Je veux retrouver l'odeur du marché de Thaïlande après une averse.",
+  "answer": {
+    "comprehension": {
+      "lieu": "marché thaïlandais",
+      "moment": "après l'averse",
+      "meteo": "pluie récente",
+      "emotion": "nostalgie mélancolique",
+      "elements": [
+        "citronnelle",
+        "terre humide",
+        "encens léger",
+        "grillades",
+        "jasmin"
+      ]
+    },
+    "signature": {
+      "nom": "Pluie sur Bangkok",
+      "description": "Une ambiance tropicale humide mêlant l’effervescence des marchés, la douceur des fleurs sacrées et la chaleur des épices, enveloppée dans une brume post-orage."
+    },
+    "roue": [
+      {
+        "famille": "Floral",
+        "pourcentage": 25
+      },
+      {
+        "famille": "Citrus",
+        "pourcentage": 20
+      },
+      {
+        "famille": "Herbal - Agrestic",
+        "pourcentage": 20
+      },
+      {
+        "famille": "Woody",
+        "pourcentage": 10
+      },
+      {
+        "famille": "Spicy",
+        "pourcentage": 15
+      },
+      {
+        "famille": "Ambery",
+        "pourcentage": 10
+      }
+    ],
+    "profil": {
+      "tete": [
+        {
+          "ingredient": "Lime Oxide",
+          "reference": "7852493",
+          "raison": "fraîcheur citronnée pour évoquer la pluie et l’humidité",
+          "sources": [
+            "S054",
+            "S057"
+          ]
+        },
+        {
+          "ingredient": "Methyl Heptenone Pure",
+          "reference": "6937003",
+          "raison": "note de citronnelle pour le dépaysement",
+          "sources": [
+            "S049",
+            "S054"
+          ]
+        }
+      ],
+      "coeur": [
+        {
+          "ingredient": "Jasmonyl™",
+          "reference": "6346803",
+          "raison": "jasmin pour la douceur nostalgique et les souvenirs de temple",
+          "sources": [
+            "S053",
+            "S057"
+          ]
+        },
+        {
+          "ingredient": "Limetol",
+          "reference": "4523001",
+          "raison": "camphre pour approcher le baume du tigre et la terre humide",
+          "sources": [
+            "S056",
+            "limite catalogue"
+          ]
+        }
+      ],
+      "fond": [
+        {
+          "ingredient": "Bisabolene",
+          "reference": "2751503",
+          "raison": "notes balsamiques et boisées pour envelopper et adoucir",
+          "sources": [
+            "S055",
+            "S057"
+          ]
+        },
+        {
+          "ingredient": "Cuminic Aldehyde",
+          "reference": "1515001",
+          "raison": "épices légères pour évoquer les grillades et la fumée",
+          "sources": [
+            "S049",
+            "S051"
+          ]
+        }
+      ]
+    },
+    "limites_catalogue": [
+      "galanga",
+      "combava",
+      "frangipanier",
+      "ylang-ylang",
+      "champaca"
+    ],
+    "informations_manquantes": [
+      "précision sur la proportion de fumée/grillades",
+      "détails sur l’encens spécifique (type de bois ou résine)"
+    ],
+    "brief": "Créer une fragrance évoquant un marché thaïlandais après une averse, mêlant fraîcheur citronnée, nostalgie florale et chaleur épicée, avec une touche terreuse et humide pour renforcer l’immersion sensorielle."
+  },
+  "model": "ministral-3:8b",
+  "sources": [
+    {
+      "chapter": "Chapitre 50 : Exemple : « J'étais en Thaïlande après la pluie, j'étais triste »",
+      "text": "Lieu – Thaïlande : rue de Bangkok (citronnelle, galanga, combava, grillades, fumée) S049, temples (encens, jasmin offert au Bouddha) S053, fleurs tropicales (frangipanier, ylang-ylang, champaca) S245.\n\nMoment – après la pluie : pétrichor et géosmine S036 ; en climat de mousson, terre humide et sous-bois mouillé S246.\n\nÉmotion – tristesse : aucune source ne relie une odeur précise à la tristesse pour tout le monde. Les sources montrent que les odeurs gardent l'émotion du moment vécu S191 et que la nostalgie évoquée par une odeur s'accompagne d'émotions positives, d'optimisme et de lien social S125. Piste : demander au client si cette tristesse était plutôt mélancolie douce (notes enveloppantes, encens, bois) ou solitude (notes plus fraîches, pluie, air humide).",
+      "score": 0.6501
+    },
+    {
+      "chapter": "Chapitre 10 : Lieux : Thaïlande",
+      "text": "Thaïlande : grillades, encens, adoucissant du linge séché au soleil, guirlandes de jasmin offertes au Bouddha. Source : The Impermanent Resident – The smells of Thailand (S053).\n\nCrevettes grillées, galanga, citronnelle, marchés flottants. Source : Outlook Traveller – Flâneuring in Bangkok (S054).\n\nFleurs de la parfumerie thaïe : jasmin, ylang-ylang, tagète, lotus ; encens à Wat Mangkon. Source : Lokalee – Craft your own Thai perfume (S055).\n\nOdeur du voyage : encens, nourriture de rue, baume du tigre, citronnelle et air humide. Source : Adventures of a Good Man – That travel smell (S056).\n\nSouvenirs olfactifs de Thaïlande : jasmin (Songkran), encens de temple, baume du tigre, inhalateur ya dom, basilic sacré, citron vert. Source : r/Thailand – Smell that reminds you of Thailand (S057).",
+      "score": 0.6439
+    },
+    {
+      "chapter": "Chapitre 2 : Associations odeur – ressenti (vue d'ensemble)",
+      "text": "Odeur : Rue de Bangkok. Notes ou molécules : citronnelle, galanga, combava, piment, ail frit, grillades, fumée, gaz de tuk-tuk. Ressentis associés : effervescence, dépaysement, excitation du voyage. Contexte typique : Marchés et street food en Thaïlande. Sources : S049 S050 S051 S054. Ingrédients Givaudan proposés : Methyl Heptenone Pure (réf. 6937003, Citrus : Citrus, Lemongrass); Lime Oxide (réf. 7852493, Citrus : Citrus, Lime, Green, Aromatic, Fresh); Citrathal™ Conc S (réf. 5847673, Citrus : Citrus, Lime, Lemon); Cuminic Aldehyde (réf. 1515001, Spicy : Spicy, Green, Herbaceous); Safranal (réf. 8797001, Spicy : Spicy, Saffron, Herbaceous, Tobacco). Limite du catalogue : pas de galanga ni de combava.\n\nOdeur : Souvenirs olfactifs de Thaïlande. Notes ou molécules : jasmin, encens de temple, baume du tigre, inhalateur ya dom, basilic sacré, citron vert. Ressentis associés : nostalgie du voyage. Contexte typique : Retour de Thaïlande. Sources : S057 S056. Ingrédients Givaudan proposés : Jasmonyl™ (réf. 6346803, Floral : Floral, Jasmine, Lactonic); Bisabolene (réf. 2751503, Floral : Floral, Orange blossom, Balsamic, Myrrh, Sweet); Limetol (réf. 4523001, Herbal - Agrestic : Herbal, Camphor, Woody, Lime); Methyl Heptenone Pure (réf. 6937003, Citrus : Citrus, Lemongrass); Lime Oxide (réf. 7852493, Citrus : Citrus, Lime, Green, Aromatic, Fresh). Limite du catalogue : baume du tigre approché par le camphre.",
+      "score": 0.6403
+    },
+    {
+      "chapter": "Chapitre 2 : Associations odeur – ressenti (vue d'ensemble)",
+      "text": "Odeur : Souvenirs olfactifs de Thaïlande. Notes ou molécules : jasmin, encens de temple, baume du tigre, inhalateur ya dom, basilic sacré, citron vert. Ressentis associés : nostalgie du voyage. Contexte typique : Retour de Thaïlande. Sources : S057 S056. Ingrédients Givaudan proposés : Jasmonyl™ (réf. 6346803, Floral : Floral, Jasmine, Lactonic); Bisabolene (réf. 2751503, Floral : Floral, Orange blossom, Balsamic, Myrrh, Sweet); Limetol (réf. 4523001, Herbal - Agrestic : Herbal, Camphor, Woody, Lime); Methyl Heptenone Pure (réf. 6937003, Citrus : Citrus, Lemongrass); Lime Oxide (réf. 7852493, Citrus : Citrus, Lime, Green, Aromatic, Fresh). Limite du catalogue : baume du tigre approché par le camphre.\n\nOdeur : Fleurs tropicales. Notes ou molécules : frangipanier, ylang-ylang, champaca, tiaré, nénuphar. Ressentis associés : douceur, apaisement, évasion. Contexte typique : Îles thaïes, Asie tropicale. Sources : S245 S055 S251. Ingrédients Givaudan proposés : Methyl Tuberate Pure (réf. 9411003, Floral : Floral, Tuberose, Lactonic); Linalyl Benzoate (réf. 2597001, Floral : Floral, Tuberose); Jasmonyl™ LG (réf. 6347001, Floral : Floral, Jasmine, Lactonic); Methyl Laitone 10%/DPG (réf. 6978468, Fruity : Fruity, Coconut milk, Lactonic, Creamy). Limite du catalogue : pas de frangipanier, ylang-ylang ni champaca.",
+      "score": 0.6185
+    }
+  ]
+}
 ```
 
 </details>
