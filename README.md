@@ -349,9 +349,7 @@ Sorties brutes de l'API, sans aucune retouche (12/11/2026, ministral-3:8b).
 - **Clé `"tête"` mal écrite, à nouveau :** les 2 notes de tête sont rangées sous `"tête"` (avec accent) et `"tete"` reste vide. C'est le cas pour les deux photos testées : l'application web, qui lit `"tete"`, perd systématiquement la note de tête.
 - **Point positif :** la limite du catalogue est signalée honnêtement (« pas de banane »), et le brief liste ses sources.
 
-#### Texte : « L'odeur du marché de Thaïlande après une averse » (`POST /ask`)
 
-<details>
 #### Texte : « Je veux retrouver l'odeur du marché de Thaïlande après une averse. » (`POST /ask`)
 
 | Étape | Ce que l'API a renvoyé |
@@ -362,6 +360,7 @@ Sorties brutes de l'API, sans aucune retouche (12/11/2026, ministral-3:8b).
 | Profil | tête : Lime Oxide, Methyl Heptenone Pure · cœur : Jasmonyl™, Limetol · fond : Bisabolene, Cuminic Aldehyde |
 | Limites et manques | pas de galanga, combava, frangipanier, ylang-ylang ni champaca dans le catalogue · proportion de fumée et type d'encens à préciser |
 | Passages retrouvés (`sources`) | 4 passages sur la Thaïlande, scores 0,62 à 0,65 : chapitre 50 (exemple Thaïlande après la pluie), chapitre 10 (Thaïlande), chapitre 2 (rue de Bangkok, souvenirs de Thaïlande, fleurs tropicales) |
+<details>
 
 ```json
 {
