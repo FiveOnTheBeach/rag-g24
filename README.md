@@ -14,20 +14,7 @@ Document de synthèse de la brique Data/IA. Chaque chiffre renvoie à un fichier
 5. compose un **profil tête / cœur / fond**, uniquement avec des ingrédients du catalogue Givaudan, chacun justifié par des sources ;
 6. rédige un **brief** pour le parfumeur, avec les limites du catalogue et les informations manquantes.
 
-**Exemple réel : une photo de plage.** Run du 12/11/2026, ministral-3:8b + qwen2.5vl, 108 s.
 
-<img src="evaluation_LLM/ask_photo/photo_test/plage.jpg" alt="Photo de plage envoyée à /ask_photo" width="320">
-
-| Étape | Résultat |
-|---|---|
-| Ce que voit le modèle de vision | plage · soleil · palmier, mer · ambiance calme |
-| Signature | **Évasion Tropicale Marine** : une plage ensoleillée exotique, fraîcheur marine, douceur tropicale et nostalgie estivale |
-| Roue | Marine 30 % · Fruity 20 % · Floral 20 % · Green 10 % · Woody 10 % · Ambery 5 % · Herbal 5 % |
-| Profil (tête) | Ultrazur™, Stemone™ |
-
-Résultat complet : [exemple_photo_plage.json](docs/exemples/exemple_photo_plage.json) (bouton de téléchargement en haut à droite du fichier sur GitHub).
-
-**Exemple réel : un souvenir en texte.** « J'étais en Thaïlande après la pluie, j'étais triste » → **Mélancolie des Temples**. Résultat complet : [exemple_texte_thailande.json](docs/exemples/exemple_texte_thailande.json).
 
 **Vocabulaire.** Chaque terme a un seul sens dans ce document.
 
@@ -213,6 +200,8 @@ Appel sans clé d'API : **refusé (HTTP 401)**.
 - **Compréhension trop bavarde :** dans C01, le champ `lieu` faisait 12 mots (« Thaïlande (Bangkok et temples, marchés flottants…) »). Corrigé depuis par le commit `4572fa5` (4 mots au plus), à remesurer.
 - **Injection mal gérée :** S01 ne fait pas fuiter le prompt système, mais fait boucler le modèle jusqu'à l'erreur. L'utilisateur reçoit une 502 au lieu d'une analyse.
 - **Trop lent pour l'application :** 79 à 109 s par analyse, alors que l'application web abandonne au bout de 120 s.
+
+
 
 **Évaluation complète : à lancer.** Les 29 cas, avec juge (~45 min) :
 
