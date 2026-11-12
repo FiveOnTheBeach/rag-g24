@@ -326,8 +326,6 @@ Transmets l'URL de base, **sans** `/health` ni `/ask`, aux tech-leads **en messa
 - Le **Wi-Fi de l'école bloque ngrok** (`ERR_NGROK_8008 : No tunnel servers could establish a TLS connection`). Passe par le **partage de connexion** de ton téléphone, y compris le jour de la démo.
 - Le plan gratuit offre **20 000 requêtes par mois** pour toute l'équipe. Pas de tests automatiques en boucle à travers le tunnel.
 
-> ⚠️ **Le service n'a pas de clé d'API.** Toute personne qui connaît l'URL ngrok peut utiliser le modèle et ta machine. Ne publie pas l'URL dans un canal public, et coupe le tunnel quand personne n'en a besoin.
-
 ---
 
 ## Brancher l'application web (hackathon-app)
