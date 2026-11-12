@@ -360,7 +360,7 @@ Sorties brutes de l'API, sans aucune retouche (12/11/2026, ministral-3:8b).
 | Profil | tête : Lime Oxide, Methyl Heptenone Pure · cœur : Jasmonyl™, Limetol · fond : Bisabolene, Cuminic Aldehyde |
 | Limites et manques | pas de galanga, combava, frangipanier, ylang-ylang ni champaca dans le catalogue · proportion de fumée et type d'encens à préciser |
 | Passages retrouvés (`sources`) | 4 passages sur la Thaïlande, scores 0,62 à 0,65 : chapitre 50 (exemple Thaïlande après la pluie), chapitre 10 (Thaïlande), chapitre 2 (rue de Bangkok, souvenirs de Thaïlande, fleurs tropicales) |
-<details>
+<Voir la réponse complète de l'API>
 
 ```json
 {
