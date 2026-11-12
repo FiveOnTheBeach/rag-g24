@@ -17,6 +17,44 @@ from fastapi import UploadFile, File, Form
 import tempfile
 from photo_vers_texte import analyser_photo, construire_question
 
+import csv
+from pathlib import Path
+
+# Catalogue officiel : référence -> nom
+CATALOGUE = {}
+with open(Path(__file__).parent / "catalogue_givaudan_complet.csv", encoding="utf-8-sig") as f:
+    for ligne in csv.DictReader(f, delimiter=";"):
+        CATALOGUE[ligne["reference"].strip()] = ligne["nom"].strip()
+
+FAMILLES = {"Floral", "Fruity", "Citrus", "Herbal - Agrestic", "Woody", "Green", "Ambery",
+            "Spicy", "Musky", "Leather - Moss", "Gourmand", "Aldehydic", "Marine"}
+
+
+def verifier(answer):
+    """Retire les ingrédients absents du catalogue et les familles inventées."""
+    if not isinstance(answer, dict):
+        return answer
+    profil = answer.get("profil") or {}
+    limites = answer.setdefault("limites_catalogue", [])
+    for niveau in ("tete", "coeur", "fond"):
+        gardes = []
+        for ing in profil.get(niveau) or []:
+            ref = str(ing.get("reference", "")).strip()
+            if ref in CATALOGUE:
+                ing["ingredient"] = CATALOGUE[ref]  # on remet le nom officiel
+                gardes.append(ing)
+            else:
+                limites.append(f"{ing.get('ingredient', '?')} : absent du catalogue, retiré du profil")
+        profil[niveau] = gardes
+    # Roue : on garde seulement les familles du catalogue, puis on remet le total à 100 %
+    roue = [s for s in answer.get("roue") or [] if s.get("famille") in FAMILLES]
+    total = sum(s.get("pourcentage", 0) for s in roue)
+    if total:
+        for s in roue:
+            s["pourcentage"] = round(s["pourcentage"] * 100 / total)
+    answer["roue"] = roue
+    return answer
+
 SYSTEM_PROMPT = """Tu es le moteur d'analyse de Givaudan Scent Journey. Tu ne dialogues jamais avec l'utilisateur et tu ne poses aucune question.
 Tu reçois un récit (texte, voix transcrite, description de photo, images choisies, produit visé).
 En t'appuyant UNIQUEMENT sur le contexte fourni, réponds par un JSON valide, sans texte autour :
@@ -110,6 +148,7 @@ def ask(req: AskRequest):
         answer = json.loads(cleaned)
     except json.JSONDecodeError:
         answer = cleaned
+    answer = verifier(answer)
     return AskResponse(question=req.question, answer=answer, model=config.LLM_MODEL, sources=sources)
 
 @app.post("/ask_photo")
