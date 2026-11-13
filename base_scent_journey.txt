@@ -2,7 +2,7 @@ Givaudan Scent Journey – Base de connaissances : odeurs, émotions, souvenirs 
 
 Chapitre 1 : Comment utiliser cette base
 
-Cette base relie des odeurs à des émotions, des souvenirs, des lieux et des moments de vie. Chaque fait est accompagné d'un identifiant de source (S001 à S294) qui renvoie au fichier sources_scent_journey.csv.
+Cette base relie des odeurs à des émotions, des souvenirs, des lieux et des moments de vie. Chaque fait est accompagné d'un identifiant de source (S001 à S485) qui renvoie au fichier sources_scent_journey.csv.
 
 Règle importante : une odeur ne produit pas la même émotion chez tout le monde. Selon Arshamian et al. (2022), l'individu explique environ 54 % de la préférence pour une odeur, la molécule 41 % et la culture 6 % (S029). Selon Herz, l'émotion liée à une odeur est en grande partie apprise lors de la première rencontre avec cette odeur (S191).
 
@@ -10,11 +10,11 @@ Les propositions d'odeurs sont donc des pistes de départ à affiner avec le cli
 
 Le catalogue Givaudan utilisé contient 157 ingrédients (molécules et spécialités), pas des parfums finis. Les ingrédients proposés pour chaque odeur sont choisis par l'équipe en comparant les notes olfactives du catalogue (colonne notes_olfactives) aux odeurs décrites par les sources. Ce choix est une proposition à valider par un parfumeur ; les sources scientifiques ne citent pas ces ingrédients.
 
-Méthode proposée pour traduire un récit en profil olfactif : 1) repérer le lieu (ex. Thaïlande, mer, forêt), 2) le moment ou la météo (ex. après la pluie, hiver, matin), 3) l'émotion (ex. tristesse, calme, joie), 4) les personnes et objets présents, puis 5) proposer les odeurs associées à chaque élément dans les chapitres ci-dessous, et 6) demander au client lesquelles lui parlent. Cette méthode est une proposition de l'équipe, pas un résultat d'étude.
+Méthode proposée pour traduire un récit en profil olfactif : 1) repérer le lieu (ex. Thaïlande, mer, forêt), 2) le moment ou la météo (ex. après la pluie, hiver, matin), 3) l'émotion (ex. tristesse, calme, joie), 4) les personnes et objets présents, puis 5) proposer les odeurs associées à chaque élément dans les chapitres ci-dessous, et 6) noter dans le brief les points à confirmer par le commercial Givaudan (l'IA ne pose pas de questions au client). Cette méthode est une proposition de l'équipe, pas un résultat d'étude.
 
 Chapitre 2 : Associations odeur – ressenti (vue d'ensemble)
 
-Odeur : Pluie sur sol sec (pétrichor). Notes ou molécules : géosmine, 2-MIB, huiles végétales. Ressentis associés : soulagement, joie, apaisement, nostalgie. Contexte typique : Première pluie après la chaleur, mousson, été. Sources : S036 S037 S041 S248 S249 S042. Ingrédients Givaudan proposés : Butyl Quinoline Secondary (réf. 3005003, Leather - Moss : Leathery, Green, Woody, Earthy, Powerful); Stemone™ (réf. 9023501, Green : Green, Natural, Leafy, Fresh); Ultrazur™ (réf. 21218823, Marine : Marine, Ozonic, Citrus, Fresh, Ambery). Limite du catalogue : pas de géosmine dans le catalogue.
+Odeur : Pluie sur sol sec (pétrichor). Notes ou molécules : géosmine, 2-MIB, huiles végétales. Ressentis associés : soulagement, joie, apaisement, nostalgie. Contexte typique : Première pluie après la chaleur, mousson, été. Sources : S036 S037 S041 S298 S248 S249 S042. Ingrédients Givaudan proposés : Butyl Quinoline Secondary (réf. 3005003, Leather - Moss : Leathery, Green, Woody, Earthy, Powerful); Stemone™ (réf. 9023501, Green : Green, Natural, Leafy, Fresh); Ultrazur™ (réf. 21218823, Marine : Marine, Ozonic, Citrus, Fresh, Ambery). Limite du catalogue : pas de géosmine dans le catalogue.
 
 Odeur : Air avant l'orage. Notes ou molécules : ozone. Ressentis associés : tension, électricité, anticipation. Contexte typique : Orage d'été, air métallique. Sources : S039 S048 S252. Ingrédients Givaudan proposés : Ultrazur™ (réf. 21218823, Marine : Marine, Ozonic, Citrus, Fresh, Ambery); Adoxal (réf. 1028001, Marine : Marine, Aldehydic, Floral, Fresh, Powerful).
 
@@ -22,11 +22,11 @@ Odeur : Mousson tropicale. Notes ou molécules : terre humide, sous-bois mouill�
 
 Odeur : Air marin, plage. Notes ou molécules : sulfure de diméthyle (DMS), bromophénols, embruns. Ressentis associés : vacances, liberté, nostalgie. Contexte typique : Bord de mer, été. Sources : S043 S044 S045 S046 S047. Ingrédients Givaudan proposés : Adoxal (réf. 1028001, Marine : Marine, Aldehydic, Floral, Fresh, Powerful); Ultrazur™ (réf. 21218823, Marine : Marine, Ozonic, Citrus, Fresh, Ambery).
 
-Odeur : Crème solaire. Notes ou molécules : gamma-nonalactone (coco), banane, fleur d'oranger. Ressentis associés : insouciance, enfance, bonheur de l'été. Contexte typique : Plage, piscine, vacances d'enfance. Sources : S236 S237 S239 S242 S128. Ingrédients Givaudan proposés : Methyl Laitone 10%/DPG (réf. 6978468, Fruity : Fruity, Coconut milk, Lactonic, Creamy); Aurantiol™ Pure (réf. 2365901, Floral : Floral, Orange blossom, Linden blossom); Amyl Salicylate (réf. 8810001, Floral : Floral, Sweet, Aromatic, Balsamic); Frutonile (réf. 1461553, Fruity : Fruity, Peach, Lactonic). Limite du catalogue : pas de banane.
+Odeur : Crème solaire. Notes ou molécules : gamma-nonalactone (coco), banane, fleur d'oranger. Ressentis associés : insouciance, enfance, bonheur de l'été. Contexte typique : Plage, piscine, vacances d'enfance. Sources : S236 S308 S376 S411 S426 S237 S338 S239 S242 S128. Ingrédients Givaudan proposés : Methyl Laitone 10%/DPG (réf. 6978468, Fruity : Fruity, Coconut milk, Lactonic, Creamy); Aurantiol™ Pure (réf. 2365901, Floral : Floral, Orange blossom, Linden blossom); Amyl Salicylate (réf. 8810001, Floral : Floral, Sweet, Aromatic, Balsamic); Frutonile (réf. 1461553, Fruity : Fruity, Peach, Lactonic). Limite du catalogue : pas de banane.
 
 Odeur : Forêt de conifères. Notes ou molécules : α-pinène, limonène (phytoncides). Ressentis associés : calme, baisse du stress, vitalité. Contexte typique : Bain de forêt (shinrin-yoku). Sources : S100 S099 S105 S104 S102. Ingrédients Givaudan proposés : Linalool Oxide (réf. 7852501, Herbal - Agrestic : Herbal, Pine, Floral, Fresh); Limetol (réf. 4523001, Herbal - Agrestic : Herbal, Camphor, Woody, Lime); Sclarene 80%/DPG (réf. 8892308, Woody : Woody, Dry, Ambery); Isopropyl Quinoline (réf. 2390003, Leather - Moss : Leathery, Woody, Moss); Orcinyl 3 (réf. 6638701, Leather - Moss : Leathery, Oakmoss, Sweet, Phenolic).
 
-Odeur : Herbe fraîchement coupée. Notes ou molécules : cis-3-hexénal, feuilles vertes (GLV). Ressentis associés : nostalgie d'enfance, printemps/été, apaisement. Contexte typique : Jardin, terrain de sport, été. Sources : S107 S126 S127. Ingrédients Givaudan proposés : Stemone™ (réf. 9023501, Green : Green, Natural, Leafy, Fresh); Folione™ (réf. 5093003, Green : Green, Leafy, Floral, Powerful); Cyclal C (réf. 4251703, Green : Green, Leafy, Floral, Powerful); NeoFolione™ (réf. 7450003, Green : Green, Floral, Fresh, Powerful).
+Odeur : Herbe fraîchement coupée. Notes ou molécules : cis-3-hexénal, feuilles vertes (GLV). Ressentis associés : nostalgie d'enfance, printemps/été, apaisement. Contexte typique : Jardin, terrain de sport, été. Sources : S107 S477 S126 S127. Ingrédients Givaudan proposés : Stemone™ (réf. 9023501, Green : Green, Natural, Leafy, Fresh); Folione™ (réf. 5093003, Green : Green, Leafy, Floral, Powerful); Cyclal C (réf. 4251703, Green : Green, Leafy, Floral, Powerful); NeoFolione™ (réf. 7450003, Green : Green, Floral, Fresh, Powerful).
 
 Odeur : Feu de bois, feu de camp. Notes ou molécules : gaïacol, syringol (fumée). Ressentis associés : sécurité, convivialité, nostalgie. Contexte typique : Camp, cheminée, soirée d'hiver. Sources : S231 S234 S232 S233. Ingrédients Givaudan proposés : Creosol (réf. 4198003, Spicy : Spicy, Vanilla, Balsam); Safraleine™ (réf. 0015893, Spicy : Spicy, Leathery, Woody, Warm); Kephalis (réf. 6378003, Woody : Woody, Ambery, Tobacco, Rich); Pyralone (réf. 8543203, Leather - Moss : Leathery, Green, Woody, Powerful). Limite du catalogue : pas de gaïacol listé.
 
@@ -38,7 +38,7 @@ Odeur : Pain chaud, pâtisserie. Notes ou molécules : réaction de Maillard, ca
 
 Odeur : Café. Notes ou molécules : arômes torréfiés. Ressentis associés : vigilance, énergie (en partie par attente). Contexte typique : Matin, travail. Sources : S276 S277. Ingrédients Givaudan proposés : Levistamel 25%/TEC (réf. 5845733, Gourmand : Gourmand, Caramel, Liquorice, Balsamic); Kephalis (réf. 6378003, Woody : Woody, Ambery, Tobacco, Rich). Limite du catalogue : pas de note café : approximation caramel/tabac.
 
-Odeur : Noël. Notes ou molécules : pin, cannelle, clou de girofle, vin chaud, pain d'épices. Ressentis associés : joie, nostalgie, cocooning, esprit festif. Contexte typique : Fêtes de fin d'année en famille. Sources : S200 S202 S201 S203. Ingrédients Givaudan proposés : Linalool Oxide (réf. 7852501, Herbal - Agrestic : Herbal, Pine, Floral, Fresh); Methyl Diantilis™ (réf. 6906203, Spicy : Spicy, Carnation, Vanilla, Sweet); Creosol (réf. 4198003, Spicy : Spicy, Vanilla, Balsam); Levistamel 25%/TEC (réf. 5845733, Gourmand : Gourmand, Caramel, Liquorice, Balsamic); Tangerinol (réf. 9177303, Citrus : Citrus, Bitter, Fruity, Fresh). Limite du catalogue : pas de cannelle ni de pain d'épices.
+Odeur : Noël. Notes ou molécules : pin, cannelle, clou de girofle, vin chaud, pain d'épices. Ressentis associés : joie, nostalgie, cocooning, esprit festif. Contexte typique : Fêtes de fin d'année en famille. Sources : S200 S202 S201 S379 S203. Ingrédients Givaudan proposés : Linalool Oxide (réf. 7852501, Herbal - Agrestic : Herbal, Pine, Floral, Fresh); Methyl Diantilis™ (réf. 6906203, Spicy : Spicy, Carnation, Vanilla, Sweet); Creosol (réf. 4198003, Spicy : Spicy, Vanilla, Balsam); Levistamel 25%/TEC (réf. 5845733, Gourmand : Gourmand, Caramel, Liquorice, Balsamic); Tangerinol (réf. 9177303, Citrus : Citrus, Bitter, Fruity, Fresh). Limite du catalogue : pas de cannelle ni de pain d'épices.
 
 Odeur : Lavande. Notes ou molécules : linalol, acétate de linalyle. Ressentis associés : calme, anxiété réduite, sommeil. Contexte typique : Attente stressante, coucher. Sources : S089 S091 S094 S088. Ingrédients Givaudan proposés : Amyl Vinyl Carbinol (réf. 1884001, Herbal - Agrestic : Herbal, Lavender); Linalyl Propionate (réf. 8448751, Herbal - Agrestic : Herbal, Lavender, Bergamot, Fruity); Linalyl Isobutyrate (réf. 6170501, Fruity : Fruity, Fresh, Lavender); Ethyl Linalool (réf. 4973001, Floral : Floral, Fresh).
 
@@ -58,9 +58,9 @@ Odeur : Rue de Bangkok. Notes ou molécules : citronnelle, galanga, combava, pim
 
 Odeur : Souvenirs olfactifs de Thaïlande. Notes ou molécules : jasmin, encens de temple, baume du tigre, inhalateur ya dom, basilic sacré, citron vert. Ressentis associés : nostalgie du voyage. Contexte typique : Retour de Thaïlande. Sources : S057 S056. Ingrédients Givaudan proposés : Jasmonyl™ (réf. 6346803, Floral : Floral, Jasmine, Lactonic); Bisabolene (réf. 2751503, Floral : Floral, Orange blossom, Balsamic, Myrrh, Sweet); Limetol (réf. 4523001, Herbal - Agrestic : Herbal, Camphor, Woody, Lime); Methyl Heptenone Pure (réf. 6937003, Citrus : Citrus, Lemongrass); Lime Oxide (réf. 7852493, Citrus : Citrus, Lime, Green, Aromatic, Fresh). Limite du catalogue : baume du tigre approché par le camphre.
 
-Odeur : Fleurs tropicales. Notes ou molécules : frangipanier, ylang-ylang, champaca, tiaré, nénuphar. Ressentis associés : douceur, apaisement, évasion. Contexte typique : Îles thaïes, Asie tropicale. Sources : S245 S055 S251. Ingrédients Givaudan proposés : Methyl Tuberate Pure (réf. 9411003, Floral : Floral, Tuberose, Lactonic); Linalyl Benzoate (réf. 2597001, Floral : Floral, Tuberose); Jasmonyl™ LG (réf. 6347001, Floral : Floral, Jasmine, Lactonic); Methyl Laitone 10%/DPG (réf. 6978468, Fruity : Fruity, Coconut milk, Lactonic, Creamy). Limite du catalogue : pas de frangipanier, ylang-ylang ni champaca.
+Odeur : Fleurs tropicales. Notes ou molécules : frangipanier, ylang-ylang, champaca, tiaré, nénuphar. Ressentis associés : douceur, apaisement, évasion. Contexte typique : Îles thaïes, Asie tropicale. Sources : S245 S055 S251 S304 S398. Ingrédients Givaudan proposés : Methyl Tuberate Pure (réf. 9411003, Floral : Floral, Tuberose, Lactonic); Linalyl Benzoate (réf. 2597001, Floral : Floral, Tuberose); Jasmonyl™ LG (réf. 6347001, Floral : Floral, Jasmine, Lactonic); Methyl Laitone 10%/DPG (réf. 6978468, Fruity : Fruity, Coconut milk, Lactonic, Creamy). Limite du catalogue : pas de frangipanier, ylang-ylang ni champaca.
 
-Odeur : Pandan. Notes ou molécules : feuille de pandan. Ressentis associés : sentiment d'être chez soi, enfance. Contexte typique : Asie du Sud-Est (desserts, maison). Sources : S243 S244 S250. Ingrédients Givaudan proposés : Methyl Laitone 10%/DPG (réf. 6978468, Fruity : Fruity, Coconut milk, Lactonic, Creamy); Stemone™ (réf. 9023501, Green : Green, Natural, Leafy, Fresh). Limite du catalogue : pas de pandan : approximation lacté/vert.
+Odeur : Pandan. Notes ou molécules : feuille de pandan. Ressentis associés : sentiment d'être chez soi, enfance. Contexte typique : Asie du Sud-Est (desserts, maison). Sources : S243 S244 S418 S250. Ingrédients Givaudan proposés : Methyl Laitone 10%/DPG (réf. 6978468, Fruity : Fruity, Coconut milk, Lactonic, Creamy); Stemone™ (réf. 9023501, Green : Green, Natural, Leafy, Fresh). Limite du catalogue : pas de pandan : approximation lacté/vert.
 
 Odeur : Odeur du partenaire. Notes ou molécules : odeur corporelle. Ressentis associés : apaisement, sécurité, baisse du cortisol. Contexte typique : Absence de l'être aimé (porter son pull). Sources : S131 S133 S132. Ingrédients Givaudan proposés : Velvione™ (réf. 1382293, Musky : Musky, Powdery, Animalic); Silvanone™ Supra (réf. 21051233, Musky : Musky, Sweet, Powdery, Animalic); Ambrettolide (réf. 1832003, Musky : Musky, Ambrette seed, Powerful, Warm, Fruity); Cervolide (réf. 7225001, Musky : Musky, Powdery). Limite du catalogue : évocation « peau » par les muscs, pas l'odeur réelle.
 
@@ -83,6 +83,64 @@ Odeur : Cuisine du pays natal. Notes ou molécules : plats familiaux (ex. refoga
 Odeur : Draps propres, matin calme. Notes ou molécules : iris, muguet, musc (Replica Lazy Sunday Morning). Ressentis associés : douceur, calme du dimanche. Contexte typique : Réveil lent. Sources : S173. Ingrédients Givaudan proposés : Irisone™ Alpha (réf. 6030003, Floral : Floral, Orris, Violet, Woody); Isoraldeine™ 95 (réf. 6281753, Floral : Floral, Orris, Woody, Fruity); Florhydral™ (réf. 8754243, Floral : Floral, Green, Muguet, Fresh, Powerful); Silvial™ (réf. 0012543, Floral : Floral, Muguet, Powerful, Fresh); Cervolide (réf. 7225001, Musky : Musky, Powdery); Musk R1 (réf. 7289001, Musky : Musky, Powdery).
 
 Odeur : Paysages olfactifs du Japon. Notes ou molécules : sources chaudes soufrées, lavande, glycine, anguille grillée, embruns. Ressentis associés : apaisement, attachement au lieu. Contexte typique : Japon (100 paysages olfactifs). Sources : S271 S272. Ingrédients Givaudan proposés : Amyl Vinyl Carbinol (réf. 1884001, Herbal - Agrestic : Herbal, Lavender); Adoxal (réf. 1028001, Marine : Marine, Aldehydic, Floral, Fresh, Powerful); Linalool Oxide (réf. 7852501, Herbal - Agrestic : Herbal, Pine, Floral, Fresh). Limite du catalogue : pas de glycine ni de note soufrée.
+
+Odeur : Inde : rues, temples et fêtes. Notes ou molécules : cardamome, encens, santal, jasmin (gajra), œillet d'Inde, huile de coco, épices. Ressentis associés : intensité, spiritualité, fête, nostalgie. Contexte typique : Pondichéry, Varanasi, Mumbai, mariages, soirées de prière. Sources : S295 S296 S297 S298 S299 S300 S301 S302 S303 S304. Ingrédients Givaudan proposés : Jasmonyl™ (réf. 6346803, Floral : Floral, Jasmine, Lactonic); Indolene 50%/CSO (réf. 5979201, Floral : Floral, Animalic, Jasmine); Sandalore™ (réf. 8847801, Woody : Woody, Sandalwood, Sweet, Warm); Javanol™ (réf. 8754013, Woody : Woody, Sandalwood, Creamy, Rose, Powerful); Cuminic Aldehyde (réf. 1515001, Spicy : Spicy, Green, Herbaceous); Methyl Laitone 10%/DPG (réf. 6978468, Fruity : Fruity, Coconut milk, Lactonic, Creamy). Limite du catalogue : pas de cardamome, d'encens, d'œillet d'Inde ni de nag champa.
+
+Odeur : Japon : hinoki, yuzu et temples. Notes ou molécules : bois de hinoki, yuzu, encens kōdō, musc blanc, cerisier. Ressentis associés : apaisement, propreté, énergie (yuzu), impermanence. Contexte typique : Kyoto, temples, onsen, Kumano Kodo. Sources : S271 S272 S273 S274 S275 S305 S306 S307 S308 S309 S310 S311 S312. Ingrédients Givaudan proposés : Tangerinol (réf. 9177303, Citrus : Citrus, Bitter, Fruity, Fresh); Citrathal™ Conc S (réf. 5847673, Citrus : Citrus, Lime, Lemon); Sclarene 80%/DPG (réf. 8892308, Woody : Woody, Dry, Ambery); Isolongifolanone (réf. 5850143, Woody : Woody, Ambery, Dry); Linalool Oxide (réf. 7852501, Herbal - Agrestic : Herbal, Pine, Floral, Fresh); Musk R1 (réf. 7289001, Musky : Musky, Powdery). Limite du catalogue : pas de hinoki ni de yuzu naturels, pas d'encens.
+
+Odeur : Maroc : souk et médina. Notes ou molécules : cumin, cannelle, thé à la menthe, fleur d'oranger, rose, cèdre de l'Atlas, safran, cuir. Ressentis associés : dépaysement, chaleur, accueil. Contexte typique : Marrakech, Fès, hammam, désert. Sources : S313 S314 S315 S316 S317 S318 S319 S320. Ingrédients Givaudan proposés : Cumin Nitrile (réf. 4223103, Spicy : Spicy, Cumin, Green); Freskomenthe™ (réf. 5202703, Herbal - Agrestic : Herbal, Mint, Fresh, Woody); Oranger Crystals (réf. 7758003, Floral : Floral, Orange blossom, Sweet, Honey); Aurantiol™ Pure (réf. 2365901, Floral : Floral, Orange blossom, Linden blossom); Rosyrane Super (réf. 5845523, Floral : Floral, Rose, Geranium, Green); Safranal (réf. 8797001, Spicy : Spicy, Saffron, Herbaceous, Tobacco); Ambermax™ 10%/TEC (réf. 1472033, Ambery : Ambery, Woody, Cedarwood); Isobutyl Quinoline-2 (réf. 6127003, Leather - Moss : Leathery, Woody, Powerful). Limite du catalogue : pas de cannelle ni de thé.
+
+Odeur : Provence : garrigue et lavande. Notes ou molécules : lavande, thym, romarin, chêne vert, pierre chaude. Ressentis associés : calme, été, vacances. Contexte typique : Luberon, Drôme provençale, juin à août. Sources : S321 S322 S323 S324 S325 S326 S327. Ingrédients Givaudan proposés : Amyl Vinyl Carbinol (réf. 1884001, Herbal - Agrestic : Herbal, Lavender); Linalyl Propionate (réf. 8448751, Herbal - Agrestic : Herbal, Lavender, Bergamot, Fruity); Linalool Oxide (réf. 7852501, Herbal - Agrestic : Herbal, Pine, Floral, Fresh); Herboxane (réf. 5698353, Herbal - Agrestic : Herbal, Green, Spicy, Fresh); Limetol (réf. 4523001, Herbal - Agrestic : Herbal, Camphor, Woody, Lime). Limite du catalogue : pas de thym ni d'huile essentielle de lavande.
+
+Odeur : Grasse : champs de fleurs. Notes ou molécules : rose de mai, jasmin grandiflorum, tubéreuse, fleur d'oranger, mimosa. Ressentis associés : émerveillement, héritage, printemps. Contexte typique : Grasse, cueillette à l'aube en mai-juin. Sources : S428 S429 S430 S431 S432 S433. Ingrédients Givaudan proposés : Rosyrane Super (réf. 5845523, Floral : Floral, Rose, Geranium, Green); Pivarose (réf. 3496423, Floral : Floral, Rosy, Fruity); Jasmonyl™ (réf. 6346803, Floral : Floral, Jasmine, Lactonic); Benzyl Propionate (réf. 8429001, Floral : Floral, Jasmine, Fruity); Methyl Tuberate Pure (réf. 9411003, Floral : Floral, Tuberose, Lactonic); Oranger Crystals (réf. 7758003, Floral : Floral, Orange blossom, Sweet, Honey). Limite du catalogue : pas de mimosa ni d'absolue de rose naturelle.
+
+Odeur : Paris : boulangerie, café, métro. Notes ou molécules : viennoiseries, café, métro poussiéreux et métallique, pluie sur la ville. Ressentis associés : nostalgie, première visite, enfance. Contexte typique : Paris, matin, métro. Sources : S328 S329 S330 S331 S332 S333 S334. Ingrédients Givaudan proposés : Levistamel 25%/TEC (réf. 5845733, Gourmand : Gourmand, Caramel, Liquorice, Balsamic); Isobutavan (réf. 1465543, Gourmand : Gourmand, Vanilla, Sweet, Fruity); Ultrazur™ (réf. 21218823, Marine : Marine, Ozonic, Citrus, Fresh, Ambery); Butyl Quinoline Secondary (réf. 3005003, Leather - Moss : Leathery, Green, Woody, Earthy, Powerful). Limite du catalogue : pas de note café, beurre, métal ou poussière.
+
+Odeur : Londres : pluie et briques. Notes ou molécules : pluie sur briques, pétrichor, métro (freins, moteurs), platanes, pub. Ressentis associés : mélancolie douce, ville, retour. Contexte typique : Londres sous la pluie. Sources : S391 S392 S393 S394 S395 S396. Ingrédients Givaudan proposés : Ultrazur™ (réf. 21218823, Marine : Marine, Ozonic, Citrus, Fresh, Ambery); Stemone™ (réf. 9023501, Green : Green, Natural, Leafy, Fresh); Butyl Quinoline Secondary (réf. 3005003, Leather - Moss : Leathery, Green, Woody, Earthy, Powerful); Isopropyl Quinoline (réf. 2390003, Leather - Moss : Leathery, Woody, Moss). Limite du catalogue : pas de géosmine ni de note métallique.
+
+Odeur : New York : la rue. Notes ou molécules : bretzels chauds, bitume, ail, hot-dogs, marrons grillés, métro. Ressentis associés : énergie, enfance, retour à la maison. Contexte typique : New York, été et hiver. Sources : S378 S379 S380 S381 S382 S383 S384. Ingrédients Givaudan proposés : Levistamel 25%/TEC (réf. 5845733, Gourmand : Gourmand, Caramel, Liquorice, Balsamic); Isobutavan (réf. 1465543, Gourmand : Gourmand, Vanilla, Sweet, Fruity); Isobutyl Quinoline-2 (réf. 6127003, Leather - Moss : Leathery, Woody, Powerful). Limite du catalogue : pas d'ail, de pain grillé ni de bitume.
+
+Odeur : Méditerranée et îles grecques. Notes ou molécules : figuier (feuille et fruit), pin, thym, romarin, sel marin, jasmin le soir, basilic. Ressentis associés : liberté, lenteur, été, sentiment d'être chez soi. Contexte typique : Hydra, Mykonos, Chypre, Adriatique. Sources : S335 S336 S337 S338 S339 S340 S341 S342 S343 S462 S463 S464 S465. Ingrédients Givaudan proposés : Stemone™ (réf. 9023501, Green : Green, Natural, Leafy, Fresh); Methyl Laitone 10%/DPG (réf. 6978468, Fruity : Fruity, Coconut milk, Lactonic, Creamy); Linalool Oxide (réf. 7852501, Herbal - Agrestic : Herbal, Pine, Floral, Fresh); Herboxane (réf. 5698353, Herbal - Agrestic : Herbal, Green, Spicy, Fresh); Adoxal (réf. 1028001, Marine : Marine, Aldehydic, Floral, Fresh, Powerful); Ultrazur™ (réf. 21218823, Marine : Marine, Ozonic, Citrus, Fresh, Ambery); Jasmonyl™ (réf. 6346803, Floral : Floral, Jasmine, Lactonic). Limite du catalogue : pas de basilic, de feuille de tomate ni d'olive.
+
+Odeur : Italie du Sud : citronniers. Notes ou molécules : citron d'Amalfi, bergamote de Calabre, fleurs d'agrumes (zagare), mandarine. Ressentis associés : joie, soleil, vacances. Contexte typique : Amalfi, Sicile, Calabre. Sources : S440 S441 S442 S443 S444. Ingrédients Givaudan proposés : Lemonile™ (réf. 6570203, Citrus : Citrus, Lemon, Intense); Citrathal™ Conc S (réf. 5847673, Citrus : Citrus, Lime, Lemon); Neobergamate Forte (réf. 0014073, Citrus : Citrus, Bergamot, Agrestic); Ethyl Linalyl Acetate (réf. 0297001, Citrus : Citrus, Bergamot, Fruity, Pear, Fresh); Tridecene-2-Nitrile (réf. 9385201, Citrus : Citrus, Tangerine, Aldehydic); Dimethyl Anthranilate (réf. 6878001, Floral : Floral, Orange blossom, Neroli, Mandarin). Limite du catalogue : pas d'huiles essentielles naturelles d'agrumes.
+
+Odeur : Séville : fleur d'oranger (azahar). Notes ou molécules : fleur d'oranger amer, encens des processions, glycine, jasmin. Ressentis associés : printemps, romance, renouveau. Contexte typique : Séville en mars-avril, Semaine sainte. Sources : S434 S435 S436 S437 S438 S439. Ingrédients Givaudan proposés : Oranger Crystals (réf. 7758003, Floral : Floral, Orange blossom, Sweet, Honey); Aurantiol™ Pure (réf. 2365901, Floral : Floral, Orange blossom, Linden blossom); Dimethyl Anthranilate (réf. 6878001, Floral : Floral, Orange blossom, Neroli, Mandarin); Methyl Anthranilate Extra (réf. 2297001, Floral : Floral, Neroli, Sweet, Warm); Verdantiol (réf. 9644003, Floral : Floral, Linden blossom, Orange blossom); Tangerinol (réf. 9177303, Citrus : Citrus, Bitter, Fruity, Fresh). Limite du catalogue : pas d'encens ni de glycine.
+
+Odeur : Istanbul : bazar aux épices. Notes ou molécules : épices, café turc, simit au sésame, thé, loukoum à la rose, grenade. Ressentis associés : effervescence, chaleur, nostalgie. Contexte typique : Bazar égyptien, Grand Bazar, Galata. Sources : S385 S386 S387 S388 S389 S390. Ingrédients Givaudan proposés : Cuminic Aldehyde (réf. 1515001, Spicy : Spicy, Green, Herbaceous); Safranal (réf. 8797001, Spicy : Spicy, Saffron, Herbaceous, Tobacco); Rosyrane Super (réf. 5845523, Floral : Floral, Rose, Geranium, Green); Levistamel 25%/TEC (réf. 5845733, Gourmand : Gourmand, Caramel, Liquorice, Balsamic). Limite du catalogue : pas de café, de sésame grillé, de cannelle ni de grenade.
+
+Odeur : Golfe : oud et bakhoor. Notes ou molécules : oud, bakhoor (oud, santal, rose, safran, ambre), musc. Ressentis associés : hospitalité, fête, prière, maison. Contexte typique : Dubaï, Émirats, majlis, Aïd. Sources : S421 S422 S423 S424 S425 S426 S427. Ingrédients Givaudan proposés : Safraleine™ (réf. 0015893, Spicy : Spicy, Leathery, Woody, Warm); Safranal (réf. 8797001, Spicy : Spicy, Saffron, Herbaceous, Tobacco); Javanol™ (réf. 8754013, Woody : Woody, Sandalwood, Creamy, Rose, Powerful); Sandalore™ (réf. 8847801, Woody : Woody, Sandalwood, Sweet, Warm); Ambrofix™ (réf. 1836803, Ambery : Ambery, Woody, Tobacco, Dry); Rosyrane Super (réf. 5845523, Floral : Floral, Rose, Geranium, Green); Silvanone™ Supra (réf. 21051233, Musky : Musky, Sweet, Powdery, Animalic). Limite du catalogue : pas d'oud ni d'encens naturel.
+
+Odeur : Égypte : le Caire. Notes ou molécules : jasmin, lotus, galant de nuit, cardamome, cumin, hibiscus, oud et musc. Ressentis associés : sensualité, nuits chaudes, histoire. Contexte typique : Khan el-Khalili, Héliopolis, bords du Nil. Sources : S466 S467 S468 S469 S470 S471. Ingrédients Givaudan proposés : Jasmonyl™ (réf. 6346803, Floral : Floral, Jasmine, Lactonic); Indolene 50%/CSO (réf. 5979201, Floral : Floral, Animalic, Jasmine); Cuminic Aldehyde (réf. 1515001, Spicy : Spicy, Green, Herbaceous); Rosyrane Super (réf. 5845523, Floral : Floral, Rose, Geranium, Green); Velvione™ (réf. 1382293, Musky : Musky, Powdery, Animalic). Limite du catalogue : pas de lotus, de cardamome ni d'oud.
+
+Odeur : Chine : thé et osmanthe. Notes ou molécules : osmanthe (abricot, miel), thé vert et noir, jasmin, encens, poivre du Sichuan. Ressentis associés : automne, sérénité, douceur. Contexte typique : Hangzhou, Chengdu, Yunnan, maisons de thé. Sources : S397 S398 S399 S400 S401 S402. Ingrédients Givaudan proposés : Nectaryl (réf. 7446003, Fruity : Fruity, Peach, Apricot, Lactonic); Frutonile (réf. 1461553, Fruity : Fruity, Peach, Lactonic); Dihydro Ionone Beta (réf. 4508403, Woody : Woody, Floral, Orris, Ambery, Fruity); Jasmonyl™ (réf. 6346803, Floral : Floral, Jasmine, Lactonic); Ethyl Linalool (réf. 4973001, Floral : Floral, Fresh). Limite du catalogue : pas d'osmanthe naturel, de thé ni de poivre du Sichuan.
+
+Odeur : Corée : Séoul. Notes ou molécules : kimchi fermenté, ginseng terreux, barbecue, champignons séchés. Ressentis associés : énergie urbaine, réconfort. Contexte typique : Séoul, marchés Gwangjang et Gyeongdong. Sources : S457 S458 S459 S460 S461. Ingrédients Givaudan proposés : Butyl Quinoline Secondary (réf. 3005003, Leather - Moss : Leathery, Green, Woody, Earthy, Powerful); Celery Ketone (réf. 3491103, Herbal - Agrestic : Herbal, Spicy, Celery); Anisyl Alcohol (réf. 1089001, Herbal - Agrestic : Herbal, Anis, Floral, Powdery). Limite du catalogue : pas de note fermentée, de fumée de barbecue ni de ginseng.
+
+Odeur : Vietnam : Hanoï et Saïgon. Notes ou molécules : nuoc-mâm, citronnelle, coriandre, anis étoilé, grillades, café fort. Ressentis associés : foisonnement, dépaysement. Contexte typique : Hanoï, Saïgon, Hoi An. Sources : S344 S345 S346 S347 S348 S349. Ingrédients Givaudan proposés : Methyl Heptenone Pure (réf. 6937003, Citrus : Citrus, Lemongrass); Lime Oxide (réf. 7852493, Citrus : Citrus, Lime, Green, Aromatic, Fresh); Anisyl Acetate (réf. 0164001, Herbal - Agrestic : Herbal, Anis, Floral, Fruity); Toscanol™ (réf. 0014203, Herbal - Agrestic : Herbal, Anis, Green); Levistamel 25%/TEC (réf. 5845733, Gourmand : Gourmand, Caramel, Liquorice, Balsamic). Limite du catalogue : pas de sauce poisson, de grillades ni de café.
+
+Odeur : Singapour : hawker centres. Notes ou molécules : pandan, coco, kaya, citronnelle, curry, durian, fumée du wok. Ressentis associés : sentiment d'être chez soi, convivialité. Contexte typique : Katong, hawker centres le soir. Sources : S472 S473 S474 S475 S476. Ingrédients Givaudan proposés : Methyl Laitone 10%/DPG (réf. 6978468, Fruity : Fruity, Coconut milk, Lactonic, Creamy); Methyl Heptenone Pure (réf. 6937003, Citrus : Citrus, Lemongrass); Paradisamide™ (réf. 0025633, Fruity : Tropical fruity, Guava, Grapefruit, Rhubarb, Cassis); Isobutavan (réf. 1465543, Gourmand : Gourmand, Vanilla, Sweet, Fruity). Limite du catalogue : pas de pandan, de curry ni de durian.
+
+Odeur : Bali : offrandes et frangipanier. Notes ou molécules : frangipanier (pêche, miel), encens dupa, canang sari, santal, vanille. Ressentis associés : gratitude, spiritualité, paix. Contexte typique : Bali, temples, spas. Sources : S350 S351 S352 S353 S354 S355 S356 S357. Ingrédients Givaudan proposés : Frutonile (réf. 1461553, Fruity : Fruity, Peach, Lactonic); Methyl Tuberate Pure (réf. 9411003, Floral : Floral, Tuberose, Lactonic); Acetal CD (réf. 0073003, Floral : Floral, Green, Honey, Rose); Sandalore™ (réf. 8847801, Woody : Woody, Sandalwood, Sweet, Warm); Ultravanil 80%/DPG (réf. 0027553, Gourmand : Gourmand, Vanilla, Sweet, Phenolic). Limite du catalogue : pas de frangipanier ni d'encens.
+
+Odeur : Mexique : Jour des morts. Notes ou molécules : cempasúchil (musqué, piquant, herbacé), copal, tortillas de maïs, pierre mouillée. Ressentis associés : mémoire, lien avec les défunts, fierté. Contexte typique : Mexique, début novembre, cimetières. Sources : S358 S359 S360 S361 S362 S363 S364. Ingrédients Givaudan proposés : Herboxane (réf. 5698353, Herbal - Agrestic : Herbal, Green, Spicy, Fresh); Maceal (réf. 6576003, Green : Green, Fresh, Herbal); Spirambrene (réf. 8974203, Ambery : Ambery, Woody, Spicy, Aldehydic, Powerful). Limite du catalogue : pas de tagète (œillet d'Inde) ni de copal.
+
+Odeur : Caraïbes et île tropicale. Notes ou molécules : coco, citron vert, ananas, rhum, canne à sucre, brise marine, crème solaire. Ressentis associés : vacances, insouciance. Contexte typique : Caraïbes, plage. Sources : S403 S404 S405 S406 S407. Ingrédients Givaudan proposés : Methyl Laitone 10%/DPG (réf. 6978468, Fruity : Fruity, Coconut milk, Lactonic, Creamy); Citrathal™ Conc S (réf. 5847673, Citrus : Citrus, Lime, Lemon); Manzanate (réf. 6702803, Fruity : Fruity, Apple, Pineapple); Pharaone™ 10%/DPG (réf. 0014363, Green : Green, Fruity, Pineapple, Aromatic); Ultrazur™ (réf. 21218823, Marine : Marine, Ozonic, Citrus, Fresh, Ambery); Amyl Salicylate (réf. 8810001, Floral : Floral, Sweet, Aromatic, Balsamic); Levistamel 25%/TEC (réf. 5845733, Gourmand : Gourmand, Caramel, Liquorice, Balsamic). Limite du catalogue : pas de rhum ni de bay rum.
+
+Odeur : Réunion et Madagascar : vanille et ylang. Notes ou molécules : vanille Bourbon (caramel, fruitée), ylang-ylang solaire, géranium. Ressentis associés : douceur, chaleur, réconfort. Contexte typique : La Réunion, Madagascar, Comores. Sources : S445 S446 S447 S448 S449. Ingrédients Givaudan proposés : Ultravanil 80%/DPG (réf. 0027553, Gourmand : Gourmand, Vanilla, Sweet, Phenolic); Isobutavan (réf. 1465543, Gourmand : Gourmand, Vanilla, Sweet, Fruity); Levistamel 25%/TEC (réf. 5845733, Gourmand : Gourmand, Caramel, Liquorice, Balsamic); Benzyl Propionate (réf. 8429001, Floral : Floral, Jasmine, Fruity); Amyl Salicylate (réf. 8810001, Floral : Floral, Sweet, Aromatic, Balsamic); Geranodyle (réf. 5464203, Floral : Floral, Geranium, Rose, Fruity). Limite du catalogue : pas d'ylang-ylang naturel.
+
+Odeur : Brésil : forêt amazonienne. Notes ou molécules : forêt humide, terre, résine de breu, patchouli, mangue, bois de rose. Ressentis associés : vitalité, mystère, exubérance. Contexte typique : Amazonie à l'aube. Sources : S414 S415 S416 S417 S418 S419 S420. Ingrédients Givaudan proposés : Stemone™ (réf. 9023501, Green : Green, Natural, Leafy, Fresh); Butyl Quinoline Secondary (réf. 3005003, Leather - Moss : Leathery, Green, Woody, Earthy, Powerful); Paradisamide™ (réf. 0025633, Fruity : Tropical fruity, Guava, Grapefruit, Rhubarb, Cassis); Javanol™ (réf. 8754013, Woody : Woody, Sandalwood, Creamy, Rose, Powerful); Madrox™ (réf. 6655003, Woody : Woody, Ambery, Tobacco, Warm). Limite du catalogue : pas de patchouli, de résine ni de bois de rose.
+
+Odeur : Afrique : savane après la pluie. Notes ou molécules : poussière rouge, pluie sur terre chaude, sauge sauvage, feu de bois, basilic sauvage. Ressentis associés : émerveillement, humilité, nostalgie. Contexte typique : Maasai Mara, Kalahari, Ngorongoro. Sources : S450 S451 S452 S453 S454 S455 S456. Ingrédients Givaudan proposés : Butyl Quinoline Secondary (réf. 3005003, Leather - Moss : Leathery, Green, Woody, Earthy, Powerful); Ultrazur™ (réf. 21218823, Marine : Marine, Ozonic, Citrus, Fresh, Ambery); Herboxane (réf. 5698353, Herbal - Agrestic : Herbal, Green, Spicy, Fresh); Ambrofix™ (réf. 1836803, Ambery : Ambery, Woody, Tobacco, Dry); Isolongifolanone (réf. 5850143, Woody : Woody, Ambery, Dry). Limite du catalogue : pas de géosmine, de fumée ni de sauge.
+
+Odeur : Désert après la pluie. Notes ou molécules : créosote (résineux, térébenthine, cuir fumé), sable, mesquite. Ressentis associés : euphorie, soulagement. Contexte typique : Sonora, Mojave, mousson d'été. Sources : S370 S371 S372 S373 S374 S375 S376 S377. Ingrédients Givaudan proposés : Pyralone (réf. 8543203, Leather - Moss : Leathery, Green, Woody, Powerful); Isobutyl Quinoline-2 (réf. 6127003, Leather - Moss : Leathery, Woody, Powerful); Sclarene 80%/DPG (réf. 8892308, Woody : Woody, Dry, Ambery); Ambermax™ 10%/TEC (réf. 1472033, Ambery : Ambery, Woody, Cedarwood). Limite du catalogue : pas de créosote ni de caryophyllène.
+
+Odeur : Montagne et Alpes. Notes ou molécules : air froid et minéral, pin, genièvre, foin d'alpage, herbes amères, mélèze. Ressentis associés : pureté, liberté, respiration. Contexte typique : Alpes, randonnée l'été, neige l'hiver. Sources : S408 S409 S410 S411 S412 S413. Ingrédients Givaudan proposés : Linalool Oxide (réf. 7852501, Herbal - Agrestic : Herbal, Pine, Floral, Fresh); Ultrazur™ (réf. 21218823, Marine : Marine, Ozonic, Citrus, Fresh, Ambery); Freskomenthe™ (réf. 5202703, Herbal - Agrestic : Herbal, Mint, Fresh, Woody); Isolongifolanone (réf. 5850143, Woody : Woody, Ambery, Dry); Limetol (réf. 4523001, Herbal - Agrestic : Herbal, Camphor, Woody, Lime); Vernaldehyde™ (réf. 9644601, Herbal - Agrestic : Herbal, Natural, Green, Aldehydic, Fresh). Limite du catalogue : pas de genièvre ni de coumarine (foin).
+
+Odeur : Scandinavie : forêt et cabane. Notes ou molécules : pin, sapin, bouleau, mousse, brioche cardamome-vanille. Ressentis associés : calme, cocooning (hygge), réconfort. Contexte typique : Forêt boréale, cabane (stuga). Sources : S365 S366 S367 S368 S369. Ingrédients Givaudan proposés : Linalool Oxide (réf. 7852501, Herbal - Agrestic : Herbal, Pine, Floral, Fresh); Isopropyl Quinoline (réf. 2390003, Leather - Moss : Leathery, Woody, Moss); Orcinyl 3 (réf. 6638701, Leather - Moss : Leathery, Oakmoss, Sweet, Phenolic); Ultravanil 80%/DPG (réf. 0027553, Gourmand : Gourmand, Vanilla, Sweet, Phenolic); Sclarene 80%/DPG (réf. 8892308, Woody : Woody, Dry, Ambery). Limite du catalogue : pas de cardamome ni de goudron de bouleau.
+
+Odeur : Islande : mousse, lave et soufre. Notes ou molécules : mousse humide, bouleau après la pluie, lave minérale, soufre géothermal, embruns. Ressentis associés : pureté, étrangeté, nature brute. Contexte typique : Islande, geysers, Blue Lagoon. Sources : S482 S483 S484 S485. Ingrédients Givaudan proposés : Isopropyl Quinoline (réf. 2390003, Leather - Moss : Leathery, Woody, Moss); Orcinyl 3 (réf. 6638701, Leather - Moss : Leathery, Oakmoss, Sweet, Phenolic); Ultrazur™ (réf. 21218823, Marine : Marine, Ozonic, Citrus, Fresh, Ambery); Adoxal (réf. 1028001, Marine : Marine, Aldehydic, Floral, Fresh, Powerful); Stemone™ (réf. 9023501, Green : Green, Natural, Leafy, Fresh). Limite du catalogue : pas de soufre ni de goudron de bouleau.
+
+Odeur : Campagne et ferme. Notes ou molécules : foin coupé (coumarine), herbe humide, tilleul et miel, écurie (cuir), lilas. Ressentis associés : enfance, simplicité, été. Contexte typique : Ferme, week-end à la campagne, juin. Sources : S477 S478 S479 S480 S481. Ingrédients Givaudan proposés : Stemone™ (réf. 9023501, Green : Green, Natural, Leafy, Fresh); Cyclal C (réf. 4251703, Green : Green, Leafy, Floral, Powerful); Verdantiol (réf. 9644003, Floral : Floral, Linden blossom, Orange blossom); Acetal CD (réf. 0073003, Floral : Floral, Green, Honey, Rose); Syringa Aldehyde 50% (réf. 1623003, Floral : Floral, Green, Sweet, Powerful); Isobutyl Quinoline-2 (réf. 6127003, Leather - Moss : Leathery, Woody, Powerful). Limite du catalogue : pas de coumarine.
 
 Chapitre 3 : Science : mémoire et émotion
 
@@ -754,6 +812,22 @@ Fleurs, verdure et embruns = paysages olfactifs les plus aimés. Source : Sommer
 
 Japon : rapport avancé entre odorat et lieu. Source : NST Perfume – One hundred sites of good fragrance (S275).
 
+Encens kōdō, yuzu et pamplemousse énergisants, hinoki (cyprès) apaisant et boisé. Source : Ideal Magazine – Relaxing aromas of Japan (kōdō, sento) (S305).
+
+Hinoki = temples de Kyoto, maisons en bois, forêts ; yuzu = thé dans un café de Kyoto. Source : Salvatore Battaglia – The scent of nostalgia (natsukashii) (S306).
+
+Yuzu plus doux que le citron ; hinoki = odeur iconique (Kumano Kodo) ; cerisier au printemps. Source : Homes & Gardens – Japanese scenting secrets (S307).
+
+Hinoki : bois de cyprès citronné, chaud, résineux, propre, ambiance spa. Source : Premiere Peau – Hinoki oil glossary (S308).
+
+Musc blanc très courant au Japon : linge séché au soleil, sécurité, douceur. Source : Livingetc – Japanese candle scents (S309).
+
+Cerisier = impermanence ; yuzu = joie et énergie ; encens = spiritualité. Source : Shay & Blue – Japanese aromatics: incense, cherry blossom, yuzu (S310).
+
+Hinoki = bois de temple et encens ; Okinawa = bois flotté et sel marin. Source : Wicked Good – Take a scented trip to Japan (S311).
+
+Hinoki : air de montagne, écorce de cyprès, encens, bains de sources chaudes. Source : Nature Lab – Kiseki Hinoki Forest (S312).
+
 Chapitre 48 : Émotion : mesure
 
 167 participants : poisson, rose, goudron, pêche ; aucune odeur n'a provoqué de joie faciale nette. Source : Heyne et al. – Odors modify emotional responses (TU Dresden) (S281).
@@ -776,25 +850,449 @@ La soif réduit le dégoût d'une odeur : l'état du corps change l'émotion. So
 
 Sensibilité au dégoût modifie la perception de toutes les odeurs. Source : Berlin et al. 2017 – Olfactory processing and insula in OCD (S289).
 
-Chapitre 50 : Exemple : « J'étais en Thaïlande après la pluie, j'étais triste »
+Chapitre 50 : Lieux : Inde
+
+Rues indiennes : cardamome, coriandre, huile d'arachide, encens religieux. Source : Exoticca – Five ways India captivates the senses (S295).
+
+Rose, ambre et jasmin parfumaient les palais des maharajas ; épices omniprésentes. Source : Exoticca Magazine – India and the senses (roses, ambre, jasmin) (S296).
+
+Pondichéry : sambar, café filtre, encens, huile de coco, jasmin ; Varanasi : encens, fritures. Source : The Tribune – The smell of our cities (S297).
+
+Œillet d'Inde (fêtes, mariages), encens de santal, masala chai, henné, gajra de jasmin, tadka. Source : The Better India – Aromas that instantly remind of India (S298).
+
+Savon au santal de Mysore, agarbatti, tissus imprimés = nostalgie de l'Inde. Source : Open Magazine – The scent of Mumbai (S299).
+
+Les odeurs rapportées de voyage ramènent dans le temps et l'espace. Source : National Geographic – Want memories? Follow your nose (S300).
+
+L'Inde a aussi des odeurs désagréables (déchets) à côté des épices. Source : Pique News – India, a trip through the senses (S301).
+
+Le soir : épices des étals et encens allumé pour Lakshmi. Source : TourRadar – Five ways India celebrates your five senses (S302).
+
+Inde : océan, huile de palme, encens, cannelle, cardamome, clou ; jasmin de Grasse ; lavande de Provence. Source : Luxury Travel Advisor – 21 things to smell before you die (S303).
+
+Inde = jasmin, nag champa, riz basmati ; Shalimar inspiré d'un jardin indien. Source : Bois de Jasmin – Scent of travel, perfumes for wanderlust (S304).
+
+Chapitre 51 : Lieux : Maroc
+
+Cannelle, cumin, paprika, curcuma, gingembre ; thé à la menthe ; eau de fleur d'oranger et de rose. Source : Four Seasons – Moroccan cuisine and food guide (S313).
+
+Épices de la médina, mer, pain, cigarette, thé à la menthe = l'odeur du nouveau chez-soi. Source : YES Abroad – Telling stories through scent (Rabat) (S314).
+
+Fleur d'oranger en mars, pain du matin, cèdre brûlé du hammam, huile d'olive pressée. Source : Barnaby Rogerson – The scents of Morocco (S315).
+
+Thé à la menthe, cuir, épices, fleur d'oranger ; cèdre de l'Atlas ; néroli de Fès-Meknès. Source : Wonderful Museums – Marrakech Perfume Museum (S316).
+
+Marchés d'épices dans la brise du soir : coriandre, cumin, ciste, cèdre, vétiver. Source : Ministry of Scent – Tauer L'Air du Désert Marocain (S317).
+
+Petitgrain, safran, épices, cèdre sec et vétiver évoquent le désert marocain. Source : Kafkaesque – Review L'Air du Désert Marocain (S318).
+
+Souk : arômes sucrés, épicés et fumés. Source : Abercrombie & Kent – Spices of the souk (S319).
+
+Miels de fleur d'oranger, lavande, câprier, caroube. Source : Afar – Fondouk Kaat Smen, Fès (souk du miel) (S320).
+
+Chapitre 52 : Lieux : Provence
+
+Garrigue = signature du sud de la France ; les plantes émettent des odeurs pour se protéger du soleil. Source : The Globe and Mail – Garrigue, the scent of the south of France (S321).
+
+Garrigue : lavande sauvage, thym, romarin, chêne vert ; lavande de mi-juin à fin août. Source : Provence-Alpes-Côte d'Azur Tourisme – Wild vegetation (S322).
+
+Lavande du Luberon, rose de mai de Grasse, mimosa : odeurs apaisantes. Source : Prior – Scent map of the south of France (S323).
+
+Garrigue et vignes partagent les mêmes molécules aromatiques. Source : Alan Rogers – Scents of Provence (S324).
+
+Lavande fraîche, herbacée, florale ; lavandin plus camphré ; linalol et acétate de linalyle. Source : Everfumed – What does lavender smell like? (S325).
+
+L'odeur d'un champ de lavande est plus subtile qu'on ne l'imagine ; plus forte avant la récolte. Source : The Fragrant Journey – Travels in France (S326).
+
+Soleil et lavande fraîchement coupée en Drôme provençale. Source : National Geographic – The essence of France (Drôme) (S327).
+
+Chapitre 53 : Lieux : Paris et villes
+
+Odeur poussiéreuse et métallique du métro = souvenirs d'enfance. Source : Emory NBB Paris – The smell of home (métro) (S328).
+
+Classement basé sur boulangeries, parfumeries, fleuristes ; café et viennoiseries. Source : Paris Secret – Paris 2e ville d'Europe qui sent le mieux (S329).
+
+Athènes : marchés, herbes, pâtisseries grecques, fleuristes. Source : Time Out – Athens best-smelling city (S330).
+
+Café et croissant chaud ; 11,4 boulangeries par 10 km². Source : Sortir à Paris – Paris in Europe's top best-smelling cities (S331).
+
+Odeur du métro parisien : forte mais attachante, liée à la première visite de Paris. Source : The Good Life France – A sweet-smelling Paris metro? (S332).
+
+1790 : premier smell walk à Paris (Hallé) ; pétrichor remplace l'odeur de la ville. Source : Freethink – Seeing the world through smell (Kate McLean) (S333).
+
+Le métro parisien a une odeur propre ; atomiseurs installés dans les rames. Source : Time Magazine – Paris Metro smell (S334).
+
+Chapitre 54 : Lieux : Méditerranée
+
+Figuier en plein soleil au mont Pélion : souvenir d'été en Grèce. Source : Diptyque – Philosykos, a summer in Greece (S335).
+
+Grèce : miel, brise jasminée, herbes sauvages, figue, agrumes. Source : Suitcase – Why visit Hydra (Hydra Figue) (S336).
+
+Îles grecques : pinèdes, miel, jasmin, sel de mer, agrumes, figue. Source : Near Far – Hydra Figue fragrance (S337).
+
+Figue, olives écrasées, pin, cyprès, thym, fenouil, romarin, brise salée. Source : Luckyscent – A Grove by the Sea (Lopud, Croatie) (S338).
+
+Figuier : feuille amère, sève laiteuse, bois sec ; nostalgie de l'été européen. Source : Near Store – Fig tree scent (S339).
+
+Île grecque : basilic, plants de tomate au soleil, sel, figuier. Source : Decoholic – How to make your house smell like a Greek island (S340).
+
+Basilic, origan, feuille d'olivier ; café d'Athènes. Source : Greek City Times – Greek salad scented candle (S341).
+
+Figuier au soleil et brise côtière = Grèce. Source : Who What Wear – Best fig perfumes (S342).
+
+Été méditerranéen : chaleur du sol et des rochers, brise salée, ombre du figuier. Source : Allia Ma Redhead – Scents of the Mediterranean (S343).
+
+Chapitre 55 : Lieux : Vietnam
+
+Hanoï : viandes grillées, nuoc-mâm fermenté, herbes fraîches, humidité lourde. Source : Travelogues – Hanoi, city of a thousand smells (S344).
+
+Odeurs du Vietnam : sauce poisson, sucre, ail, échalote frite caramélisée. Source : Philstar – Hanoi, a feast for the senses (S345).
+
+Pho : anis étoilé, cannelle, clou de girofle ; herbes, grillades, piment, sucre caramélisé. Source : Trip Nguyen – Vietnam through its street food scents (S346).
+
+Saigon : odeur continue de porc grillé mariné (bun cha), banh mi, pho. Source : Traveller – Ho Chi Minh City food tour (S347).
+
+Hanoï d'abord désagréable puis associé à de bons souvenirs : citronnelle, coriandre. Source : Feel Love Travelling – The smell of Hanoi (S348).
+
+Café fort, gingembre, marchés de Hoi An. Source : Active Junky – Traveling Vietnam (S349).
+
+Chapitre 56 : Lieux : Bali
+
+Canang sari : feuilles de palme, fleurs, riz, encens, offerts chaque jour. Source : A Little Adrift – Frangipani, incense, Balinese beliefs (S350).
+
+Rues de Bali = encens + frangipanier, aussi dans les spas. Source : Finns Beach Club – Frangipani, Bali floral symbol (S351).
+
+Frangipanier : pêche, miel épicé, gardénia ; planté dans chaque temple balinais. Source : Premiere Peau – Frangipani in perfumery (S352).
+
+Frangipanier sacré = cœur pur offert aux dieux. Source : Bali.com – Plumeria, frangipani tree (S353).
+
+Odeur douce et persistante des canang sari = évoque Bali instantanément. Source : Potato Head – Canang sari, Bali daily offerings (S354).
+
+L'encens (dupa) porte l'essence de l'offrande vers Dieu. Source : NOW Bali – Canang sari, Bali's daily offering (S355).
+
+Fleurs, feuilles, crackers de riz, encens : gratitude quotidienne. Source : Honeycombers – Canang sari offerings Bali (S356).
+
+Encens balinais : frangipanier, santal, vanille = réconfort. Source : Intime Incense – Gratitude incense (canang sari) (S357).
+
+Chapitre 57 : Lieux : Mexique
+
+Jour des morts = odeur de cempasúchil (œillet d'Inde) et d'encens copal. Source : AP / VOA – Day of the Dead, a celebration for the 5 senses (S358).
+
+Cempasúchil et copal guident les âmes ; honorer et se relier au passé. Source : KVIA (AP) – The smell that guides you from the underworld (S359).
+
+Odeur musquée et piquante du cempasúchil, adorée ou détestée. Source : NPR – Why marigolds are the iconic flower of Día de los Muertos (S360).
+
+Cempasúchil : parfum fort, épicé, herbacé, attire les esprits ; cimetières parfumés la nuit. Source : Chef Rick Martinez – The flowers of Día de Muertos (S361).
+
+Mexico : tacos, cempasúchil des marchés, livres anciens de la rue Donceles. Source : Mexico News Daily – Perfume museum Mexico City (S362).
+
+Tortillas de maïs, pierre mouillée, savon ; copal âcre sur les autels. Source : On a Hilltop – Led by the nose through Mexico City (S363).
+
+Les fleurs sentent le travail honnête des agriculteurs et la fierté mexicaine. Source : Spectrum News – Day of the Dead (Arenazas) (S364).
+
+Chapitre 58 : Lieux : Scandinavie
+
+Forêt boréale : aiguilles de pin, cônes de sapin, sève de bouleau, muguet des bois. Source : Skandinavisk – The Scandinavian forest (S365).
+
+Hav (côte), Stuga (cabane : écorce de bouleau, mousse, muscade, encens), Hjem (vanille, orange, ambre). Source : Skandinavisk – Scent library (S366).
+
+Pin, eucalyptus, camphre, menthe, cardamome, clou, mousse de chêne. Source : Cranbourn – Nordic Serenity (S367).
+
+Islande : bois mouillé après la pluie, feuilles humides, air fumé. Source : Scandinavia Standard – Smell the Icelandic landscape (S368).
+
+Vanille + cardamome = association suédoise traditionnelle (brioche à la cardamome). Source : ZGO – Maya Njie Vanilj (S369).
+
+Chapitre 59 : Lieux : Déserts
+
+Pluie du désert = euphorie ; trans-caryophyllène du créosote. Source : University of Arizona – The smell of desert rain may be good for your health (S370).
+
+178 plantes étudiées : créosote, origan sauvage, lavande du désert parfument la mousson. Source : Arizona Highways – Gary Paul Nabhan (S371).
+
+60 plantes aromatiques ; violette du saule du désert, mesquite sucré ; soulagement. Source : Tucson.com – Where does the scent of a monsoon come from? (S372).
+
+Croûtes de sol et créosote à odeur de térébenthine. Source : UA Press – Why does the desert smell like rain? (osmocosm) (S373).
+
+Créosote mouillé = parfum délicieux de la mousson. Source : KNAU – Why the desert smells like rain (S374).
+
+Désert de Mojave : créosote terreux et un peu sucré ; peut stabiliser les émotions. Source : City Cast Las Vegas – Why the desert smells good after rain (S375).
+
+Créosote : amer, résineux, vert, médicinal ; odeur de survie. Source : Premiere Peau – Creosote bush (S376).
+
+Facettes cuir fumé (gaïacol), goudron, aquatique : pluie sur le désert de Sonora. Source : Ministry of Scent – Creosote (S377).
+
+Chapitre 60 : Lieux : New York
+
+NY : métro et bretzels ; été = bitume + ail. Source : 6sqft – Kate McLean: NYC streets smell of garlic and tarmac (S378).
+
+Égouts soufrés, four à charbon de pizzeria ; mauvaises et bonnes odeurs. Source : NPR – The smell of summer in New York City (Ann Gottlieb) (S379).
+
+Gaz d'échappement, poubelles ; les odeurs produisent réactions et souvenirs intenses. Source : WNYC – Eau d'New York in the summer (S380).
+
+Odeur de bretzels chauds dans les rues toute l'année. Source : WFUV – Cityscape: the pretzel (S381).
+
+Bretzels brûlés ; même les mauvaises odeurs signalent le retour à la maison. Source : Scouting NY – Top 25 bad smells of NYC (S382).
+
+Hot-dogs, marrons, bretzels = souvenirs d'enfance de New York. Source : Ruby Street – Pushcart city (S383).
+
+Parfumeurs : odeurs négatives extrêmes et positives extrêmes (boulangeries miel-sucre). Source : West Side Spirit – Scents and the city (S384).
+
+Chapitre 61 : Lieux : Istanbul
+
+Carte olfactive d'Istanbul par l'expert Vedat Ozan : simit et thé comme odeur de la ville, Bazar aux épices comme centre olfactif, café et fritures à Karaköy. Source : Exploring Istanbul's scents with sensory map (Daily Sabah) (S385).
+
+Liste des odeurs d'Istanbul : simit chaud des charrettes rouges, café turc au cezve, jus de grenade, épices du Bazar égyptien, humidité de la Citerne basilique. Source : 14 smells of Istanbul that always bring you back there (S386).
+
+Odeurs d'Istanbul : café turc, loukoum sucré, et en hiver bois et charbon qui brûlent. Source : Istanbul smell senses (Yabangee) (S387).
+
+Le Bazar aux épices crée son propre climat olfactif ; route historique des épices et du café depuis l'Inde et l'Égypte ; thés, fruits secs, loukoum, baklava. Source : Spice Bazaar (istanbul.com) (S388).
+
+Entrée du Bazar aux épices décrite comme enivrante ; surnommé autrefois la pharmacie d'Istanbul ; café turc qui flotte dans le Grand Bazar depuis des siècles. Source : Great bazaars of Istanbul (Daily Sabah) (S389).
+
+Épices en sacs ouverts, loukoum à la rose, pistache, grenade et citron, sahlep et café turc. Source : Spice Bazaar Istanbul (ermakvagus) (S390).
+
+Chapitre 62 : Lieux : Londres
+
+Odeur propre au métro londonien (moteurs terreux) ; projet de cartes olfactives urbaines Cambridge / Royal College of Art / Yahoo Labs via smellwalks. Source : What does London smell like? Urban smellscape mapped (City AM) (S391).
+
+Carte olfactive de Londres par Quercia, Aiello, Schifanella et Kate McLean à partir des réseaux sociaux : animaux, émissions, nature. Source : London totally stinks and these smell maps prove it (Time Out) (S392).
+
+Londres sous la pluie : odeur d'après-pluie (pétrichor), briques mouillées, herbe très verte. Source : London in the rain is elite, actually (Time Out) (S393).
+
+Londres décrite par l'odeur de poussière de freins, de briques trempées de pluie et des sièges du métro ; l'odeur aide à préserver l'identité d'une ville. Source : Lavender, petrol or vomit: what does your city smell like? (Guardian via inkl) (S394).
+
+Londres par le nez : kérosène sucré à Heathrow, chien mouillé dans le métro, tourte bœuf-bière au pub. Source : Making 'scents' of London (Otago Daily Times) (S395).
+
+Platanes de Londres dont l'écorce absorbe la crasse et pèle ; odeur d'excitation de la grande ville. Source : The smell of old London town (Bloomsbury Festival) (S396).
+
+Chapitre 63 : Lieux : Chine
+
+L'osmanthe (guihua) est l'odeur de l'automne en Chine du Sud depuis plus de 2000 ans ; parfum préféré de 44,7 % des consommateurs chinois selon iiMedia 2022 ; thé Longjing à l'osmanthe de Hangzhou. Source : How a tiny flower becomes the scent of autumn in China (The World of Chinese) (S397).
+
+Culture olfactive chinoise : encens des temples, osmanthe en automne, bois d'agar, vapeur de thé ; Osmanthe Yunnan d'Hermès associe thé et osmanthe. Source : From Agarwood to Osmanthus: Perfume Journeys through China (Bois de Jasmin) (S398).
+
+La Chine par les sens : huit cuisines régionales, poivre du Sichuan, fondue, cinq-épices de Hong Kong, champignons du Yunnan, thés vert et noir. Source : China in Five Senses (Odynovo) (S399).
+
+Chengdu, ville aux plus nombreuses maisons de thé de Chine ; Sichuan berceau du thé ; thé vert Zhuyeqing du mont Emei. Source : Chengdu tea culture (China Tours) (S400).
+
+Thé noir des monts Wuyi à l'osmanthe : profil fruité rappelant mangue et miel. Source : Osmanthus Black tea (Red Blossom Tea) (S401).
+
+Thés parfumés chinois : jasmin parfumé quatre fois sur thé du Sichuan, thé noir parfumé à l'osmanthe d'automne. Source : Floral tea (iTeaworld) (S402).
+
+Chapitre 64 : Lieux : Caraïbes
+
+Caraïbes en parfum : brise marine, air salé, sable chaud, coco, fruits tropicaux (fruit de la passion, ananas), vanille de Madagascar. Source : Travel to the Caribbean through your perfume (Perfume.com) (S403).
+
+Pyramide inspirée des îles Vierges : coco, citron vert, bergamote, mandarine ; gingembre, ylang, jasmin, hibiscus ; rhum blanc, canne à sucre, musc. Source : Creed Virgin Island Water notes (Venba) (S404).
+
+Odeur de plage tropicale : coco, monoï/tiaré, accord sel marin, floraux solaires et salicylates qui évoquent la crème solaire. Source : Tropical beach vacation scents (Snif) (S405).
+
+Le bay rum des Caraïbes vient des bay trees, de l'air marin et du climat tropical ; mélange d'épices chaudes et de bois frais. Source : Scent of Paradise – St. Johns Bay Rum (Emerald Coast) (S406).
+
+Le tropical évoque ananas, coco, océan, hibiscus, musc et vanille ; notion large qui varie selon la destination. Source : What does tropical smell like? (Homesick) (S407).
+
+Chapitre 65 : Lieux : Montagne et Alpes
+
+L'odeur de neige selon Pamela Dalton : froid, humidité et nerf trijumeau ; c'est surtout une absence d'odeurs végétales et une sensation fraîche. Source : Ever wonder why snow smells so good? (Ski.com) (S408).
+
+Randonnée alpine en parfum : granit, air de glacier, herbes amères, lys et orchidées des prairies, bois de mélèze et hêtre. Source : L'Air des Alpes Suisses (Tauer, Essenza Nobile) (S409).
+
+Portrait olfactif des Alpes suisses et françaises : foin, genièvre, accord minéral, pin, fumée et accord neige. Source : Les Alpes (Nissaba, Bloom Perfume) (S410).
+
+L'edelweiss sent presque rien : air froid minéral, léger foin, trace de miel ; note conceptuelle d'altitude. Source : Edelweiss (Première Peau glossary) (S411).
+
+La note montagne est un accord synthétique : ozonique, pin et sapin baumiques ; exemple Silver Mountain Water de Creed. Source : Mountain – Ingredient Guide (CA Perfume) (S412).
+
+Prairies alpines suisses : coumarine/tonka qui évoque le foin sec d'une prairie d'été. Source : Scented Advent, December 4 (Scents and Sensibilities) (S413).
+
+Chapitre 66 : Lieux : Brésil et Amazonie
+
+Plantes et fruits d'Amazonie comme matières premières de la parfumerie et cosmétique brésilienne, avec un usage durable. Source : The Scent of Biodiversity (IPS) (S414).
+
+Givaudan a capté en forêt amazonienne des combinaisons d'odeurs typiques des néotropiques (technique de piégeage de l'air autour des plantes). Source : Givaudan in Dübendorf – Amazonian Rain Forest scent trapping (Chimia 2000) (S415).
+
+Parfum inspiré de la forêt amazonienne à l'aube et de la résine de breu : bois, terre fraîche, fleurs. Source : Costa Brazil Aroma review (Who What Wear) (S416).
+
+Forêt amazonienne à l'aube traduite par patchouli, santal, vétiver et ambre : terre fraîche, feuilles écrasées, fumée. Source : Costa Brazil AROMA (Trend Hunter) (S417).
+
+L'odeur associée au Brésil est souvent la mangue fraîche ; lien avec la menace sur la forêt amazonienne. Source : Brazil – mango (World Sensorium) (S418).
+
+Œuvre olfactive Rainforest : molécules de synthèse pour reproduire la forêt, patchouli pour l'exubérance rustique. Source : Smell: Rainforest (Josely Carvalho) (S419).
+
+Le bois de rose du Brésil (Aniba rosaeodora), natif d'Amazonie, est une matière boisée florale emblématique. Source : Brazilian Rosewood (CA Perfume) (S420).
+
+Chapitre 67 : Lieux : Golfe et Moyen-Orient
+
+Dans le Golfe le parfum est un rituel : les maisons accueillent avec du bakhoor à l'oud, on superpose huiles et attars ; le parfum est ce qui fait qu'on se souvient de vous. Source : Why Dubai is becoming the global capital of luxury perfume, oud culture (Khaleej Times) (S421).
+
+Aux Émirats l'oud se sent dans les maisons avant l'arrivée des invités, les vêtements, les fêtes et la prière ; il évoque la maison avant le luxe ; matières traditionnelles : oud, encens, ambre, rose, musc. Source : Why the UAE is the world's perfume capital (Gulf News) (S422).
+
+Le Golfe sent toujours l'oud, le musc, l'ambre et le bakhoor ; le parfum remplit les maisons avant les invités. Source : Inside the liquid gold world of oud (Gulf News) (S423).
+
+L'oud, musqué et doux, est arrivé dans la culture du Golfe depuis l'Asie du Sud et de l'Est ; utilisé comme bakhoor pour parfumer les maisons. Source : The fragrant world of oud (AramcoWorld) (S424).
+
+Plateaux de parfums offerts aux invités, fumée de bakhoor sur les vêtements ; la culture du Golfe n'est pas que l'oud : aussi une forte culture du musc et de la rose. Source : Middle Eastern fragrance traditions (The Zoe Report) (S425).
+
+Le bakhoor sent fumé, doux et résineux, comme un majlis : copeaux d'oud, santal, rose, safran, ambre, parfois benjoin, liés au miel et brûlés sur charbon. Source : Bakhoor (Première Peau glossary) (S426).
+
+L'oud brûlé est perçu comme épicé par certains, boisé doux par d'autres ; un goût qui s'acquiert. Source : Scent of the Gulf: Why oud has become more precious than gold (Al Arabiya) (S427).
+
+Chapitre 68 : Lieux : Grasse
+
+Savoir-faire de Grasse inscrit à l'UNESCO en 2018 ; iris, mimosa, tubéreuse, violette, fleur d'oranger, jacinthe, surtout jasmin et rose de mai. Source : Explore Grasse: The World Capital of Perfume (France Today) (S428).
+
+Champs de rose centifolia et de jasmin qui parfument légèrement la ville ; rosiers et orangers le long des routes ; récolte de jasmin passée de 1800 t en 1930 à 27 t. Source : Discover Grasse: France's Capital of Fragrance (France Today) (S429).
+
+Grasse entre Méditerranée et Alpes : microclimat ensoleillé et minéral ; tubéreuse, lavande, centifolia ; visite Fragonard qui sent rose, jasmin, lavande et fleur d'oranger. Source : Unbottling Grasse (Symrise blog) (S430).
+
+Les deux fleurs reines de Grasse : rose de mai cueillie à l'aube mi-mai à début juin, et jasmin grandiflorum ; la centifolia de Grasse est miellée, rosée et légèrement verte. Source : Grasse perfume capital (Première Peau) (S431).
+
+Grasse ville de tanneurs qui parfumait les gants à l'eau de rose et aux épices pour couvrir l'odeur du cuir ; enfleurage à froid pour le jasmin. Source : How Grasse Became the Perfume Capital (Scento) (S432).
+
+Retour de jeunes cultivateurs de rose centifolia à Grasse après le déclin des années 1980. Source : Flower power returns to Grasse (Yahoo / Telegraph) (S433).
+
+Chapitre 69 : Lieux : Espagne et Séville
+
+Séville couverte d'orangers amers (Citrus aurantium) qui imprègnent la ville d'odeur de fleur d'oranger au printemps ; azahar vient de l'arabe zahr, fleur. Source : Sevilla is blooming, why so many orange trees? (Visita Sevilla) (S434).
+
+De mars à avril environ 40 000 orangers fleurissent à Séville ; s'y ajoutent glycine, roses blanches et jacarandas. Source : Springtime in Seville: a Feast for the Senses (Travel Begins at 40) (S435).
+
+L'odeur sucrée de l'azahar entre par les fenêtres ; pour les habitants c'est le signal apaisant du retour du printemps. Source : Sevilla's Best Kept Secret (Stories from Sevilla) (S436).
+
+Odeur d'azahar : florale, un peu cireuse, très hespéridée ; pic en mars-avril pendant la Semaine sainte. Source : Seville Oranges guide (Nomado) (S437).
+
+Séville au printemps : fleur d'oranger fraîche, miellée ou animale, avec la fumée d'encens des processions. Source : Séville à l'aube review (Fragplace) (S438).
+
+Eau de fleur d'oranger omniprésente en Andalousie, en cuisine et à l'accueil ; aucun parfum ne remplace l'azahar dans l'air un matin de printemps. Source : Azahar (Shawn Hennessey) (S439).
+
+Chapitre 70 : Lieux : Italie du Sud
+
+Partout sur la côte amalfitaine flotte une odeur d'agrumes due au citron sfusato Amalfitano IGP. Source : What Makes Italy's Amalfi Lemons Unique (Tasting Table) (S440).
+
+Terrasses de citronniers, vert des feuilles contre bleu de la mer, parfum pénétrant des zagare (fleurs de citronnier). Source : PGI Amalfi Coast Lemon (amalficoast.com) (S441).
+
+La côte amalfitaine se souvient par l'odeur ; le citron est la note qui la représente le mieux. Source : Scents and Places: The Amalfi Coast (Divain) (S442).
+
+Bergamote, or vert de Calabre ; fleurs d'agrumes (zagare) qui rappellent des vergers de Sicile et des citronniers d'Amalfi. Source : Italy's boundless zest for citrus (Truffle Pig) (S443).
+
+Parfums d'été italien : bergamote de Calabre, citron d'Amalfi, mandarine rouge, orange amère ; Zagara de Santa Maria Novella proche de la fleur d'oranger de Sicile. Source : Italian scents (NewBeauty) (S444).
+
+Chapitre 71 : Lieux : Réunion et océan Indien
+
+La pollinisation manuelle de la vanille a été découverte à La Réunion (île Bourbon) par Edmond Albius en 1841 ; producteurs : Madagascar, Réunion, Comores, Tahiti. Source : Vanilla in perfumery (Bon Parfumeur) (S445).
+
+Appellation vanille Bourbon depuis 1964 : Réunion, Madagascar, Maurice, Comores, Mayotte ; Madagascar produit environ 85 % de la vanille mondiale. Source : Madagascar vanilla, Bourbon vanilla (Norohy) (S446).
+
+La Réunion : climat tropical doux, forte humidité, sols volcaniques, forêt de Bélouve ; berceau de la culture commerciale de la vanille. Source : The bittersweet beginnings of vanilla (Smithsonian) (S447).
+
+Ylang-ylang de Madagascar : solaire, floral, un peu fruité ; vanilles de Madagascar et des Comores ; géranium d'Égypte ; cèdre du Maroc. Source : Scent of Africa ingredients (S448).
+
+Vanille Bourbon des Comores : arômes ronds et fruités qui tendent vers le caramel. Source : Bourbon vanilla pods from Comoros (Samba Vanilla) (S449).
+
+Chapitre 72 : Lieux : Afrique et savane
+
+L'Afrique a une odeur : poussière rouge, sauge sauvage, feu de bois, pluie sur terre chaude ; la pluie dans le cratère du Ngorongoro marque plus que les animaux. Source : The Smell of Africa (Grayton Expeditions) (S450).
+
+Kalahari en novembre : poussière très sèche et promesse de pluie ; pétrichor, géosmine et ozone font l'odeur de l'Afrique. Source : In the Kalahari with the San (National Geographic) (S451).
+
+Nostalgie olfactive de l'Afrique : poussière, feu de bois, terre après la pluie, sauge sauvage écrasée, frangipanier au bord de l'océan Indien, odeur des éléphants. Source : The attraction of Africa (Travel Africa) (S452).
+
+Maasai Mara : fine poussière ocre rouge qui sent la terre ancienne derrière le véhicule de safari. Source : The call of Maasai Mara (Daily Star) (S453).
+
+Dans le bush : pétrichor très puissant après la pluie, basilic sauvage écrasé sous les pneus, odeur des animaux. Source : Londolozi blog – bush smells (S454).
+
+L'odeur de la pluie en Afrique décrite comme du miel chaud au fond de la gorge et du sucre brûlé. Source : Final Musings on the African Bushveld (S455).
+
+Après les orages, le bush passe du sec poussiéreux au vert ; odeur de terre caractéristique après la pluie. Source : The smell of freshly fallen rain (Singita) (S456).
+
+Chapitre 73 : Lieux : Corée et Séoul
+
+Dès l'avion, Séoul se reconnaît à un mélange de kimchi et d'épices. Source : Myung-dong eating paradise, Seoul (San Diego Reader) (S457).
+
+À Séoul le kimchi est un ingrédient vivant ; l'odeur de fermentation couvre des quartiers entiers. Source : Seoul food: kimchi and fermentation (Fiesta Forks) (S458).
+
+Au marché Gyeongdong l'air sent la terre : ginseng, champignons séchés, racines médicinales. Source : A taste of Seoul's food markets (Silversea) (S459).
+
+Samgyetang : parfum terreux du ginseng et bouillon ; ragoût de kimchi épicé. Source : Seoul food guide (Trip.com) (S460).
+
+Rues de Séoul : grésillement du barbecue, kimchi à chaque stand ; épices coréennes plutôt sucrées et anisées. Source : Seoul, Korea (Foodism) (S461).
+
+Chapitre 74 : Lieux : Grèce et îles
+
+Chypre : sel-mer-herbes-terre ; en été origan, romarin, thym ; en hiver neige, fumée, pin ; côte au sel et lavande de mer ; plaine poussière, agrumes, figue ; l'odeur comme sentiment d'être chez soi. Source : What does Cyprus smell of? (Cyprus Mail) (S462).
+
+Île de l'Adriatique en parfum : feuille de figuier, olive noire, sel marin, huile d'olive, romarin, thym, cyprès, pin, accord minéral. Source : A Grove By The Sea (Bloom Perfume) (S463).
+
+Mykonos : odeur du figuier, café grec torréfié au petit-déjeuner, ouzo anisé mêlé à l'odeur de la mer. Source : Scents of summer: Mykonos (Fragrance Bouquet) (S464).
+
+L'odeur du figuier en parfumerie repose sur le stémone et l'octalactone gamma ; amertume de la feuille froissée et note lactée. Source : Philosykos: the Hellenic inspiration (Perfume Shrine) (S465).
+
+Chapitre 75 : Lieux : Égypte et Caire
+
+Lotus du Nil symbole de pureté ; citronnelle ; région de Gharbiya source de plus de la moitié de l'huile de jasmin mondiale. Source : Lotus, jasmine, oud: 5 scents that take you to Egypt (Egyptian Streets) (S466).
+
+Ruelles d'épices derrière Khan el-Khalili : cumin, coriandre, cardamome, hibiscus ; souk Al-Attarine des parfums depuis le XIVe siècle : lotus, jasmin, santal, musc. Source : Spices and oils buying rules in Egypt (Pyramids Land) (S467).
+
+Khan el-Khalili : odeur de cardamome dans l'air, cuivre martelé, huiles essentielles de jasmin et de rose qui capturent le Caire. Source : Khan el-Khalili Bazaar (Accor) (S468).
+
+Le jasmin parfume les jardins d'Héliopolis, vendeurs de roses sur la corniche, nuits chaudes au parfum de chicha. Source : Cairo, the gem by the Nile (Air France) (S469).
+
+Dans Khan el-Khalili, oud et musc s'échappent des parfumeries aux flacons de verre soufflé. Source : Unpacking list (Four Seasons Cairo) (S470).
+
+Pour une Cairote, jasmin et misk el leil (galant de nuit) sont l'odeur du Caire. Source : Le Nez Fragrance Bar (CairoScene) (S471).
+
+Chapitre 76 : Lieux : Singapour et Malaisie
+
+Nasi lemak : riz au lait de coco et feuille de pandan ; durian ; boisson rose au sirop de rose au parfum floral sucré. Source : Iconic smells of Malaysia (SilverKris) (S472).
+
+À Katong, l'arôme du kaya (confiture coco, œuf, pandan) et du kopi remplit les coffee shops d'antan. Source : Singapore: Four Hearts, One City (Fah Thai) (S473).
+
+Au hawker centre de North Bridge Road : citronnelle, mangue, curcuma, pâte de crevette fermentée et curry. Source : Where to eat in Singapore (SCMP/dpa) (S474).
+
+Odeur du durian : chaussettes et oignon pour ses détracteurs, fromage bleu crémeux pour ses fans. Source : Singapore's durian-themed cafe (SCMP) (S475).
+
+Le soir au hawker : fumée du wok, fruits trop mûrs, jus de canne pressé, chaleur qui ne retombe pas. Source : Singapore food streets and night markets (Street Food Guy) (S476).
+
+Chapitre 77 : Lieux : Campagne et ferme
+
+Herbe coupée : composés verts (cis-3-hexénal) ; liée par la mémoire au printemps, à l'été, aux terrains de jeu ; décrite comme réconfortante. Source : Smell of freshly cut grass (Wikipedia) (S477).
+
+Le foin fraîchement fauché dégage de la coumarine (flouve odorante), proche de la vanille. Source : The science behind the smells of the seasons (Country Life) (S478).
+
+Week-ends à la campagne : herbe chauffée presque sucrée, tilleul et miel, écurie avec cuir, graisse, poussière, foin et fleurs sauvages. Source : Scents We Remember Before We Remember Why (Parfumo blog) (S479).
+
+À la ferme : foin coupé, lilas au printemps, herbe humide du matin, mélasse, ensilage de maïs, tiges sèches en automne. Source : Farm-scented candles (Hoard's Dairyman) (S480).
+
+Mi-juin, l'odeur sucrée de la première coupe de foin flotte dans l'air. Source : First-cut hay (Country Living) (S481).
+
+Chapitre 78 : Lieux : Islande
+
+Air islandais : mousse, embruns, bouleau ; soufre près des geysers et dans l'eau chaude. Source : Iceland in five senses (Travel Talk) (S482).
+
+Odeurs d'Islande : bouleau après la pluie, angélique, alchémille, gaillet jaune, trèfle blanc, mousse ; odeur de lave : goudron de bouleau, soufre et métal. Source : Perlan shop – Iceland room spray and Volcano scent (S483).
+
+Islande : eau très pure, mousse humide terreuse et herbacée, pierres de lave minérales, feu de cheminée et fumée soufrée. Source : Reykjavik by Contes de Parfums review (Parfumo) (S484).
+
+Blue Lagoon : odeur d'œuf pourri due au soufre des eaux géothermales riches en silice et minéraux. Source : The Stinky Reality of the Blue Lagoon (Explore) (S485).
+
+Chapitre 79 : Exemple : « J'étais en Thaïlande après la pluie, j'étais triste »
 
 Lieu – Thaïlande : rue de Bangkok (citronnelle, galanga, combava, grillades, fumée) S049, temples (encens, jasmin offert au Bouddha) S053, fleurs tropicales (frangipanier, ylang-ylang, champaca) S245.
 
 Moment – après la pluie : pétrichor et géosmine S036 ; en climat de mousson, terre humide et sous-bois mouillé S246.
 
-Émotion – tristesse : aucune source ne relie une odeur précise à la tristesse pour tout le monde. Les sources montrent que les odeurs gardent l'émotion du moment vécu S191 et que la nostalgie évoquée par une odeur s'accompagne d'émotions positives, d'optimisme et de lien social S125. Piste : demander au client si cette tristesse était plutôt mélancolie douce (notes enveloppantes, encens, bois) ou solitude (notes plus fraîches, pluie, air humide).
+Émotion – tristesse : aucune source ne relie une odeur précise à la tristesse pour tout le monde. Les sources montrent que les odeurs gardent l'émotion du moment vécu S191 et que la nostalgie évoquée par une odeur s'accompagne d'émotions positives, d'optimisme et de lien social S125. Piste pour le brief : selon le récit, cette tristesse peut être une mélancolie douce (notes enveloppantes, encens, bois) ou solitude (notes plus fraîches, pluie, air humide).
 
 Profil de départ proposé (à valider par un parfumeur) : tête pluie et citronnelle – Methyl Heptenone Pure (réf. 6937003, Citrus : Citrus, Lemongrass), Ultrazur™ (réf. 21218823, Marine : Marine, Ozonic, Citrus, Fresh, Ambery), Stemone™ (réf. 9023501, Green : Green, Natural, Leafy, Fresh) ; cœur jasmin et fleurs blanches – Jasmonyl™ (réf. 6346803, Floral : Floral, Jasmine, Lactonic), Methyl Tuberate Pure (réf. 9411003, Floral : Floral, Tuberose, Lactonic) ; fond encens, bois et terre humide – Bisabolene (réf. 2751503, Floral : Floral, Orange blossom, Balsamic, Myrrh, Sweet), Sandalore™ (réf. 8847801, Woody : Woody, Sandalwood, Sweet, Warm), Butyl Quinoline Secondary (réf. 3005003, Leather - Moss : Leathery, Green, Woody, Earthy, Powerful). Ce profil est une proposition de l'équipe construite à partir des sources et des notes du catalogue, pas une formule testée.
 
-Chapitre 51 : Catalogue Givaudan – famille Floral
+Chapitre 80 : Catalogue Givaudan – famille Floral
 
-Ingrédient Givaudan Acetal CD (référence 0073003), famille Floral, notes : Floral, Green, Honey, Rose. Description : Acetal CD blends well with floral notes such as hyacinth, rose and lilac, with green accords, and with linden blossom and chypre compositions. Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/acetal-cd
+Ingrédient Givaudan Acetal CD (référence 0073003), famille Floral, notes : Floral, Green, Honey, Rose. Description : Acetal CD blends well with floral notes such as hyacinth, rose and lilac, with green accords, and with linden blossom and chypre compositions. Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Bali : offrandes et frangipanier, Campagne et ferme. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/acetal-cd
 
-Ingrédient Givaudan Amyl Salicylate (référence 8810001), famille Floral, notes : Floral, Sweet, Aromatic, Balsamic. Description : Amyl Salicylate has a floral and sweet, herbaceous and balsamic character, with a green undertone. It is extensively used in florals and can be an important ingredient for fougere accords. Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Crème solaire. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/amyl-salicylate
+Ingrédient Givaudan Amyl Salicylate (référence 8810001), famille Floral, notes : Floral, Sweet, Aromatic, Balsamic. Description : Amyl Salicylate has a floral and sweet, herbaceous and balsamic character, with a green undertone. It is extensively used in florals and can be an important ingredient for fougere accords. Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Crème solaire, Caraïbes et île tropicale, Réunion et Madagascar : vanille et ylang. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/amyl-salicylate
 
-Ingrédient Givaudan Aurantiol™ Pure (référence 2365901), famille Floral, notes : Floral, Orange blossom, Linden blossom. Description : Aurantiol™ Pure is perhaps the best known Schiff base and is extensively used in a large variety of floral notes such as orange-blossom, linden-blossom and tuberose. Used in citrus cologne types, it… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Crème solaire. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/aurantioltm-pure
+Ingrédient Givaudan Aurantiol™ Pure (référence 2365901), famille Floral, notes : Floral, Orange blossom, Linden blossom. Description : Aurantiol™ Pure is perhaps the best known Schiff base and is extensively used in a large variety of floral notes such as orange-blossom, linden-blossom and tuberose. Used in citrus cologne types, it… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Crème solaire, Maroc : souk et médina, Séville : fleur d'oranger (azahar). Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/aurantioltm-pure
 
-Ingrédient Givaudan Benzyl Propionate (référence 8429001), famille Floral, notes : Floral, Jasmine, Fruity. Description : Benzyl Propionate has a floral jasmine note, distinctively more fruity than the corresponding Acetate. Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Jasmin. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/benzyl-propionate
+Ingrédient Givaudan Benzyl Propionate (référence 8429001), famille Floral, notes : Floral, Jasmine, Fruity. Description : Benzyl Propionate has a floral jasmine note, distinctively more fruity than the corresponding Acetate. Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Jasmin, Grasse : champs de fleurs, Réunion et Madagascar : vanille et ylang. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/benzyl-propionate
 
 Ingrédient Givaudan Bisabolene (référence 2751503), famille Floral, notes : Floral, Orange blossom, Balsamic, Myrrh, Sweet. Description : Bisabolene has a warm, sweet-spicy-balsamic odour very typical of opoponax and ‘oriental’ fragrance types. It finds use in reconstitutions of oils of bergamot, myrrh and lemon, and is an excellent… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Encens, oliban, Souvenirs olfactifs de Thaïlande. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/bisabolene
 
@@ -808,13 +1306,13 @@ Ingrédient Givaudan Cyclamen Aldehyde Extra (référence 1534001), famille Flor
 
 Ingrédient Givaudan Cyclohexyl Salicylate (référence 8819601), famille Floral, notes : Floral, Balsamic, Green. Description : Cyclohexyl Salicylate has a powerful floral and balsamic note with green inflexions reminiscent of jasmine. It can be used in all type of compositions and is especially useful to create carnation,… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/cyclohexyl-salicylate
 
-Ingrédient Givaudan Dimethyl Anthranilate (référence 6878001), famille Floral, notes : Floral, Orange blossom, Neroli, Mandarin. Description : Dimethyl Anthranilate is similar in use to Methyl Anthranilate, but it will not form Schiff bases with the aldehydes and has little or no tendency to discolour. Impact olfactif : Non renseigné ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/dimethyl-anthranilate
+Ingrédient Givaudan Dimethyl Anthranilate (référence 6878001), famille Floral, notes : Floral, Orange blossom, Neroli, Mandarin. Description : Dimethyl Anthranilate is similar in use to Methyl Anthranilate, but it will not form Schiff bases with the aldehydes and has little or no tendency to discolour. Impact olfactif : Non renseigné ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Italie du Sud : citronniers, Séville : fleur d'oranger (azahar). Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/dimethyl-anthranilate
 
 Ingrédient Givaudan Dupical (référence 4685003), famille Floral, notes : Floral, Green, Muguet, Fresh. Description : Dupical is a powerful, fresh, transparent aldehydic muguet. It is a wonderful modifier and enhancer of the muguet character in a fragrance. It can be used across all applications thanks to its high… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/dupical
 
 Ingrédient Givaudan Elintaal (référence 5845123), famille Floral, notes : Floral, Green, Muguet. Description : Elintaal has a natural and fresh muguet note with herbaceous undertones. Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor Medium. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/elintaal
 
-Ingrédient Givaudan Ethyl Linalool (référence 4973001), famille Floral, notes : Floral, Fresh. Description : Ethyl Linalool has a floral, fresh, bergamot character and is sweeter and less agrestic than Linalool. As with Linalool, it is used in a wide variety of notes for floral bouquets. Impact olfactif : Non renseigné ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Lavande. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/ethyl-linalool
+Ingrédient Givaudan Ethyl Linalool (référence 4973001), famille Floral, notes : Floral, Fresh. Description : Ethyl Linalool has a floral, fresh, bergamot character and is sweeter and less agrestic than Linalool. As with Linalool, it is used in a wide variety of notes for floral bouquets. Impact olfactif : Non renseigné ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Lavande, Chine : thé et osmanthe. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/ethyl-linalool
 
 Ingrédient Givaudan Ethyl Safranate™ (référence 8802603), famille Floral, notes : Floral, Rose, Fruity, Apple, Spicy. Description : Ethyl Safranate™ is a complex diffusive spicy rose note with apple cider and spicy aspects. This rich and versatile ingredient is used in a wide range of fragrance types, from floral through to… Impact olfactif : High impact ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/ethyl-safranate
 
@@ -824,7 +1322,7 @@ Ingrédient Givaudan Florocyclene (référence 8467001), famille Floral, notes :
 
 Ingrédient Givaudan Florosa (référence 5083303), famille Floral, notes : Floral, Muguet, Sweet. Description : Florosa has a creamy floral muguet note. It is commonly used in combination with muguet aldehydes such as Bourgeonal and Dupical. It is a general floraliser and can be taken in a number of different… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/florosa
 
-Ingrédient Givaudan Geranodyle (référence 5464203), famille Floral, notes : Floral, Geranium, Rose, Fruity. Description : Geranodyle is a complex mixture with a fresh geranium odour. A top note ingredient, it has good diffusivity and increases the fruity character of compositions. Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/geranodyle
+Ingrédient Givaudan Geranodyle (référence 5464203), famille Floral, notes : Floral, Geranium, Rose, Fruity. Description : Geranodyle is a complex mixture with a fresh geranium odour. A top note ingredient, it has good diffusivity and increases the fruity character of compositions. Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Réunion et Madagascar : vanille et ylang. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/geranodyle
 
 Ingrédient Givaudan Givescone™ (référence 5542803), famille Floral, notes : Floral, Rose, Spicy, Fruity, Woody. Description : Givescone™ is used where real innovation is required. It has a complex odour picture, with floral, spicy, fruity, woody and even herbaceous nuances. It blends particularly well with rose, carnation,… Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/givesconetm
 
@@ -834,7 +1332,7 @@ Ingrédient Givaudan Gyrane (référence 5653603), famille Floral, notes : Flora
 
 Ingrédient Givaudan Hexyl Salicylate (référence 8826001), famille Floral, notes : Floral, Green, Fruity. Description : Hexyl Salicylate has a floral fruity character, with a mild, sweet herbaceous slant. It is a very useful modifier of floral fragrances especially with Amyl Salicylate. Impact olfactif : Impactful ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/hexyl-salicylate
 
-Ingrédient Givaudan Indolene 50%/CSO (référence 5979201), famille Floral, notes : Floral, Animalic, Jasmine. Description : Indolene 50% has a floral animalic note. It is very useful to extend the natural jasmin character of a composition. Impact olfactif : Significant impact ; ténacité sur touche sèche : Medium Good. Odeurs et souvenirs associés dans cette base : Jasmin. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/indolene-50cso
+Ingrédient Givaudan Indolene 50%/CSO (référence 5979201), famille Floral, notes : Floral, Animalic, Jasmine. Description : Indolene 50% has a floral animalic note. It is very useful to extend the natural jasmin character of a composition. Impact olfactif : Significant impact ; ténacité sur touche sèche : Medium Good. Odeurs et souvenirs associés dans cette base : Jasmin, Inde : rues, temples et fêtes, Égypte : le Caire. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/indolene-50cso
 
 Ingrédient Givaudan Irisone™ Alpha (référence 6030003), famille Floral, notes : Floral, Orris, Violet, Woody. Description : Irisone™ Alpha is used widely in perfume compositions mainly in woody, floral, balsamic, piney or citrus notes for its high substantivity. It is also know to bring an interesting twist to rose… Impact olfactif : Non renseigné ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Odeur de bébé, Draps propres, matin calme. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/irisonetm-alpha
 
@@ -856,7 +1354,7 @@ Ingrédient Givaudan Jasmone Cis (référence 6340001), famille Floral, notes : 
 
 Ingrédient Givaudan Jasmonyl™ LG (référence 6347001), famille Floral, notes : Floral, Jasmine, Lactonic. Description : Jasmonyl LG is used in many types of compositions for its lactonic jasmine effect. It also has a mushroom-like facet that blends well with lavender. It enhances and improves the diffusion of… Impact olfactif : Impactful ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Fleurs tropicales. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/jasmonyltm-lg
 
-Ingrédient Givaudan Jasmonyl™ (référence 6346803), famille Floral, notes : Floral, Jasmine, Lactonic. Description : Jasmonyl™ is used in many perfume types for its lactonic jasmine effect. It also possesses a mushroom-like note that blends well with lavender. Jasmonyl™ enhances and improves the diffusion of most… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Jasmin, Souvenirs olfactifs de Thaïlande. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/jasmonyltm
+Ingrédient Givaudan Jasmonyl™ (référence 6346803), famille Floral, notes : Floral, Jasmine, Lactonic. Description : Jasmonyl™ is used in many perfume types for its lactonic jasmine effect. It also possesses a mushroom-like note that blends well with lavender. Jasmonyl™ enhances and improves the diffusion of most… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Jasmin, Souvenirs olfactifs de Thaïlande, Inde : rues, temples et fêtes, Grasse : champs de fleurs, Méditerranée et îles grecques, Égypte : le Caire, Chine : thé et osmanthe. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/jasmonyltm
 
 Ingrédient Givaudan Jasmopyrane Forte (référence 6347541), famille Floral, notes : Floral, Jasmine, Aromatic. Description : Jasmopyrane Forte has a floral jasmine note with a rich sweet herbaceous character and hints of tea. Jasmopyrane Forte is a broader-cut, lower cost option that is slightly more tenacious and has a… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/jasmopyrane-forte
 
@@ -866,17 +1364,17 @@ Ingrédient Givaudan Linalyl Benzoate (référence 2597001), famille Floral, not
 
 Ingrédient Givaudan Linalyl Cinnamate (référence 3910003), famille Floral, notes : Floral, Fruity, Balsamic, Sweet. Description : Linalyl Cinnamate gives a sweet natural effect to floral, fruity and oriental compositions. It is ideal for use in delicate floral accords where it acts as a blending agent and as a fixative. Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/linalyl-cinnamate
 
-Ingrédient Givaudan Methyl Anthranilate Extra (référence 2297001), famille Floral, notes : Floral, Neroli, Sweet, Warm. Description : Methyl Anthranilate Extra is extensively used in many types of floral blends such as neroli and orange blossom, as well as in exotic compositions, gardenia, tuberose and jasmine, Methyl Anthranilate… Impact olfactif : Non renseigné ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/methyl-anthranilate-extra
+Ingrédient Givaudan Methyl Anthranilate Extra (référence 2297001), famille Floral, notes : Floral, Neroli, Sweet, Warm. Description : Methyl Anthranilate Extra is extensively used in many types of floral blends such as neroli and orange blossom, as well as in exotic compositions, gardenia, tuberose and jasmine, Methyl Anthranilate… Impact olfactif : Non renseigné ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Séville : fleur d'oranger (azahar). Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/methyl-anthranilate-extra
 
 Ingrédient Givaudan Methyl Octyne Carbonate (référence 7594003), famille Floral, notes : Floral, Violet leaves, Green. Description : Methyl Octyne Carbonate is widely used in floral notes. It produces the powerful yet subtle note of violet leaves with a fruity-vegetable, cucumber undertone. Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/methyl-octyne-carbonate
 
-Ingrédient Givaudan Methyl Tuberate Pure (référence 9411003), famille Floral, notes : Floral, Tuberose, Lactonic. Description : Methyl Tuberate Pure is a powerful modifier in all kinds of floral accords. The characteristic note of Methyl Tuberate Pure imparts a natural touch of white flower, such as tuberose and gardenia. It… Impact olfactif : Significant impact ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Mousson tropicale, Fleurs tropicales. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/methyl-tuberate-pure
+Ingrédient Givaudan Methyl Tuberate Pure (référence 9411003), famille Floral, notes : Floral, Tuberose, Lactonic. Description : Methyl Tuberate Pure is a powerful modifier in all kinds of floral accords. The characteristic note of Methyl Tuberate Pure imparts a natural touch of white flower, such as tuberose and gardenia. It… Impact olfactif : Significant impact ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Mousson tropicale, Fleurs tropicales, Grasse : champs de fleurs, Bali : offrandes et frangipanier. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/methyl-tuberate-pure
 
 Ingrédient Givaudan Myraldyl Acetate (référence 0408601), famille Floral, notes : Floral, Jasmine, Sweet, Fruity, Green. Description : Myraldyl Acetate brings a diffusive jasmine / muguet odour. It gives an exceptionally full bodied, floral character to compositions. Its good stability and long lasting qualities, combined with its… Impact olfactif : Impactful ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/myraldyl-acetate
 
 Ingrédient Givaudan Nympheal™ (référence 1489703), famille Floral, notes : Floral, Muguet. Description : Nympheal™ is a diffusive floral cyclamen muguet note with green, watery and linden blossom facets. Nympheal™ imparts white floral watery density and brings a floral creaminess to the composition and… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/nympheal
 
-Ingrédient Givaudan Oranger Crystals (référence 7758003), famille Floral, notes : Floral, Orange blossom, Sweet, Honey. Description : Oranger Crystals is very useful in neroli / orange blossom blends. It gives pretty effects in jasmine accords and colognes. Its stability and substantivity allow it to be used to great advantage in… Impact olfactif : Non renseigné ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/oranger-crystals
+Ingrédient Givaudan Oranger Crystals (référence 7758003), famille Floral, notes : Floral, Orange blossom, Sweet, Honey. Description : Oranger Crystals is very useful in neroli / orange blossom blends. It gives pretty effects in jasmine accords and colognes. Its stability and substantivity allow it to be used to great advantage in… Impact olfactif : Non renseigné ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Maroc : souk et médina, Grasse : champs de fleurs, Séville : fleur d'oranger (azahar). Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/oranger-crystals
 
 Ingrédient Givaudan Pelargene (référence 1394573), famille Floral, notes : Floral, Geranium. Description : Pelargene has a powerful geranium character, reminiscent of crushed leaves. It adds substantivity and body, particularly to floral fragrances, especially rose and geranium. Impact olfactif : High impact ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/pelargene
 
@@ -884,19 +1382,19 @@ Ingrédient Givaudan Peonile™ (référence 8753253), famille Floral, notes : F
 
 Ingrédient Givaudan Phenyl Acetaldehyde 85%/PEA (référence 1597503), famille Floral, notes : Floral, Green, Honey. Description : Phenyl Acetaldehyde 85%/PEA has a very diffusive rosy top note with honey facets. Impact olfactif : High impact ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/phenyl-acetaldehyde-85pea
 
-Ingrédient Givaudan Pivarose (référence 3496423), famille Floral, notes : Floral, Rosy, Fruity. Description : Pivarose is a floral tea-rose note with a fruity balsamic character and a hint of honey sweetness. It is a useful modifier of the more common rose alcohols and esters. Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/pivarose
+Ingrédient Givaudan Pivarose (référence 3496423), famille Floral, notes : Floral, Rosy, Fruity. Description : Pivarose is a floral tea-rose note with a fruity balsamic character and a hint of honey sweetness. It is a useful modifier of the more common rose alcohols and esters. Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Grasse : champs de fleurs. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/pivarose
 
-Ingrédient Givaudan Rosyrane Super (référence 5845523), famille Floral, notes : Floral, Rose, Geranium, Green. Description : Rosyrane Super has an intense, diffusive rose character with green, geranium and metallic notes. It is particularly suited to be the heart of a very diffusive rose or geranium complex especially in… Impact olfactif : High impact ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/rosyrane-super
+Ingrédient Givaudan Rosyrane Super (référence 5845523), famille Floral, notes : Floral, Rose, Geranium, Green. Description : Rosyrane Super has an intense, diffusive rose character with green, geranium and metallic notes. It is particularly suited to be the heart of a very diffusive rose or geranium complex especially in… Impact olfactif : High impact ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Maroc : souk et médina, Grasse : champs de fleurs, Istanbul : bazar aux épices, Golfe : oud et bakhoor, Égypte : le Caire. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/rosyrane-super
 
 Ingrédient Givaudan Silvial™ (référence 0012543), famille Floral, notes : Floral, Muguet, Powerful, Fresh. Description : Silvial™ is a powerful, vibrant muguet ingredient with a slight citrus undertone and a fresh, aldehydic touch. It is used in perfumery in the same way as the other related muguet products. Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Draps propres, matin calme. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/silvialtm
 
-Ingrédient Givaudan Syringa Aldehyde 50% (référence 1623003), famille Floral, notes : Floral, Green, Sweet, Powerful. Description : Syringa Aldehyde is an impactful floral-green note, used as a top note in lilac, hyacinth and rose accords but less pungent than Phenyl Acetaldehyde. Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/syringa-aldehyde-50
+Ingrédient Givaudan Syringa Aldehyde 50% (référence 1623003), famille Floral, notes : Floral, Green, Sweet, Powerful. Description : Syringa Aldehyde is an impactful floral-green note, used as a top note in lilac, hyacinth and rose accords but less pungent than Phenyl Acetaldehyde. Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Campagne et ferme. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/syringa-aldehyde-50
 
 Ingrédient Givaudan Undecavertol (référence 9449903), famille Floral, notes : Floral, Violet, Green, Fresh. Description : Undecavertol was developed in connection with structural elucidation work on unknown trace components of lily of the valley. It has a powerful green-floral character, somewhat related to lily-of-the-… Impact olfactif : Significant impact ; ténacité sur touche sèche : Medium. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/undecavertol
 
-Ingrédient Givaudan Verdantiol (référence 9644003), famille Floral, notes : Floral, Linden blossom, Orange blossom. Description : Verdantiol offers an intense floral note to delicate flower type creations, such as neroli, orange blossom, narcissus and frangipani. It provides excellent fixative value on all supports. Impact olfactif : Impactful ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/verdantiol
+Ingrédient Givaudan Verdantiol (référence 9644003), famille Floral, notes : Floral, Linden blossom, Orange blossom. Description : Verdantiol offers an intense floral note to delicate flower type creations, such as neroli, orange blossom, narcissus and frangipani. It provides excellent fixative value on all supports. Impact olfactif : Impactful ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Séville : fleur d'oranger (azahar), Campagne et ferme. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/verdantiol
 
-Chapitre 52 : Catalogue Givaudan – famille Fruity
+Chapitre 81 : Catalogue Givaudan – famille Fruity
 
 Ingrédient Givaudan Acetate C9 Nonylic (référence 0420003), famille Fruity, notes : Fruity, Tropical, Aromatic. Description : Acetate C9 Nonylic has a fruity and tropical note with aromatic undertones. Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/acetate-c9-nonylic
 
@@ -906,7 +1404,7 @@ Ingrédient Givaudan Berryflor™ (référence 5206903), famille Fruity, notes :
 
 Ingrédient Givaudan Ethyl Methyl-2-Butyrate (référence 6892801), famille Fruity, notes : Fruity, Green, Apple, Pineapple skin, Diffusive. Description : Ethyl Methyl-2-Butyrate has a very diffusive fruity effect that serves as a modifier in floral accords or in combination with fruity esters. Impact olfactif : Non renseigné ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/ethyl-methyl-2-butyrate
 
-Ingrédient Givaudan Frutonile (référence 1461553), famille Fruity, notes : Fruity, Peach, Lactonic. Description : Frutonile has an intense peach character with lactonic undertones. It is stable across the whole pH range, allowing the perfumers to create a stable fruity effect at low concentration in any… Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Crème solaire. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/frutonile
+Ingrédient Givaudan Frutonile (référence 1461553), famille Fruity, notes : Fruity, Peach, Lactonic. Description : Frutonile has an intense peach character with lactonic undertones. It is stable across the whole pH range, allowing the perfumers to create a stable fruity effect at low concentration in any… Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Crème solaire, Chine : thé et osmanthe, Bali : offrandes et frangipanier. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/frutonile
 
 Ingrédient Givaudan Gardocyclene (référence 5361601), famille Fruity, notes : Fruity, Green, Floral. Description : Gardocyclene is a fruity floral and slightly green material, less anise-like than the other cyclenes. Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/gardocyclene
 
@@ -920,23 +1418,23 @@ Ingrédient Givaudan Labienoxime 10%/IPM-TEC (référence 0017643), famille Frui
 
 Ingrédient Givaudan Linalyl Isobutyrate (référence 6170501), famille Fruity, notes : Fruity, Fresh, Lavender. Description : Linalyl Isobutyrate has a natural, fresh character which enhances the top note of many compositions, especially lavender, cologne and fruity blends. Its modifying action is also much appreciated in… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Lavande. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/linalyl-isobutyrate
 
-Ingrédient Givaudan Manzanate (référence 6702803), famille Fruity, notes : Fruity, Apple, Pineapple. Description : Manzanate has a fruity ripe apple character with aspects of cider and sweet pineapple. It brings a great impact and bloom in water-contact products. Impact olfactif : Non renseigné ; ténacité sur touche sèche : Medium. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/manzanate
+Ingrédient Givaudan Manzanate (référence 6702803), famille Fruity, notes : Fruity, Apple, Pineapple. Description : Manzanate has a fruity ripe apple character with aspects of cider and sweet pineapple. It brings a great impact and bloom in water-contact products. Impact olfactif : Non renseigné ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Caraïbes et île tropicale. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/manzanate
 
-Ingrédient Givaudan Methyl Laitone 10%/DPG (référence 6978468), famille Fruity, notes : Fruity, Coconut milk, Lactonic, Creamy. Description : Methyl Laitone 10% is one of the new spiro-lactones developed and patented by Givaudan. It is extremely powerful and very effective in all accords where a creamy, fruity volume is required. Methyl… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Crème solaire, Fleurs tropicales, Pandan, Odeur de bébé. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/methyl-laitone-10dpg
+Ingrédient Givaudan Methyl Laitone 10%/DPG (référence 6978468), famille Fruity, notes : Fruity, Coconut milk, Lactonic, Creamy. Description : Methyl Laitone 10% is one of the new spiro-lactones developed and patented by Givaudan. It is extremely powerful and very effective in all accords where a creamy, fruity volume is required. Methyl… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Crème solaire, Fleurs tropicales, Pandan, Odeur de bébé, Inde : rues, temples et fêtes, Méditerranée et îles grecques, Singapour : hawker centres, Caraïbes et île tropicale. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/methyl-laitone-10dpg
 
 Ingrédient Givaudan Methyl Laitone 10%/TEC (référence 0010213), famille Fruity, notes : Fruity, Coconut milk, Lactonic, Creamy. Description : Methyl Laitone 10% is one of the new spiro-lactones developed and patented by Givaudan. It is extremely powerful and very effective in all accords where a creamy, fruity volume is required. Methyl… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/methyl-laitone-10tec
 
-Ingrédient Givaudan Nectaryl (référence 7446003), famille Fruity, notes : Fruity, Peach, Apricot, Lactonic. Description : Nectaryl produces a natural, fruity and sophisticated note in fine fragrance. Its stability and substantivity makes it valuable as a lactonic element in powder detergent. Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/nectaryl
+Ingrédient Givaudan Nectaryl (référence 7446003), famille Fruity, notes : Fruity, Peach, Apricot, Lactonic. Description : Nectaryl produces a natural, fruity and sophisticated note in fine fragrance. Its stability and substantivity makes it valuable as a lactonic element in powder detergent. Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Chine : thé et osmanthe. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/nectaryl
 
-Ingrédient Givaudan Paradisamide™ (référence 0025633), famille Fruity, notes : Tropical fruity, Guava, Grapefruit, Rhubarb, Cassis. Description : Paradisamide™ is a long lasting, fresh tropical fruit note of guava and passion fruit with nuances of grapefruit, rhubarb and cassis. Paradisamide™ can be overdosed in tropical fruit accords up to 20… Impact olfactif : Significant impact ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Mousson tropicale. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/paradisamidetm
+Ingrédient Givaudan Paradisamide™ (référence 0025633), famille Fruity, notes : Tropical fruity, Guava, Grapefruit, Rhubarb, Cassis. Description : Paradisamide™ is a long lasting, fresh tropical fruit note of guava and passion fruit with nuances of grapefruit, rhubarb and cassis. Paradisamide™ can be overdosed in tropical fruit accords up to 20… Impact olfactif : Significant impact ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Mousson tropicale, Singapour : hawker centres, Brésil : forêt amazonienne. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/paradisamidetm
 
 Ingrédient Givaudan Pivacyclene (référence 5845473), famille Fruity, notes : Fruity, Peach, Green. Description : Pivacyclene is part of the cyclene family and offers a dry fruity peach note with a fresh green softness. It works well with the other cyclenes as a modifier around 1% in soaps and detergents. Also… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/pivacyclene
 
 Ingrédient Givaudan Strawberry Pure (référence 5200003), famille Fruity, notes : Fruity, Strawberry, Powerful. Description : Strawberry Pure is obviously used for strawberry compounds, but this product is also useful in a variety of floral compositions, such as jasmine and rose. Strawberry Pure adds warmth to a fragrance… Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/strawberry-pure
 
-Chapitre 53 : Catalogue Givaudan – famille Citrus
+Chapitre 82 : Catalogue Givaudan – famille Citrus
 
-Ingrédient Givaudan Citrathal™ Conc S (référence 5847673), famille Citrus, notes : Citrus, Lime, Lemon. Description : Citrathal™ Conc S has a distinctive clean-fresh, lemon-lime character and is one of the more chemically stable citrus materials. Citrathal™ is available in three grades. Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Agrumes, Rue de Bangkok. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/citrathaltm-conc-s
+Ingrédient Givaudan Citrathal™ Conc S (référence 5847673), famille Citrus, notes : Citrus, Lime, Lemon. Description : Citrathal™ Conc S has a distinctive clean-fresh, lemon-lime character and is one of the more chemically stable citrus materials. Citrathal™ is available in three grades. Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Agrumes, Rue de Bangkok, Japon : hinoki, yuzu et temples, Italie du Sud : citronniers, Caraïbes et île tropicale. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/citrathaltm-conc-s
 
 Ingrédient Givaudan Citrathal™ Concentrate S TW (référence 5847683), famille Citrus, notes : Citrus, Lime, Lemon. Description : Citrathal™ Concentrate S TW has a distinctive clean-fresh, lemon-lime character and is one of the more chemically stable citrus materials. Citrathal™ is available in three grades. Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/citrathaltm-concentrate-s-tw
 
@@ -946,173 +1444,173 @@ Ingrédient Givaudan Decatone (référence 4356101), famille Citrus, notes : Cit
 
 Ingrédient Givaudan Dimethyl Octenone (référence 4591003), famille Citrus, notes : Citrus, Fruity, Fresh. Description : Dimethyl Octenone can be used to great advantage in citrus accords where it underlines the natural bitterness of the fruit. Its combination with fresh notes is much appreciated for the diffusion that… Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/dimethyl-octenone
 
-Ingrédient Givaudan Ethyl Linalyl Acetate (référence 0297001), famille Citrus, notes : Citrus, Bergamot, Fruity, Pear, Fresh. Description : Ethyl Linalyl Acetate is softer, more floral, more bergamot and less lavender than Linalyl Acetate. It has an elegant, refreshing effect in floral bouquets. Impact olfactif : Non renseigné ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Agrumes. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/ethyl-linalyl-acetate
+Ingrédient Givaudan Ethyl Linalyl Acetate (référence 0297001), famille Citrus, notes : Citrus, Bergamot, Fruity, Pear, Fresh. Description : Ethyl Linalyl Acetate is softer, more floral, more bergamot and less lavender than Linalyl Acetate. It has an elegant, refreshing effect in floral bouquets. Impact olfactif : Non renseigné ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Agrumes, Italie du Sud : citronniers. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/ethyl-linalyl-acetate
 
 Ingrédient Givaudan Gardamide (référence 1390623), famille Citrus, notes : Citrus, Grapefruit, Rhubarb. Description : Gardamide is a zesty grapefruit citrus heart note, with aspects of crisp rhubarb. It works well with other citrus and earthy green notes. Gardamide increases in strength over the first few hours,… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/gardamide
 
-Ingrédient Givaudan Lemonile™ (référence 6570203), famille Citrus, notes : Citrus, Lemon, Intense. Description : Lemonile™ is used in lemon, verbena and lime compositions where it imparts freshness and diffusion. This nitrile is an extremely powerful chemical and has excellent stability in alkaline media. More… Impact olfactif : Significant impact ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Agrumes. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/lemoniletm
+Ingrédient Givaudan Lemonile™ (référence 6570203), famille Citrus, notes : Citrus, Lemon, Intense. Description : Lemonile™ is used in lemon, verbena and lime compositions where it imparts freshness and diffusion. This nitrile is an extremely powerful chemical and has excellent stability in alkaline media. More… Impact olfactif : Significant impact ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Agrumes, Italie du Sud : citronniers. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/lemoniletm
 
-Ingrédient Givaudan Lime Oxide (référence 7852493), famille Citrus, notes : Citrus, Lime, Green, Aromatic, Fresh. Description : Lime Oxide adds freshness and intensity to perfumes designed for functional products. It is also a powerful citrus booster with excellent stability in many applications, including bleach. Impact olfactif : High impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Rue de Bangkok, Souvenirs olfactifs de Thaïlande. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/lime-oxide
+Ingrédient Givaudan Lime Oxide (référence 7852493), famille Citrus, notes : Citrus, Lime, Green, Aromatic, Fresh. Description : Lime Oxide adds freshness and intensity to perfumes designed for functional products. It is also a powerful citrus booster with excellent stability in many applications, including bleach. Impact olfactif : High impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Rue de Bangkok, Souvenirs olfactifs de Thaïlande, Vietnam : Hanoï et Saïgon. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/lime-oxide
 
 Ingrédient Givaudan Linalyl Formate (référence 5150501), famille Citrus, notes : Citrus, Bergamot, Green. Description : Linalyl Formate introduces freshness and lift to the top note of citrus and lavender fragrances. It helps to combine the fruity character of Linalyl Acetate with the fatty notes of the aldehydes. Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/linalyl-formate
 
 Ingrédient Givaudan Mefranal (référence 0010593), famille Citrus, notes : Citrus, Aldehydic, Geranium. Description : Mefranal has a refreshing lemon geranium note with an aldehydic floral heart. Impact olfactif : Non renseigné ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/mefranal
 
-Ingrédient Givaudan Methyl Heptenone Pure (référence 6937003), famille Citrus, notes : Citrus, Lemongrass. Description : Methyl Heptenone Pure is used to provide a natural green freshness to agrestic or hesperidic top notes. Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Rue de Bangkok, Souvenirs olfactifs de Thaïlande. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/methyl-heptenone-pure
+Ingrédient Givaudan Methyl Heptenone Pure (référence 6937003), famille Citrus, notes : Citrus, Lemongrass. Description : Methyl Heptenone Pure is used to provide a natural green freshness to agrestic or hesperidic top notes. Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Rue de Bangkok, Souvenirs olfactifs de Thaïlande, Vietnam : Hanoï et Saïgon, Singapour : hawker centres. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/methyl-heptenone-pure
 
 Ingrédient Givaudan Methyl Pamplemousse (référence 6993001), famille Citrus, notes : Citrus, Grapefruit peel, Fresh. Description : Methyl Pamplemousse, with its fresh bitterness, blends very well with citrus bases. It can also be used as a booster for vetiver accords. Methyl Pamplemousse is a key ingredient in modern colognes. Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Agrumes. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/methyl-pamplemousse
 
-Ingrédient Givaudan Neobergamate Forte (référence 0014073), famille Citrus, notes : Citrus, Bergamot, Agrestic. Description : Neobergamate Forte has a powerful and fresh citrus bergamot top note combined with a floral, herbaceous heart. It is excellent for adding a fresh citrus lime effect. Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/neobergamate-forte
+Ingrédient Givaudan Neobergamate Forte (référence 0014073), famille Citrus, notes : Citrus, Bergamot, Agrestic. Description : Neobergamate Forte has a powerful and fresh citrus bergamot top note combined with a floral, herbaceous heart. It is excellent for adding a fresh citrus lime effect. Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Italie du Sud : citronniers. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/neobergamate-forte
 
 Ingrédient Givaudan Rhubafuran (référence 8683003), famille Citrus, notes : Citrus, Rhubarb, Green, Fresh. Description : Rhubafuran has an intense tangy rhubarb character, with a green eucalyptus heart very suitable in fruity and citrus accords. It can be used across all functional fragrances with good performance in… Impact olfactif : High impact ; ténacité sur touche sèche : Medium. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/rhubafuran
 
-Ingrédient Givaudan Tangerinol (référence 9177303), famille Citrus, notes : Citrus, Bitter, Fruity, Fresh. Description : Tangerinol blends well with fresh and sparkling compounds thanks to its fresh hesperidic character. Mixed with aldehydes and fruity notes, it gives more natural volume. Tangerinol is also effective… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Noël, Agrumes. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/tangerinol
+Ingrédient Givaudan Tangerinol (référence 9177303), famille Citrus, notes : Citrus, Bitter, Fruity, Fresh. Description : Tangerinol blends well with fresh and sparkling compounds thanks to its fresh hesperidic character. Mixed with aldehydes and fruity notes, it gives more natural volume. Tangerinol is also effective… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Noël, Agrumes, Japon : hinoki, yuzu et temples, Séville : fleur d'oranger (azahar). Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/tangerinol
 
 Ingrédient Givaudan Tetrahydro Citral (référence 9254001), famille Citrus, notes : Citrus, Aldehydic, Sweet, Fresh. Description : Tetrahydro Citral enhances the citrus effect in colognes. It can partially replace Citral in soap and detergent formulations thanks to its better stability. Impact olfactif : Non renseigné ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/tetrahydro-citral
 
-Ingrédient Givaudan Tridecene-2-Nitrile (référence 9385201), famille Citrus, notes : Citrus, Tangerine, Aldehydic. Description : Tridecene-2-Nitrile has a powerful citrus, tangerine note with an aldehydic character and a hint of fresh coriander. Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/tridecene-2-nitrile
+Ingrédient Givaudan Tridecene-2-Nitrile (référence 9385201), famille Citrus, notes : Citrus, Tangerine, Aldehydic. Description : Tridecene-2-Nitrile has a powerful citrus, tangerine note with an aldehydic character and a hint of fresh coriander. Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Italie du Sud : citronniers. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/tridecene-2-nitrile
 
-Chapitre 54 : Catalogue Givaudan – famille Herbal - Agrestic
+Chapitre 83 : Catalogue Givaudan – famille Herbal - Agrestic
 
-Ingrédient Givaudan Amyl Vinyl Carbinol (référence 1884001), famille Herbal - Agrestic, notes : Herbal, Lavender. Description : Amyl Vinyl Carbinol is an impactful herbal note with mushroom effect. It is a top note used as a modifier in agrestic-aromatic accords like lavender and fougere. Impact olfactif : High impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Lavande, Paysages olfactifs du Japon. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/amyl-vinyl-carbinol
+Ingrédient Givaudan Amyl Vinyl Carbinol (référence 1884001), famille Herbal - Agrestic, notes : Herbal, Lavender. Description : Amyl Vinyl Carbinol is an impactful herbal note with mushroom effect. It is a top note used as a modifier in agrestic-aromatic accords like lavender and fougere. Impact olfactif : High impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Lavande, Paysages olfactifs du Japon, Provence : garrigue et lavande. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/amyl-vinyl-carbinol
 
-Ingrédient Givaudan Anisyl Acetate (référence 0164001), famille Herbal - Agrestic, notes : Herbal, Anis, Floral, Fruity. Description : Anisyl Acetate is a good modifier in floral, fruity, oriental and chypre fragrances where it imparts sweetness and a natural effect. Impact olfactif : Non renseigné ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/anisyl-acetate
+Ingrédient Givaudan Anisyl Acetate (référence 0164001), famille Herbal - Agrestic, notes : Herbal, Anis, Floral, Fruity. Description : Anisyl Acetate is a good modifier in floral, fruity, oriental and chypre fragrances where it imparts sweetness and a natural effect. Impact olfactif : Non renseigné ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Vietnam : Hanoï et Saïgon. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/anisyl-acetate
 
-Ingrédient Givaudan Anisyl Alcohol (référence 1089001), famille Herbal - Agrestic, notes : Herbal, Anis, Floral, Powdery. Description : Anisyl Alcohol adds volume and gives a natural aspect to floral compositions such as mimosa, lilac, cassia, apple-blossom, jasmine and heliotrope as well as to clove and fougere perfumes. It has an… Impact olfactif : Non renseigné ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/anisyl-alcohol
+Ingrédient Givaudan Anisyl Alcohol (référence 1089001), famille Herbal - Agrestic, notes : Herbal, Anis, Floral, Powdery. Description : Anisyl Alcohol adds volume and gives a natural aspect to floral compositions such as mimosa, lilac, cassia, apple-blossom, jasmine and heliotrope as well as to clove and fougere perfumes. It has an… Impact olfactif : Non renseigné ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Corée : Séoul. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/anisyl-alcohol
 
-Ingrédient Givaudan Celery Ketone (référence 3491103), famille Herbal - Agrestic, notes : Herbal, Spicy, Celery. Description : Celery Ketone is used as a modifier of aldehydic chypres and fougeres. It blends well with basil and tarragon oils in top note compositions, and also supports jasmine complexes. Celery Ketone is very… Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/celery-ketone
+Ingrédient Givaudan Celery Ketone (référence 3491103), famille Herbal - Agrestic, notes : Herbal, Spicy, Celery. Description : Celery Ketone is used as a modifier of aldehydic chypres and fougeres. It blends well with basil and tarragon oils in top note compositions, and also supports jasmine complexes. Celery Ketone is very… Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Corée : Séoul. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/celery-ketone
 
-Ingrédient Givaudan Freskomenthe™ (référence 5202703), famille Herbal - Agrestic, notes : Herbal, Mint, Fresh, Woody. Description : Freskomenthe™ adds an element of freshness to a wide range of accords, including lavender, citrus, aromatic, geranium and green notes. It contributes to a unique cooling effect in powder detergent,… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Air d'hiver, neige, Menthe poivrée. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/freskomenthetm
+Ingrédient Givaudan Freskomenthe™ (référence 5202703), famille Herbal - Agrestic, notes : Herbal, Mint, Fresh, Woody. Description : Freskomenthe™ adds an element of freshness to a wide range of accords, including lavender, citrus, aromatic, geranium and green notes. It contributes to a unique cooling effect in powder detergent,… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Air d'hiver, neige, Menthe poivrée, Maroc : souk et médina, Montagne et Alpes. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/freskomenthetm
 
-Ingrédient Givaudan Herboxane (référence 5698353), famille Herbal - Agrestic, notes : Herbal, Green, Spicy, Fresh. Description : Herboxane is a spicy whilst distinctively herbal note particularly basil, reminiscent of sweet red pepper. Herboxane adds a distinctive freshness to a fragrance. It is also very stable in detergent… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Romarin. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/herboxane
+Ingrédient Givaudan Herboxane (référence 5698353), famille Herbal - Agrestic, notes : Herbal, Green, Spicy, Fresh. Description : Herboxane is a spicy whilst distinctively herbal note particularly basil, reminiscent of sweet red pepper. Herboxane adds a distinctive freshness to a fragrance. It is also very stable in detergent… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Romarin, Provence : garrigue et lavande, Méditerranée et îles grecques, Mexique : Jour des morts, Afrique : savane après la pluie. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/herboxane
 
 Ingrédient Givaudan Isomenthone DL (référence 6253503), famille Herbal - Agrestic, notes : Herbal, Aromatic, Green, Mint. Description : Isomenthone DL has a a fresh and aromatic herbal note with green inflexions reminiscent of peppermint. It can be used in fresh, minty, agrestic or fougere composition as well as in lavender or… Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Menthe poivrée. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/isomenthone-dl
 
-Ingrédient Givaudan Limetol (référence 4523001), famille Herbal - Agrestic, notes : Herbal, Camphor, Woody, Lime. Description : Limetol is used where a lemon-woody note is desired. It also offers pine needle and lime nuances. Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Forêt de conifères, Romarin, Souvenirs olfactifs de Thaïlande. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/limetol
+Ingrédient Givaudan Limetol (référence 4523001), famille Herbal - Agrestic, notes : Herbal, Camphor, Woody, Lime. Description : Limetol is used where a lemon-woody note is desired. It also offers pine needle and lime nuances. Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Forêt de conifères, Romarin, Souvenirs olfactifs de Thaïlande, Provence : garrigue et lavande, Montagne et Alpes. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/limetol
 
-Ingrédient Givaudan Linalool Oxide (référence 7852501), famille Herbal - Agrestic, notes : Herbal, Pine, Floral, Fresh. Description : Linalool Oxide is a fresh, sweet material which is very useful for its ability to give additional lift to floral accords. It also has a fresh earthy quality which makes it invaluable in… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Forêt de conifères, Noël, Paysages olfactifs du Japon. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/linalool-oxide
+Ingrédient Givaudan Linalool Oxide (référence 7852501), famille Herbal - Agrestic, notes : Herbal, Pine, Floral, Fresh. Description : Linalool Oxide is a fresh, sweet material which is very useful for its ability to give additional lift to floral accords. It also has a fresh earthy quality which makes it invaluable in… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Forêt de conifères, Noël, Paysages olfactifs du Japon, Japon : hinoki, yuzu et temples, Provence : garrigue et lavande, Méditerranée et îles grecques, Montagne et Alpes, Scandinavie : forêt et cabane. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/linalool-oxide
 
-Ingrédient Givaudan Linalyl Propionate (référence 8448751), famille Herbal - Agrestic, notes : Herbal, Lavender, Bergamot, Fruity. Description : Linalyl Propionate falls into the category of modern bergamot-lavender notes. A pronounced fruity nuance distinguishes it from Linalyl Acetate. Its excellent stability and intensive clean, fresh… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Lavande. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/linalyl-propionate
+Ingrédient Givaudan Linalyl Propionate (référence 8448751), famille Herbal - Agrestic, notes : Herbal, Lavender, Bergamot, Fruity. Description : Linalyl Propionate falls into the category of modern bergamot-lavender notes. A pronounced fruity nuance distinguishes it from Linalyl Acetate. Its excellent stability and intensive clean, fresh… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Lavande, Provence : garrigue et lavande. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/linalyl-propionate
 
-Ingrédient Givaudan Toscanol™ (référence 0014203), famille Herbal - Agrestic, notes : Herbal, Anis, Green. Description : Toscanol™ has a powerful and linear anisic, sweet-spicy note of estragole (methyl chavicol), liquorice and sassafras oil character with a touch of saffron, myrtle, opoponax and carvi seeds. Toscanol… Impact olfactif : High impact ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/toscanoltm
+Ingrédient Givaudan Toscanol™ (référence 0014203), famille Herbal - Agrestic, notes : Herbal, Anis, Green. Description : Toscanol™ has a powerful and linear anisic, sweet-spicy note of estragole (methyl chavicol), liquorice and sassafras oil character with a touch of saffron, myrtle, opoponax and carvi seeds. Toscanol… Impact olfactif : High impact ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Vietnam : Hanoï et Saïgon. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/toscanoltm
 
-Ingrédient Givaudan Vernaldehyde™ (référence 9644601), famille Herbal - Agrestic, notes : Herbal, Natural, Green, Aldehydic, Fresh. Description : Vernaldehyde™ has a fresh, green, mountain air character and blends very well with aldehydic citrus and woody notes. Vernaldehyde™ adds originality to a fragrance and imparts a natural aura. Its… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/vernaldehydetm
+Ingrédient Givaudan Vernaldehyde™ (référence 9644601), famille Herbal - Agrestic, notes : Herbal, Natural, Green, Aldehydic, Fresh. Description : Vernaldehyde™ has a fresh, green, mountain air character and blends very well with aldehydic citrus and woody notes. Vernaldehyde™ adds originality to a fragrance and imparts a natural aura. Its… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Montagne et Alpes. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/vernaldehydetm
 
-Chapitre 55 : Catalogue Givaudan – famille Woody
+Chapitre 84 : Catalogue Givaudan – famille Woody
 
 Ingrédient Givaudan Boisiris™ (référence 2786903), famille Woody, notes : Woody, Ambery, Orris. Description : Boisiris™ is a rich woody chemical with a distinct orris note. Ambery and tobacco undertones add to its elegant character. Designed for use as a heart note in fine perfumery, it gives more volume and… Impact olfactif : Impactful ; ténacité sur touche sèche : Medium. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/boisiristm
 
-Ingrédient Givaudan Dihydro Ionone Beta (référence 4508403), famille Woody, notes : Woody, Floral, Orris, Ambery, Fruity. Description : Dihydro Ionone Beta, a less well-known member of the ionone family, is increasingly used for its original woody and slightly ambery character. It brings a rich sophisticated volume to perfumes in… Impact olfactif : Significant impact ; ténacité sur touche sèche : Medium. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/dihydro-ionone-beta
+Ingrédient Givaudan Dihydro Ionone Beta (référence 4508403), famille Woody, notes : Woody, Floral, Orris, Ambery, Fruity. Description : Dihydro Ionone Beta, a less well-known member of the ionone family, is increasingly used for its original woody and slightly ambery character. It brings a rich sophisticated volume to perfumes in… Impact olfactif : Significant impact ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Chine : thé et osmanthe. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/dihydro-ionone-beta
 
 Ingrédient Givaudan Ebanol™ (référence 4697403), famille Woody, notes : Woody, Sandalwood, Musky, Powerful. Description : Ebanol™ has a very rich, natural sandalwood odour. It is powerful and intense, bringing volume and elegance to woody accords and a diffusive sandalwood effect to compositions. Ebanol™ is highly… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/ebanoltm
 
-Ingrédient Givaudan Isolongifolanone (référence 5850143), famille Woody, notes : Woody, Ambery, Dry. Description : Isolongifolanone has a fresh woody note, dry and diffusive with rich amber quality. Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Vieux livres. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/isolongifolanone
+Ingrédient Givaudan Isolongifolanone (référence 5850143), famille Woody, notes : Woody, Ambery, Dry. Description : Isolongifolanone has a fresh woody note, dry and diffusive with rich amber quality. Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Vieux livres, Japon : hinoki, yuzu et temples, Afrique : savane après la pluie, Montagne et Alpes. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/isolongifolanone
 
 Ingrédient Givaudan Javanol™ Super (référence 1493163), famille Woody, notes : Woody, Sandalwood, Warm. Description : Javanol™ Super is a new quality of Javanol™. It has a rich natural sandalwood creamy note, enhancing the lactonic cedarwood facets, while Javanol™ enhance fresh rosy powdery facets. Javanol™ and… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/javanoltm-super
 
-Ingrédient Givaudan Javanol™ (référence 8754013), famille Woody, notes : Woody, Sandalwood, Creamy, Rose, Powerful. Description : Javanol™ is the latest generation of sandalwood molecule with unprecedented power and substantivity. It has a rich, natural, creamy sandalwood note like beta santanol combined with some rosy nuances… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/javanol
+Ingrédient Givaudan Javanol™ (référence 8754013), famille Woody, notes : Woody, Sandalwood, Creamy, Rose, Powerful. Description : Javanol™ is the latest generation of sandalwood molecule with unprecedented power and substantivity. It has a rich, natural, creamy sandalwood note like beta santanol combined with some rosy nuances… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Inde : rues, temples et fêtes, Golfe : oud et bakhoor, Brésil : forêt amazonienne. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/javanol
 
 Ingrédient Givaudan Kephalis (référence 6378003), famille Woody, notes : Woody, Ambery, Tobacco, Rich. Description : Kephalis is a very versatile and rich product, used as a long lasting heart and base notes. It blends well with floral notes (jasmine, rose, violet, lavender, etc.) as well as sophisticated ambery,… Impact olfactif : Significant impact ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Feu de bois, feu de camp, Vieux livres, Café. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/kephalis
 
-Ingrédient Givaudan Madrox™ (référence 6655003), famille Woody, notes : Woody, Ambery, Tobacco, Warm. Description : Madrox™ is extremely useful in woody, fougere and chypre compositions, where it imparts an interesting ambergris note. Used as a main constituent, it blends the top notes and strengthens the body of… Impact olfactif : Impactful ; ténacité sur touche sèche : Medium. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/madroxtm
+Ingrédient Givaudan Madrox™ (référence 6655003), famille Woody, notes : Woody, Ambery, Tobacco, Warm. Description : Madrox™ is extremely useful in woody, fougere and chypre compositions, where it imparts an interesting ambergris note. Used as a main constituent, it blends the top notes and strengthens the body of… Impact olfactif : Impactful ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Brésil : forêt amazonienne. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/madroxtm
 
 Ingrédient Givaudan Oxyoctaline Formate (référence 5166003), famille Woody, notes : Woody, Ambery. Description : Oxyoctaline Formate has an original, ambery and long lasting character, blending very well with most woody notes. Its richness and elegance allow perfect harmony with natural woody products bringing… Impact olfactif : Impactful ; ténacité sur touche sèche : Medium. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/oxyoctaline-formate
 
-Ingrédient Givaudan Sandalore™ (référence 8847801), famille Woody, notes : Woody, Sandalwood, Sweet, Warm. Description : Sandalore™, a powerful, diffusive and extremely tenacious product, imparts a rich, warm, natural sandalwood character to perfumes, as well as volume and substantivity. It is an interesting sandalwood… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Encens, oliban. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/sandaloretm
+Ingrédient Givaudan Sandalore™ (référence 8847801), famille Woody, notes : Woody, Sandalwood, Sweet, Warm. Description : Sandalore™, a powerful, diffusive and extremely tenacious product, imparts a rich, warm, natural sandalwood character to perfumes, as well as volume and substantivity. It is an interesting sandalwood… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Encens, oliban, Inde : rues, temples et fêtes, Golfe : oud et bakhoor, Bali : offrandes et frangipanier. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/sandaloretm
 
 Ingrédient Givaudan Sandela™ 85%/IPM (référence 8850203), famille Woody, notes : Woody, Sandalwood, Balsamic. Description : Sandela™ is a classical sandalwood note that can be used in all fragrance types. Impact olfactif : Non renseigné ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/sandelatm-85ipm
 
-Ingrédient Givaudan Sclarene 80%/DPG (référence 8892308), famille Woody, notes : Woody, Dry, Ambery. Description : Sclarene brings a strong dry woody note with camphor and warm metallic undertones. It can be used in small quantity with musky and ambery notes such as Ambrofix to bring warm and metallic facets.… Impact olfactif : Impactful ; ténacité sur touche sèche : Medium Good. Odeurs et souvenirs associés dans cette base : Forêt de conifères. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/sclarene-80dpg
+Ingrédient Givaudan Sclarene 80%/DPG (référence 8892308), famille Woody, notes : Woody, Dry, Ambery. Description : Sclarene brings a strong dry woody note with camphor and warm metallic undertones. It can be used in small quantity with musky and ambery notes such as Ambrofix to bring warm and metallic facets.… Impact olfactif : Impactful ; ténacité sur touche sèche : Medium Good. Odeurs et souvenirs associés dans cette base : Forêt de conifères, Japon : hinoki, yuzu et temples, Désert après la pluie, Scandinavie : forêt et cabane. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/sclarene-80dpg
 
-Chapitre 56 : Catalogue Givaudan – famille Green
+Chapitre 85 : Catalogue Givaudan – famille Green
 
 Ingrédient Givaudan Anther (référence 5846393), famille Green, notes : Green, Floral, Hyacinth, Fresh. Description : Anther is a powerful ingredient with a green, fruity and fresh character. It is a strong modifier of tropical notes and hyacinth freshness. Used primarily in soaps and detergents, Anther gives great… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/anther
 
-Ingrédient Givaudan Cyclal C (référence 4251703), famille Green, notes : Green, Leafy, Floral, Powerful. Description : Cyclal C is a key product in many modern compositions for its extremely natural green character. It blends beautifully with fruity, citrus, agrestic, floral compositions where it imparts its unique… Impact olfactif : Non renseigné ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Herbe fraîchement coupée. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/cyclal-c
+Ingrédient Givaudan Cyclal C (référence 4251703), famille Green, notes : Green, Leafy, Floral, Powerful. Description : Cyclal C is a key product in many modern compositions for its extremely natural green character. It blends beautifully with fruity, citrus, agrestic, floral compositions where it imparts its unique… Impact olfactif : Non renseigné ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Herbe fraîchement coupée, Campagne et ferme. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/cyclal-c
 
 Ingrédient Givaudan Folione™ (référence 5093003), famille Green, notes : Green, Leafy, Floral, Powerful. Description : Folione™, used in traces, produces violet-leaf and cucumber notes. It blends extremely well with products in the orris family like the Isoraldeine™s and the ionones. Impact olfactif : High impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Herbe fraîchement coupée. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/folionetm
 
-Ingrédient Givaudan Maceal (référence 6576003), famille Green, notes : Green, Fresh, Herbal. Description : Maceal has an intensely powerful, fresh green note, with a hint of spicy nutmeg. It is best used as a 10% dilution where its natural, green, tree bark character is highlighted. Maceal can be used at… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/maceal
+Ingrédient Givaudan Maceal (référence 6576003), famille Green, notes : Green, Fresh, Herbal. Description : Maceal has an intensely powerful, fresh green note, with a hint of spicy nutmeg. It is best used as a 10% dilution where its natural, green, tree bark character is highlighted. Maceal can be used at… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Mexique : Jour des morts. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/maceal
 
 Ingrédient Givaudan NeoFolione™ (référence 7450003), famille Green, notes : Green, Floral, Fresh, Powerful. Description : NeoFolione™ blends very well with most floral notes, especially violet, where it is particularly useful in replacing Folione™. It imparts freshness and diffusion and has good stability. Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Herbe fraîchement coupée. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/neofolionetm
 
 Ingrédient Givaudan Petiole (référence 1394793), famille Green, notes : Green, Floral, Hyacinth. Description : Petiole is a green and powerful ingredient, with floral shades of hyacinth and rose, and a hint of watercress. It gives a natural green freshness to top notes. Impact olfactif : Significant impact ; ténacité sur touche sèche : Medium. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/petiole
 
-Ingrédient Givaudan Pharaone™ 10%/DPG (référence 0014363), famille Green, notes : Green, Fruity, Pineapple, Aromatic. Description : Pharaone™ 10%/DPG has a new fruity green, natural aspect which adds value to both consumer products and fine fragrance creation. It is extremely powerful and diffusive. It gives freshness and lift to… Impact olfactif : High impact ; ténacité sur touche sèche : Medium. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/pharaonetm-10dpg
+Ingrédient Givaudan Pharaone™ 10%/DPG (référence 0014363), famille Green, notes : Green, Fruity, Pineapple, Aromatic. Description : Pharaone™ 10%/DPG has a new fruity green, natural aspect which adds value to both consumer products and fine fragrance creation. It is extremely powerful and diffusive. It gives freshness and lift to… Impact olfactif : High impact ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Caraïbes et île tropicale. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/pharaonetm-10dpg
 
 Ingrédient Givaudan Spirogalbanone™ Pure (référence 0010703), famille Green, notes : Green, Galbanum, Fruity, Pineapple, Powerful. Description : Spirogalbanone™ Pure is a powerful, stable and highly substantive green galbanum note combined with fruity facets. Spirogalbanone™ Pure combines nicely with Pharaone™ to build a linear green galbanum… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/spirogalbanone-pure
 
-Ingrédient Givaudan Stemone™ (référence 9023501), famille Green, notes : Green, Natural, Leafy, Fresh. Description : Stemone™ imparts a natural and fresh nuance to fragrance notes such as lily of the valley, narcissus, mandarin, fig leaves, grapefruit, blackcurrant and tomato. It is an excellent modifier that… Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Pluie sur sol sec (pétrichor), Mousson tropicale, Herbe fraîchement coupée, Pandan. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/stemonetm
+Ingrédient Givaudan Stemone™ (référence 9023501), famille Green, notes : Green, Natural, Leafy, Fresh. Description : Stemone™ imparts a natural and fresh nuance to fragrance notes such as lily of the valley, narcissus, mandarin, fig leaves, grapefruit, blackcurrant and tomato. It is an excellent modifier that… Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Pluie sur sol sec (pétrichor), Mousson tropicale, Herbe fraîchement coupée, Pandan, Londres : pluie et briques, Méditerranée et îles grecques, Brésil : forêt amazonienne, Islande : mousse, lave et soufre, Campagne et ferme. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/stemonetm
 
 Ingrédient Givaudan Undecatriene 10%/TEC (référence 0011033), famille Green, notes : Green, Galbanum, Aromatic, Intense. Description : Undecatriene 10%/TEC is a very natural and vibrant metallic green galbanum note. It is used in traces to provide a natural galbanum-like effect in compositions. It rounds out the palette of available… Impact olfactif : Significant impact ; ténacité sur touche sèche : Medium. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/undecatriene-10tec
 
 Ingrédient Givaudan Verdoracine (référence 0010023), famille Green, notes : Green, Galbanum, Carrot. Description : Verdoracine has a green note with aspects of freshly peeled carrots and dry earthy qualities of galbanum. It can be used in detergents up to 3% to support the green galbanum heart of a fragrance. It… Impact olfactif : Significant impact ; ténacité sur touche sèche : Medium. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/verdoracine
 
-Chapitre 57 : Catalogue Givaudan – famille Ambery
+Chapitre 86 : Catalogue Givaudan – famille Ambery
 
 Ingrédient Givaudan Amberketal IPM (référence 8755303), famille Ambery, notes : Ambery, Woody, Dry. Description : Amberketal is a powerful ambery note for use in most applications, with good stability in non aggressive media. It is effective as a modifier in association with existing woody / ambery ingredients. Impact olfactif : Impactful ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Encens, oliban. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/amberketal-ipm
 
-Ingrédient Givaudan Ambermax™ 10%/TEC (référence 1472033), famille Ambery, notes : Ambery, Woody, Cedarwood. Description : Ambermax™ is a powerful, fusing and substantive rich ambery note with some woody cedarwood facets. Its outstanding fabric substantivity makes it a key building block for fabric care fragrances… Impact olfactif : Impactful ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/ambermaxtm-10tec
+Ingrédient Givaudan Ambermax™ 10%/TEC (référence 1472033), famille Ambery, notes : Ambery, Woody, Cedarwood. Description : Ambermax™ is a powerful, fusing and substantive rich ambery note with some woody cedarwood facets. Its outstanding fabric substantivity makes it a key building block for fabric care fragrances… Impact olfactif : Impactful ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Maroc : souk et médina, Désert après la pluie. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/ambermaxtm-10tec
 
 Ingrédient Givaudan Ambermax™ 50%/Dowanol TPM (référence 1472023), famille Ambery, notes : Ambery, Woody, Cedarwood. Description : Ambermax™ is a powerful, fusing and substantive rich ambery note with some woody cedarwood facets. Its outstanding fabric substantivity makes it a key building block for fabric care fragrances… Impact olfactif : Impactful ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/ambermaxtm-50dowanol-tpm
 
-Ingrédient Givaudan Ambrofix™ (référence 1836803), famille Ambery, notes : Ambery, Woody, Tobacco, Dry. Description : Ambrofix™ is a highly powerful, highly substantive and highly stable ambery note. It is the most suitable material to deliver an authentic Ambergris note. Ambrofix™ also brings a woody sensuality to… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/ambrofix
+Ingrédient Givaudan Ambrofix™ (référence 1836803), famille Ambery, notes : Ambery, Woody, Tobacco, Dry. Description : Ambrofix™ is a highly powerful, highly substantive and highly stable ambery note. It is the most suitable material to deliver an authentic Ambergris note. Ambrofix™ also brings a woody sensuality to… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Golfe : oud et bakhoor, Afrique : savane après la pluie. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/ambrofix
 
 Ingrédient Givaudan Dihydro Ambrate (référence 4485103), famille Ambery, notes : Ambery, Woody. Description : Dihydro Ambrate gives richness and balance to compounds, strengthening them and adding warmth and fullness. It can also be used as a diffusive woody note. Impact olfactif : Impactful ; ténacité sur touche sèche : Medium. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/dihydro-ambrate
 
 Ingrédient Givaudan Okoumal™ (référence 7622363), famille Ambery, notes : Ambery, Woody, Tobacco, Musky. Description : Okoumal™ brings an attractive and elegant woody-ambery effect. It gives significant volume, richness and warmth to fragrance compositions and combines well with cedar derivatives, patchouli oil and… Impact olfactif : Impactful ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/okoumaltm
 
-Ingrédient Givaudan Spirambrene (référence 8974203), famille Ambery, notes : Ambery, Woody, Spicy, Aldehydic, Powerful. Description : Spirambrene blends well with sparkling, green, spicy and aldehydic top notes. It is an interesting complement in woody accords for providing a diffusive ambery effect. Due to its high impact, it… Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Encens, oliban. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/spirambrene
+Ingrédient Givaudan Spirambrene (référence 8974203), famille Ambery, notes : Ambery, Woody, Spicy, Aldehydic, Powerful. Description : Spirambrene blends well with sparkling, green, spicy and aldehydic top notes. It is an interesting complement in woody accords for providing a diffusive ambery effect. Due to its high impact, it… Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Encens, oliban, Mexique : Jour des morts. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/spirambrene
 
-Chapitre 58 : Catalogue Givaudan – famille Spicy
+Chapitre 87 : Catalogue Givaudan – famille Spicy
 
 Ingrédient Givaudan Creosol (référence 4198003), famille Spicy, notes : Spicy, Vanilla, Balsam. Description : Creosol has a spicy vanilla note with leathery inflexions and medicinal, balsam undertones. It can be used as a modifier in white floral accords and is interesting in floral, leather and animalic… Impact olfactif : High impact ; ténacité sur touche sèche : Poor Medium. Odeurs et souvenirs associés dans cette base : Feu de bois, feu de camp, Noël. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/creosol
 
-Ingrédient Givaudan Cumin Nitrile (référence 4223103), famille Spicy, notes : Spicy, Cumin, Green. Description : Cumin Nitrile is a spicy cuminic ingredient, with a dry character and a hint of green. It is less pungent than the aldehyde but more stable and tenacious. Impact olfactif : High impact ; ténacité sur touche sèche : Poor. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/cumin-nitrile
+Ingrédient Givaudan Cumin Nitrile (référence 4223103), famille Spicy, notes : Spicy, Cumin, Green. Description : Cumin Nitrile is a spicy cuminic ingredient, with a dry character and a hint of green. It is less pungent than the aldehyde but more stable and tenacious. Impact olfactif : High impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Maroc : souk et médina. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/cumin-nitrile
 
-Ingrédient Givaudan Cuminic Aldehyde (référence 1515001), famille Spicy, notes : Spicy, Green, Herbaceous. Description : Cuminic Aldehyde has a spicy green note with herbaceous and animalic undertones. It can be used at low dosage as a modifier in chypre, spicy or fougere notes. Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Rue de Bangkok. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/cuminic-aldehyde
+Ingrédient Givaudan Cuminic Aldehyde (référence 1515001), famille Spicy, notes : Spicy, Green, Herbaceous. Description : Cuminic Aldehyde has a spicy green note with herbaceous and animalic undertones. It can be used at low dosage as a modifier in chypre, spicy or fougere notes. Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Rue de Bangkok, Inde : rues, temples et fêtes, Istanbul : bazar aux épices, Égypte : le Caire. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/cuminic-aldehyde
 
 Ingrédient Givaudan Methyl Diantilis™ (référence 6906203), famille Spicy, notes : Spicy, Carnation, Vanilla, Sweet. Description : Methyl Diantilis™ is an elegant, spicy, sweet ingredient with a similar olfactive profile to Isoeugenol, but with an additional powdery aspect reminiscent of carnation (Dianthus caryophyllus). Unlike… Impact olfactif : Impactful ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Noël, Vanille. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/methyl-diantilistm
 
-Ingrédient Givaudan Safraleine™ (référence 0015893), famille Spicy, notes : Spicy, Leathery, Woody, Warm. Description : Safraleine™ has a very unique warm and vibrant character offering a new alternative to existing spicy ingredients. Safraleine™ exhibits warm, powerful, leathery and tobacco facets but its complexity… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Feu de bois, feu de camp. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/safraleinetm
+Ingrédient Givaudan Safraleine™ (référence 0015893), famille Spicy, notes : Spicy, Leathery, Woody, Warm. Description : Safraleine™ has a very unique warm and vibrant character offering a new alternative to existing spicy ingredients. Safraleine™ exhibits warm, powerful, leathery and tobacco facets but its complexity… Impact olfactif : Significant impact ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Feu de bois, feu de camp, Golfe : oud et bakhoor. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/safraleinetm
 
-Ingrédient Givaudan Safranal (référence 8797001), famille Spicy, notes : Spicy, Saffron, Herbaceous, Tobacco. Description : Safranal has a spicy saffron-like note with herbaceous, tobacco facets and floral undertones. It is very useful in spicy, agrestic, tobacco, orris and woody compositions. Impact olfactif : Non renseigné ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Rue de Bangkok. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/safranal
+Ingrédient Givaudan Safranal (référence 8797001), famille Spicy, notes : Spicy, Saffron, Herbaceous, Tobacco. Description : Safranal has a spicy saffron-like note with herbaceous, tobacco facets and floral undertones. It is very useful in spicy, agrestic, tobacco, orris and woody compositions. Impact olfactif : Non renseigné ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Rue de Bangkok, Maroc : souk et médina, Istanbul : bazar aux épices, Golfe : oud et bakhoor. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/safranal
 
-Chapitre 59 : Catalogue Givaudan – famille Musky
+Chapitre 88 : Catalogue Givaudan – famille Musky
 
 Ingrédient Givaudan Ambrettolide (référence 1832003), famille Musky, notes : Musky, Ambrette seed, Powerful, Warm, Fruity. Description : Ambrettolide is a macrocyclic musk with an exceptional diffusion and a very fine character. Its influence in a composition can be perceived at all evaporation levels. It is a superb fixative and… Impact olfactif : Impactful ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Odeur du partenaire. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/ambrettolide
 
 Ingrédient Givaudan Cervolide (référence 7225001), famille Musky, notes : Musky, Powdery. Description : Cervolide has a fine musk note, slightly fruity with a woody background. Impact olfactif : Impactful ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Odeur du partenaire, Odeur de bébé, Draps propres, matin calme. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/cervolide
 
-Ingrédient Givaudan Musk R1 (référence 7289001), famille Musky, notes : Musky, Powdery. Description : Musk R1 is a sensual, sophisticated, creamy, powdery macrocyclic musk. It gives an exalting effect when used in combination with other macrocyclic musks. Impact olfactif : Impactful ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Odeur de bébé, Draps propres, matin calme. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/musk-r1
+Ingrédient Givaudan Musk R1 (référence 7289001), famille Musky, notes : Musky, Powdery. Description : Musk R1 is a sensual, sophisticated, creamy, powdery macrocyclic musk. It gives an exalting effect when used in combination with other macrocyclic musks. Impact olfactif : Impactful ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Odeur de bébé, Draps propres, matin calme, Japon : hinoki, yuzu et temples. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/musk-r1
 
-Ingrédient Givaudan Silvanone™ Supra (référence 21051233), famille Musky, notes : Musky, Sweet, Powdery, Animalic. Description : Silvanone™ Supra is a sweet powdery animalic macrocyclic musk with aspects of nitromusk. It is highly substantive and tenacious and can be used in all application areas to give a full body and long… Impact olfactif : Non renseigné ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Odeur du partenaire. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/silvanonetm-supra
+Ingrédient Givaudan Silvanone™ Supra (référence 21051233), famille Musky, notes : Musky, Sweet, Powdery, Animalic. Description : Silvanone™ Supra is a sweet powdery animalic macrocyclic musk with aspects of nitromusk. It is highly substantive and tenacious and can be used in all application areas to give a full body and long… Impact olfactif : Non renseigné ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Odeur du partenaire, Golfe : oud et bakhoor. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/silvanonetm-supra
 
-Ingrédient Givaudan Velvione™ (référence 1382293), famille Musky, notes : Musky, Powdery, Animalic. Description : Velvione™ is powerful powdery macrocyclic musk with some nitro-musk aspects. It is highly substantive and stable, as well as biodegradable It is excellent in fine fragrance where it adds a powdery… Impact olfactif : Impactful ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Odeur du partenaire. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/velvionetm
+Ingrédient Givaudan Velvione™ (référence 1382293), famille Musky, notes : Musky, Powdery, Animalic. Description : Velvione™ is powerful powdery macrocyclic musk with some nitro-musk aspects. It is highly substantive and stable, as well as biodegradable It is excellent in fine fragrance where it adds a powdery… Impact olfactif : Impactful ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Odeur du partenaire, Égypte : le Caire. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/velvionetm
 
-Chapitre 60 : Catalogue Givaudan – famille Leather - Moss
+Chapitre 89 : Catalogue Givaudan – famille Leather - Moss
 
-Ingrédient Givaudan Butyl Quinoline Secondary (référence 3005003), famille Leather - Moss, notes : Leathery, Green, Woody, Earthy, Powerful. Description : Butyl Quinoline Secondary has a smooth, fine, woody-vetiver-leather character. It is used in chypre, leather, woody compositions and in masculine colognes where it imparts great diffusion and… Impact olfactif : Non renseigné ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Pluie sur sol sec (pétrichor), Mousson tropicale. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/butyl-quinoline-secondary
+Ingrédient Givaudan Butyl Quinoline Secondary (référence 3005003), famille Leather - Moss, notes : Leathery, Green, Woody, Earthy, Powerful. Description : Butyl Quinoline Secondary has a smooth, fine, woody-vetiver-leather character. It is used in chypre, leather, woody compositions and in masculine colognes where it imparts great diffusion and… Impact olfactif : Non renseigné ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Pluie sur sol sec (pétrichor), Mousson tropicale, Paris : boulangerie, café, métro, Londres : pluie et briques, Corée : Séoul, Brésil : forêt amazonienne, Afrique : savane après la pluie. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/butyl-quinoline-secondary
 
-Ingrédient Givaudan Isobutyl Quinoline-2 (référence 6127003), famille Leather - Moss, notes : Leathery, Woody, Powerful. Description : Isobutyl Quinoline-2 is widely used in masculine colognes for its vibrant, intense leathery character. It combines nicely in chypre, leathery and woody accords where it is extremely powerful and long… Impact olfactif : Non renseigné ; ténacité sur touche sèche : Good. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/isobutyl-quinoline-2
+Ingrédient Givaudan Isobutyl Quinoline-2 (référence 6127003), famille Leather - Moss, notes : Leathery, Woody, Powerful. Description : Isobutyl Quinoline-2 is widely used in masculine colognes for its vibrant, intense leathery character. It combines nicely in chypre, leathery and woody accords where it is extremely powerful and long… Impact olfactif : Non renseigné ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Maroc : souk et médina, New York : la rue, Désert après la pluie, Campagne et ferme. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/isobutyl-quinoline-2
 
-Ingrédient Givaudan Isopropyl Quinoline (référence 2390003), famille Leather - Moss, notes : Leathery, Woody, Moss. Description : Isopropyl Quinoline is an indispensable element in the formulation of masculine notes, where it blends very well with mossy vetiver, chypre and tobacco accords, as well as with animal and spicy types… Impact olfactif : Non renseigné ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Forêt de conifères. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/isopropyl-quinoline
+Ingrédient Givaudan Isopropyl Quinoline (référence 2390003), famille Leather - Moss, notes : Leathery, Woody, Moss. Description : Isopropyl Quinoline is an indispensable element in the formulation of masculine notes, where it blends very well with mossy vetiver, chypre and tobacco accords, as well as with animal and spicy types… Impact olfactif : Non renseigné ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Forêt de conifères, Londres : pluie et briques, Scandinavie : forêt et cabane, Islande : mousse, lave et soufre. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/isopropyl-quinoline
 
-Ingrédient Givaudan Orcinyl 3 (référence 6638701), famille Leather - Moss, notes : Leathery, Oakmoss, Sweet, Phenolic. Description : Orcinyl 3 brings a typical oakmoss note reinforcing the character of this absolute in all compounds. It can be used in combination with Evernyl as the heart of an oakmoss substitute. It blends very… Impact olfactif : Significant impact ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Forêt de conifères. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/orcinyl-3
+Ingrédient Givaudan Orcinyl 3 (référence 6638701), famille Leather - Moss, notes : Leathery, Oakmoss, Sweet, Phenolic. Description : Orcinyl 3 brings a typical oakmoss note reinforcing the character of this absolute in all compounds. It can be used in combination with Evernyl as the heart of an oakmoss substitute. It blends very… Impact olfactif : Significant impact ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Forêt de conifères, Scandinavie : forêt et cabane, Islande : mousse, lave et soufre. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/orcinyl-3
 
-Ingrédient Givaudan Pyralone (référence 8543203), famille Leather - Moss, notes : Leathery, Green, Woody, Powerful. Description : Pyralone is finer, more aromatic and tobacco-like, and has less of a dry, earthy character than Butyl Quinoline Secondary. It is used in chypre, fougere and tobacco accords. Impact olfactif : Non renseigné ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Feu de bois, feu de camp. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/pyralone
+Ingrédient Givaudan Pyralone (référence 8543203), famille Leather - Moss, notes : Leathery, Green, Woody, Powerful. Description : Pyralone is finer, more aromatic and tobacco-like, and has less of a dry, earthy character than Butyl Quinoline Secondary. It is used in chypre, fougere and tobacco accords. Impact olfactif : Non renseigné ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Feu de bois, feu de camp, Désert après la pluie. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/pyralone
 
-Chapitre 61 : Catalogue Givaudan – famille Gourmand
+Chapitre 90 : Catalogue Givaudan – famille Gourmand
 
 Ingrédient Givaudan Azarbre (référence 7043003), famille Gourmand, notes : Gourmand, Honey, Woody, Orris. Description : Azarbre has a warm honey note with aspects of dried flowers. It will enhance the effect of ionones at 2 to 3%. When used at higher dosage up to 10% it blends the woody and floral components of a… Impact olfactif : Significant impact ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Vieux livres, Pain chaud, pâtisserie. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/azarbre
 
-Ingrédient Givaudan Isobutavan (référence 1465543), famille Gourmand, notes : Gourmand, Vanilla, Sweet, Fruity. Description : Isobutavan has a sweet and creamy vanillic character reminiscent of white chocolate, cream soda with a soft apricot feeling. Isobutavan is much less discolouring than vanillin or ethyl vanillin and… Impact olfactif : Significant impact ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Vieux livres, Pain chaud, pâtisserie, Vanille. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/isobutavan
+Ingrédient Givaudan Isobutavan (référence 1465543), famille Gourmand, notes : Gourmand, Vanilla, Sweet, Fruity. Description : Isobutavan has a sweet and creamy vanillic character reminiscent of white chocolate, cream soda with a soft apricot feeling. Isobutavan is much less discolouring than vanillin or ethyl vanillin and… Impact olfactif : Significant impact ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Vieux livres, Pain chaud, pâtisserie, Vanille, Paris : boulangerie, café, métro, New York : la rue, Singapour : hawker centres, Réunion et Madagascar : vanille et ylang. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/isobutavan
 
-Ingrédient Givaudan Levistamel 25%/TEC (référence 5845733), famille Gourmand, notes : Gourmand, Caramel, Liquorice, Balsamic. Description : Levistamel 25%/TEC has a sweet note of caramelised sugar with a green, celery, fenugreek, balsamic and aromatic background. At levels up to 1% Levistamel 25%/TEC can add an interesting effect in… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Pain chaud, pâtisserie, Café, Noël. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/levistamel-25tec
+Ingrédient Givaudan Levistamel 25%/TEC (référence 5845733), famille Gourmand, notes : Gourmand, Caramel, Liquorice, Balsamic. Description : Levistamel 25%/TEC has a sweet note of caramelised sugar with a green, celery, fenugreek, balsamic and aromatic background. At levels up to 1% Levistamel 25%/TEC can add an interesting effect in… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Pain chaud, pâtisserie, Café, Noël, Paris : boulangerie, café, métro, New York : la rue, Istanbul : bazar aux épices, Vietnam : Hanoï et Saïgon, Caraïbes et île tropicale, Réunion et Madagascar : vanille et ylang. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/levistamel-25tec
 
-Ingrédient Givaudan Ultravanil 80%/DPG (référence 0027553), famille Gourmand, notes : Gourmand, Vanilla, Sweet, Phenolic. Description : Ultravanil 80%/DPG has a very powerful vanilla absolute note. Neat it has a strong phenolic background. 1%-2% of a 10% dilution can be used as a booster to other vanillic notes in a formulation.… Impact olfactif : High impact ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Vieux livres, Vanille. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/ultravanil-80dpg
+Ingrédient Givaudan Ultravanil 80%/DPG (référence 0027553), famille Gourmand, notes : Gourmand, Vanilla, Sweet, Phenolic. Description : Ultravanil 80%/DPG has a very powerful vanilla absolute note. Neat it has a strong phenolic background. 1%-2% of a 10% dilution can be used as a booster to other vanillic notes in a formulation.… Impact olfactif : High impact ; ténacité sur touche sèche : Medium. Odeurs et souvenirs associés dans cette base : Vieux livres, Vanille, Bali : offrandes et frangipanier, Réunion et Madagascar : vanille et ylang, Scandinavie : forêt et cabane. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/ultravanil-80dpg
 
-Chapitre 62 : Catalogue Givaudan – famille Aldehydic
+Chapitre 91 : Catalogue Givaudan – famille Aldehydic
 
 Ingrédient Givaudan Aldehyde C11 Undecylenic (référence 1361001), famille Aldehydic, notes : Aldehyde, Floral-Green, Rosy, Citrus. Description : Aldehyde C11 Undecylenic has an aldehydic and floral note with zesty and citrus undertones, reminiscent of orange and mandarin. It is very useful in floral and spicy composition and has a good fabric… Impact olfactif : Non renseigné ; ténacité sur touche sèche : Poor Medium. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/aldehyde-c11-undecylenic
 
@@ -1120,8 +1618,8 @@ Ingrédient Givaudan Aldehyde Iso C11 (référence 1560803), famille Aldehydic, 
 
 Ingrédient Givaudan Decenal-4-Trans (référence 4357003), famille Aldehydic, notes : Aldehydic, Orange, Green, Floral. Description : Decenal-4-Trans is an exceptionally powerful and diffusive chemical. Used mainly as a top note ingredient, it produces a fresh, natural, citrus-orange effect, imparting tremendous lift. Impact olfactif : High impact ; ténacité sur touche sèche : Medium. Pas encore associé à une odeur de souvenir dans cette base. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/decenal-4-trans
 
-Chapitre 63 : Catalogue Givaudan – famille Marine
+Chapitre 92 : Catalogue Givaudan – famille Marine
 
-Ingrédient Givaudan Adoxal (référence 1028001), famille Marine, notes : Marine, Aldehydic, Floral, Fresh, Powerful. Description : Adoxal has a natural, ozonic aspect. It is very powerful and must be used carefully. Adoxal blends extremely well with floral notes such as muguet and cyclamen, as well as with fruity and woody… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Air avant l'orage, Air marin, plage, Paysages olfactifs du Japon. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/adoxal
+Ingrédient Givaudan Adoxal (référence 1028001), famille Marine, notes : Marine, Aldehydic, Floral, Fresh, Powerful. Description : Adoxal has a natural, ozonic aspect. It is very powerful and must be used carefully. Adoxal blends extremely well with floral notes such as muguet and cyclamen, as well as with fruity and woody… Impact olfactif : Impactful ; ténacité sur touche sèche : Poor. Odeurs et souvenirs associés dans cette base : Air avant l'orage, Air marin, plage, Paysages olfactifs du Japon, Méditerranée et îles grecques, Islande : mousse, lave et soufre. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/adoxal
 
-Ingrédient Givaudan Ultrazur™ (référence 21218823), famille Marine, notes : Marine, Ozonic, Citrus, Fresh, Ambery. Description : Ultrazur™ can be used in most applications where a fresh, substantive, ozonic note is required. Trace amounts can already modify a fragrance while several percents can be used to impart a fresh,… Impact olfactif : Non renseigné ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Pluie sur sol sec (pétrichor), Air avant l'orage, Air marin, plage, Air d'hiver, neige. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/ultrazurtm
+Ingrédient Givaudan Ultrazur™ (référence 21218823), famille Marine, notes : Marine, Ozonic, Citrus, Fresh, Ambery. Description : Ultrazur™ can be used in most applications where a fresh, substantive, ozonic note is required. Trace amounts can already modify a fragrance while several percents can be used to impart a fresh,… Impact olfactif : Non renseigné ; ténacité sur touche sèche : Good. Odeurs et souvenirs associés dans cette base : Pluie sur sol sec (pétrichor), Air avant l'orage, Air marin, plage, Air d'hiver, neige, Paris : boulangerie, café, métro, Londres : pluie et briques, Méditerranée et îles grecques, Caraïbes et île tropicale, Afrique : savane après la pluie, Montagne et Alpes, Islande : mousse, lave et soufre. Fiche : https://www.givaudan.com/fragrance-beauty/fragrance-ingredients-business/fragrance-molecules/ultrazurtm
