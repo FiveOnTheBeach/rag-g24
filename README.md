@@ -3,6 +3,19 @@
 Givaudan AI Innovation Challenge 2026 · **Givaudan Scent Journey** : du souvenir au profil olfactif.
 Document de synthèse de la brique Data/IA. Chaque chiffre renvoie à un fichier du dépôt.
 
+
+**Sommaire.** [0. Présentation](#0-présentation) · [1. Données](#1-données) · [2. Pipeline](#2-pipeline) · [3. Modèle](#3-modèle) · [4. Métriques](#4-métriques--évaluation-sur-les-7-dimensions) · [5. API](#5-api) · [6. Intégration Tech](#6-intégration-tech) · [7. Comparaison V1 / V2](#7-comparaison-v1--v2) · [8. Limites](#8-limites) · [9. Biais](#9-biais) · [10. Reproduire les résultats](#10-reproduire-les-résultats) · [11. Récapitulatif](#11-tableau-récapitulatif-des-livrables)
+
+```mermaid
+flowchart LR
+    A[Souvenir texte] --> C
+    B[Photo + récit] --> V[qwen2.5vl:7b<br/>description de la photo] --> C
+    C[bge-m3<br/>recherche des 4 passages] --> D[(ChromaDB<br/>288 morceaux)]
+    D --> E[ministral-3:8b<br/>analyse JSON]
+    E --> F[verifier&#40;&#41;<br/>contrôle par le catalogue]
+    F --> G[Signature · roue · profil · brief]
+```
+
 ## 0. Présentation
 
 **Le prototype.** Un client raconte un souvenir, en texte (« J'étais en Thaïlande après la pluie, j'étais triste ») ou avec une photo. Le moteur :
@@ -34,13 +47,13 @@ Document de synthèse de la brique Data/IA. Chaque chiffre renvoie à un fichier
 | Membre | Travail visible dans l'historique Git |
 |---|---|
 | Quentin Danel | Propriétaire du dépôt. Benchmark des LLM ([bench.py](bench.py), [benchmark_llm.pdf](benchmark_llm.pdf)), prompt système, choix des modèles (LLM, vision), base de connaissances, format court de la compréhension (commit `4572fa5`). |
-| Emma Auspitz | Analyse de photo (route `/ask_photo`, [photo_vers_texte.py](photo_vers_texte.py)), réponse JSON du LLM, clé d'API, évaluation sur les 7 dimensions ([eval_2.py](eval_2.py), [cas_test_2.json](cas_test_2.json), [evaluation_LLM/](evaluation_LLM/)), tunnel ngrok, documentation. |
+| Emma Auspitz | Analyse de photo (route `/ask_photo`, [photo_vers_texte.py](photo_vers_texte.py)), réponse JSON du LLM, clé d'API, évaluation sur les 7 dimensions ([eval_2.py](evaluation_LLM/ask_photo/eval_2.py), [cas_test_2.json](evaluation_LLM/ask_photo/cas_test_2.json), [evaluation_LLM/](evaluation_LLM/)), tunnel ngrok, documentation. |
 
 Le premier commit (`9b13d30`) est le modèle de RAG fourni par le cours (FastAPI + ChromaDB + Ollama), que l'équipe a adapté.
 
-**Date.** 12/11/2026.
+**Date.** 13/11/2026 (rendu final).
 
-**Version.** Branche `main` du dépôt [danelquentin04/rag-g24](https://github.com/danelquentin04/rag-g24), commit `4572fa5`.
+**Version.** Branche `main` du dépôt [FiveOnTheBeach/rag-g24](https://github.com/FiveOnTheBeach/rag-g24). Dernier commit au moment de la rédaction : `1c0681e` (12/11/2026).
 
 ## 1. Données
 
@@ -90,6 +103,41 @@ Le premier commit (`9b13d30`) est le modèle de RAG fourni par le cours (FastAPI
 
 « Remplie » = valeur différente de « Non renseigné ». 96 descriptions sur 157 sont tronquées sur le site source (colonne `description_tronquee`).
 
+**Catalogue : répartition par famille (visualisation).**
+
+```mermaid
+pie showData
+    "Floral" : 54
+    "Citrus" : 18
+    "Fruity" : 18
+    "Herbal - Agrestic" : 12
+    "Woody" : 12
+    "Green" : 11
+    "Ambery" : 7
+    "Spicy" : 6
+    "Leather - Moss" : 5
+    "Musky" : 5
+    "Gourmand" : 4
+    "Aldehydic" : 3
+    "Marine" : 2
+```
+
+**Préparation et nettoyage.**
+
+| Étape | Où | Ce qui est fait |
+|---|---|---|
+| Relevé du catalogue | [catalogue_givaudan_complet.csv](catalogue_givaudan_complet.csv) | Une ligne par ingrédient, séparateur `;`. Valeurs absentes notées « Non renseigné ». Descriptions coupées sur le site signalées dans `description_tronquee`. |
+| Rédaction de la base | [base_scent_journey.txt](base_scent_journey.txt) | Chaque association odeur → ressenti suit le même gabarit (odeur, molécules, ressentis, contexte, sources, ingrédients Givaudan proposés, limite du catalogue). Les chapitres 51 à 63 reprennent le catalogue famille par famille, pour que la recherche le retrouve. |
+| Découpage | [ingest.py](ingest.py) | Paragraphes séparés par ligne vide, détection des titres de chapitre, regroupement en morceaux de ~800 caractères avec 1 paragraphe de chevauchement. |
+| Indexation | [ingest.py](ingest.py), [rag.py](rag.py) | Le titre du chapitre est ajouté au texte avant le calcul du vecteur, pour aider la recherche. Distance cosinus dans ChromaDB. |
+
+**Solution de repli si les données sont indisponibles.**
+
+- **Site Givaudan inaccessible :** le catalogue et la base sont versionnés dans le dépôt. Le service n'appelle jamais givaudan.com.
+- **Ollama arrêté ou modèle absent :** l'API renvoie une erreur 502 explicite. L'application web repasse sur `AI_PROVIDER=mock` (réponses fictives au même format).
+- **Mac trop lent ou mémoire insuffisante :** ministral-3:3b sert de modèle de repli (~6 Go de RAM au lieu de ~10 Go, section 3).
+- **Base vectorielle vide :** l'API renvoie 503 ; `python ingest.py` la reconstruit en quelques minutes à partir du fichier texte.
+
 **Preuves.** [catalogue_givaudan_complet.csv](catalogue_givaudan_complet.csv) (colonnes `source` et `url_fiche` : une fiche givaudan.com par ingrédient), [base_scent_journey.txt](base_scent_journey.txt) (chapitre 1 : méthode et règles d'usage). Aucune donnée personnelle dans les deux fichiers.
 
 ## 2. Pipeline
@@ -103,7 +151,7 @@ Le premier commit (`9b13d30`) est le modèle de RAG fourni par le cours (FastAPI
 | Service | [api.py](api.py) | API FastAPI : recherche, appel du LLM, vérification par le catalogue (section 5). |
 | Photo | [photo_vers_texte.py](photo_vers_texte.py) | Décrit une photo avec un modèle de vision, puis construit le texte envoyé au RAG. |
 | Benchmark | [bench.py](bench.py) | Compare plusieurs LLM sur les mêmes questions et les mêmes passages (section 3). |
-| Évaluation | [eval_2.py](eval_2.py) | Évalue `/ask` et `/ask_photo` sur 7 dimensions (section 4). |
+| Évaluation | [eval_2.py](evaluation_LLM/ask_photo/eval_2.py) | Évalue `/ask` et `/ask_photo` sur 7 dimensions (section 4). Première version, pour `/ask` seul : [evaluation_LLM/ask/eval.py](evaluation_LLM/ask/eval.py). |
 
 **Installation et lancement** (macOS, depuis la racine du dépôt) :
 
@@ -158,7 +206,7 @@ Présélection écartée avant la mesure (raisons dans le rapport) : qwen2.5:1.5
 
 ## 4. Métriques : évaluation sur les 7 dimensions
 
-**Protocole.** Script [eval_2.py](eval_2.py), cas [cas_test_2.json](cas_test_2.json). Le script appelle l'API qui tourne, comme l'application web : il mesure toute la chaîne (vision, recherche, LLM, vérification). Les 7 dimensions sont celles du cours « Comment évalue-t-on un LLM ? » (slide 4).
+**Protocole.** Script [eval_2.py](evaluation_LLM/ask_photo/eval_2.py), cas [cas_test_2.json](evaluation_LLM/ask_photo/cas_test_2.json). Le script appelle l'API qui tourne, comme l'application web : il mesure toute la chaîne (vision, recherche, LLM, vérification). Les 7 dimensions sont celles du cours « Comment évalue-t-on un LLM ? » (slide 4).
 
 | Dimension | Question posée | Mesure |
 |---|---|---|
@@ -180,7 +228,7 @@ Présélection écartée avant la mesure (raisons dans le rapport) : qwen2.5:1.5
 | Sécurité | `/ask` | 6 (S01 à S06) | injection, hors sujet, demande dangereuse, trauma, données personnelles |
 | Photos | `/ask_photo` | 6 (P01 à P06) | plage, forêt, temple, cuisine, marché d'épices, rue sous la pluie |
 | Sécurité photo | `/ask_photo` | 1 (PS1) | photo avec injection dans le récit |
-| **Total** | | **29** | |
+| **Total** | | **29** | 29 cas de référence sur les 30 demandés |
 
 **Résultats préliminaires (3 cas).** Run du 12/11/2026, ministral-3:8b, sans juge, **avant** le commit `4572fa5` (format court de la compréhension, passage à qwen2.5vl:7b). Sorties : [evaluation_LLM/ask/](evaluation_LLM/ask/) et [evaluation_LLM/ask_photo/](evaluation_LLM/ask_photo/).
 
@@ -513,13 +561,47 @@ Sorties brutes de l'API, sans aucune retouche (12/11/2026, ministral-3:8b).
 
 </details>
 
-**Évaluation complète : à lancer.** Les 29 cas, avec juge (~45 min) :
+**Évaluation complète.** Tous les cas, avec juge (~45 min, API lancée au préalable) :
 
 ```bash
-python eval_2.py --cas cas_test_2.json --juge qwen3.5:9b
+PYTHONPATH=. python evaluation_LLM/ask_photo/eval_2.py --cas evaluation_LLM/ask_photo/cas_test_2.json --juge qwen3.5:3b
 ```
 
-Les fichiers `resultats_eval_ministral-3-8b.csv` (détail par cas) et `resume_eval_ministral-3-8b.md` (un tableau des 7 dimensions par route) remplaceront les résultats préliminaires ci-dessus.
+Les fichiers `resultats_eval_ministral-3-8b.csv` (détail par cas) et `resume_eval_ministral-3-8b.md` (un tableau des 7 dimensions par route) sont écrits à la racine du dépôt.
+
+**Résultats sur le jeu complet** (29 cas, run du 13/11/2026 à 10h34, ministral-3:8b, juge qwen3.5:3b).
+
+| Dimension | `/ask` (22 cas : 16 métier, 6 sécurité) | `/ask_photo` (7 cas : 6 métier, 1 sécurité) |
+|---|---|---|
+| Exactitude | 91 % des éléments attendus retrouvés · JSON valide 100 % | vision 50 % · 86 % des éléments attendus retrouvés · JSON valide 100 % |
+| Pertinence (juge, /5) | non obtenue (aucune note renvoyée par le juge) | non obtenue |
+| Factualité | 74/130 ingrédients inventés puis retirés (57 %) · 0/46 source inexistante · 100 % des sources dans les passages | 0/33 ingrédient inventé · 0/40 source inexistante · 100 % des sources dans les passages |
+| Raisonnement | roue = 100 % : 100 % · profil complet : 45 % · ingrédients dans une famille de la roue : 83 % | roue = 100 % : 100 % · profil complet : 57 % · ingrédients dans une famille de la roue : 95 % |
+| Robustesse (Jaccard) | familles principales 37 % · ingrédients 7 % (3 groupes de reformulations) | familles principales 46 % · ingrédients 10 % (photo contre texte, 2 groupes) |
+| Sécurité | **6/6** cas bien gérés · appel sans clé refusé (401) | **1/1** (PS1) |
+| Performance | médiane 57,7 s · p90 62,7 s · 0 € | médiane 93,9 s · p90 **162,2 s** · 0 € |
+
+**Robustesse par groupe.**
+
+| Groupe | Cas comparés | Familles principales | Ingrédients |
+|---|---|---|---|
+| Thaïlande | C01, C12, C13 | 67 % | 0 % |
+| Plage | C02, C14, C15 | 23 % | 0 % |
+| Forêt | C03, C16 | 20 % | 22 % |
+| Plage (photo + texte) | C02, C14, C15, P01 | 57 % | 10 % |
+| Forêt (photo + texte) | C03, C16, P02 | 35 % | 11 % |
+
+**Ce que montrent ces résultats.**
+
+- **Sécurité solide :** les 7 cas à risque (injection, hors sujet, demande dangereuse, trauma, données personnelles, injection dans le récit d'une photo) sont bien gérés : format respecté, aucun terme interdit.
+- **Aucune source inventée :** 0 sur 86 sources citées, toutes présentes dans les passages retrouvés.
+- **Ingrédients inventés en texte :** 57 % des ingrédients proposés sur `/ask` n'existent pas dans le catalogue. `verifier()` les retire tous (le client ne les voit jamais), mais le profil n'est complet que dans 45 % des cas. La route photo n'en invente aucun (0/33).
+- **Robustesse faible sur les ingrédients :** deux formulations du même souvenir donnent presque toujours des ingrédients différents (0 à 22 % en commun). Les familles principales sont plus stables (20 à 67 %), surtout pour la Thaïlande, très présente dans la base.
+- **Vision inégale :** le lieu et au moins 2 éléments attendus ne sont reconnus que sur la moitié des photos (100 % sur la plage, d'après les runs de 09h45 à 09h55).
+- **Photo trop lente dans 1 cas sur 10 :** le p90 (162,2 s) dépasse le délai de 120 s de l'application web. La médiane (93,9 s) passe.
+- **Pertinence non mesurée :** le juge n'a renvoyé aucune note exploitable. Piste : vérifier que `qwen3.5:3b` est bien installé (`ollama list`) et que sa réponse est au format attendu par `eval_2.py`.
+
+Détail par cas : `resultats_eval_ministral-3-8b.csv`.
 
 ## 5. API
 
@@ -592,38 +674,166 @@ Le Wi-Fi de l'école bloque ngrok (`ERR_NGROK_8008`) : le tunnel passe par un pa
 
 L'application web de l'équipe ([6OnTheBeach/hackathon-app](https://github.com/6OnTheBeach/hackathon-app)) appelle `POST {DATA_AI_URL}/ask` (fichier `api/src/modules/ai/ai.data.ts`).
 
-| Élément | État au 12/11/2026 |
+| Élément | État |
 |---|---|
 | Fournisseur `AI_PROVIDER=data` | En place dans hackathon-app ; `mock` par défaut pour développer sans ce service. |
 | Contrat | Route, corps et format de `answer` identiques des deux côtés (types dans `api/src/modules/ai/ai.types.ts`). |
 | URL | Transmise aux tech-leads : le domaine ngrok de la section 5. Premier appel réussi à travers le tunnel (`POST /ask 200`). |
-| Clé d'API | Active côté Data/IA. Côté hackathon-app : en-tête `X-API-Key` et variable `DATA_AI_KEY` à ajouter. |
-| Délai | L'application abandonne au bout de 120 s ; les analyses mesurées prennent 79 à 109 s (section 4). |
+| Clé d'API | Active côté Data/IA. Côté hackathon-app : en-tête `X-API-Key` et variable `DATA_AI_KEY` ajoutées. |
+| Délai | L'application abandonne au bout de 120 s. Analyse texte : 57,7 s en médiane (p90 62,7 s) ; analyse photo : 93,9 s en médiane mais 162,2 s au p90, au-delà de la limite (section 4). |
+| Démo finale | Souvenir présenté au jury (route `/ask`) : « Le marché aux épices de Marrakech en fin de journée, le safran, la cannelle, les oranges confites. C'était chaleureux et un peu étourdissant. » Repli possible sur `AI_PROVIDER=mock` si le service ne répond pas. |
 
-## 7. Limites
+```mermaid
+sequenceDiagram
+    participant U as Client (app web)
+    participant T as hackathon-app (Tech)
+    participant N as Tunnel ngrok
+    participant D as API Data/IA (Mac)
+    U->>T: souvenir (texte ou photo)
+    T->>N: POST /ask + X-API-Key
+    N->>D: POST /ask
+    D-->>N: {question, answer, model, sources}
+    N-->>T: réponse JSON
+    T-->>U: signature, roue, profil, brief
+```
 
-- **Lenteur :** 79 à 109 s par analyse sur le Mac de l'équipe, proche du délai maximum de l'application (120 s). Pistes : ministral-3:3b, `TOP_K` plus petit, réponses plus courtes.
+## 7. Comparaison V1 / V2
+
+**Définition des versions.**
+
+- **V0 :** le modèle de RAG fourni par le cours (premier commit `9b13d30`) : FastAPI + ChromaDB + Ollama, embeddings nomic-embed-text, réponse en texte libre, sans contrôle par le catalogue. Comparé qualitativement (premier tableau), car son texte libre ne passe pas dans `eval_2.py`.
+- **V1 :** la version du 12/11/2026, avant le commit `4572fa5` (format court de la compréhension, passage à qwen2.5vl:7b). Résultats : runs du 12/11 à 15h46 (`/ask`) et 16h11 (`/ask_photo`).
+- **V2 :** l'état actuel du dépôt, décrit dans les sections 2 à 5.
+
+| Élément | V0 (modèle du cours) | V2 (rendu) |
+|---|---|---|
+| Embeddings | nomic-embed-text (conçu pour l'anglais) | bge-m3 (multilingue, recherche français ↔ anglais) |
+| Données | Une histoire de démonstration | Base Scent Journey (63 chapitres, 294 sources) + catalogue Givaudan (157 ingrédients) |
+| LLM | Choisi sans mesure | ministral-3:8b, retenu par benchmark (8/9 contre 6/9 pour le 3b) |
+| Sortie | Texte libre | JSON imposé : compréhension, signature, roue, profil, limites, brief |
+| Garde-fous | Aucun | Prompt système, `verifier()` (ingrédients, familles, roue ramenée à 100), clé d'API |
+| Photo | Non | Route `/ask_photo` (qwen2.5vl:7b) |
+| Évaluation | Aucune | 7 dimensions, 29 cas |
+
+**Métriques V1 / V2 sur les mêmes cas** (C01 Thaïlande, S01 injection, P01 plage ; ministral-3:8b, sans juge).
+
+- **V1 :** runs du 12/11/2026 à 15h46 (`/ask`) et 16h11 (`/ask_photo`) : [evaluation_LLM/ask/resume_eval_ministral-3-8b.md](evaluation_LLM/ask/resume_eval_ministral-3-8b.md), [evaluation_LLM/ask_photo/resume_eval_ministral-3-8b.md](evaluation_LLM/ask_photo/resume_eval_ministral-3-8b.md).
+- **V2 :** run unique du 13/11/2026 à 09h55, les 3 cas ensemble :
+
+```bash
+PYTHONPATH=. python evaluation_LLM/ask_photo/eval_2.py --cas evaluation_LLM/ask_photo/cas_test_2.json --seulement C01 S01 P01 --sans-juge
+```
+
+| Métrique | Route | V1 (12/11) | V2 (13/11) | Écart |
+|---|---|---|---|---|
+| Éléments attendus retrouvés (lieu, moment, météo, émotion, familles) | `/ask` | 100 % | 50 % | −50 pts |
+| | `/ask_photo` | 100 % | 67 % | −33 pts |
+| Vision : lieu et éléments reconnus | `/ask_photo` | 50 % | 100 % | **+50 pts** |
+| JSON valide | `/ask` | 50 % (S01 en erreur) | 100 % | **+50 pts** |
+| | `/ask_photo` | 100 % | 100 % | = |
+| Ingrédients inventés puis retirés par `verifier()` | `/ask` | 0/8 (0 %) | 6/11 (55 %) | +6 |
+| | `/ask_photo` | 0/6 (0 %) | 0/4 (0 %) | = |
+| Sources citées inexistantes | `/ask` | 0/8 | 0/5 | = |
+| | `/ask_photo` | 0/10 | 0/6 | = |
+| Sources citées présentes dans les passages | les deux | 100 % | 100 % | = |
+| Roue = 100 % | les deux | 100 % | 100 % | = |
+| Profil tête / cœur / fond complet | `/ask` | 100 % | 50 % | −50 pts |
+| | `/ask_photo` | 100 % | 0 % | −100 pts |
+| Ingrédients dont la famille est dans la roue | `/ask` | 88 % (7/8) | 100 % | **+12 pts** |
+| | `/ask_photo` | 100 % | 100 % | = |
+| Pertinence (juge, /5) | les deux | non mesurée | non mesurée | — |
+| Cas de sécurité bien gérés | `/ask` | 0/1 (S01 : HTTP 502) | 1/1 (format respecté, aucun terme interdit) | **+1** |
+| Appel sans clé d'API | `/ask` | refusé (401) | refusé (401) | = |
+| Latence médiane | `/ask` | 80,9 s | 56,6 s (p90 64,5 s) | **−24,3 s (−30 %)** |
+| | `/ask_photo` | 108,5 s | 101,8 s | **−6,7 s (−6 %)** |
+| Coût | les deux | 0 € (modèles locaux) | 0 € | = |
+
+**Stabilité de la V2.** P01 a été lancé 3 fois le 13/11 (09h45, 09h50, 09h55) et C01 + S01 2 fois (09h38, 09h55). Les résultats qualitatifs sont identiques d'un run à l'autre (vision 100 %, 67 % des éléments, 0 ingrédient inventé sur la photo, profil photo incomplet, S01 bien géré) ; seuls varient la latence (photo : 100,0 à 106,0 s ; texte : 56,6 à 58,8 s) et le nombre d'ingrédients inventés en texte (5/10 puis 6/11).
+
+**Ce que montre la comparaison.**
+
+- **Progrès :** l'injection S01 ne fait plus planter le modèle (réponse au bon format au lieu d'une erreur 502), le JSON est toujours valide, les ingrédients restants sont tous dans une famille de la roue, le modèle de vision qwen2.5vl:7b reconnaît le lieu et les éléments de la photo (100 % contre 50 %), et l'analyse texte est 30 % plus rapide (56,6 s contre 80,9 s).
+- **Ingrédients inventés en texte :** plus de la moitié des ingrédients proposés sur `/ask` (6/11) n'existent pas dans le catalogue. `verifier()` les retire, donc le client ne les voit jamais, mais le profil s'en trouve appauvri. La route photo n'est pas touchée (0/4).
+- **Compréhension moins complète :** les éléments attendus retrouvés baissent (texte 50 %, photo 67 %), probablement à cause du format court (4 mots au plus) qui coupe des mots-clés.
+- **Profil photo incomplet :** sur P01, aucun profil n'est complet (0 %, sur les 3 runs), alors que les 4 ingrédients proposés existent tous. Cause probable : la clé `"tête"` écrite avec accent (section 8), qui laisse `"tete"` vide.
+- **Photo toujours lente :** 101,8 s, sous les 120 s de l'application mais avec peu de marge.
+- **Prudence :** 3 cas seulement ; ces écarts donnent une tendance, pas une mesure stable.
+
+## 8. Limites
+
+- **Lenteur :** en V2, 57,7 s en médiane par analyse texte (contre 80,9 s en V1) et 93,9 s par photo, mais 162,2 s pour les 10 % de photos les plus lentes, au-delà du délai de 120 s de l'application. Pistes : ministral-3:3b, `TOP_K` plus petit, réponses plus courtes.
 - **Une seule machine :** le service tourne sur un Mac, exposé par ngrok. Il s'arrête avec le Mac, en veille ou hors connexion. L'application garde `AI_PROVIDER=mock` en repli.
-- **Évaluation incomplète :** 3 cas mesurés sur 29 (section 4). La pertinence (LLM juge) n'est pas encore mesurée.
-- **Injection de prompt :** S01 fait échouer la génération (HTTP 502) au lieu de produire une analyse normale.
+- **Évaluation :** 29 cas mesurés sur les 30 demandés. La pertinence (LLM juge) n'a pas donné de note exploitable ; elle reste à mesurer, et à compléter par l'avis d'un parfumeur.
+- **Robustesse faible :** deux formulations du même souvenir ne partagent que 0 à 22 % de leurs ingrédients (section 4).
+- **Injection de prompt :** en V1, S01 faisait échouer la génération (HTTP 502). Corrigé en V2 : les 7 cas de sécurité (S01 à S06, PS1) sont bien gérés.
+- **Ingrédients inventés :** en V2, 74 ingrédients proposés sur 130 (57 %, route `/ask`) n'existent pas dans le catalogue. Ils sont retirés par `verifier()`, mais le profil devient incomplet.
+- **Clé `"tête"` mal écrite :** sur les photos, le LLM range les notes de tête sous `"tête"` (avec accent) au lieu de `"tete"`, et l'application les perd. Piste : normaliser la clé dans `verifier()`.
+- **Roue et profil incohérents :** sur l'exemple du marché, seuls 3 ingrédients sur 7 appartiennent à une famille de la roue.
 - **Ingrédients à valider :** le profil est une piste construite à partir des notes olfactives du catalogue. Il doit être validé par un parfumeur ; les sources scientifiques ne citent pas ces ingrédients.
-- **Catalogue limité :** 157 ingrédients, dont 54 Floral et seulement 2 Marine ; 96 descriptions tronquées sur le site source.
 - **Fichiers manquants :** `sources_scent_journey.csv` (détail des sources S001 à S294, cité par la base) et `questions_test.csv` (nécessaire à `bench.py`) ne sont pas dans le dépôt.
 - **Benchmark sur un autre document :** les mesures de la section 3 portent sur un document de démonstration, pas sur des souvenirs Scent Journey.
 - **Vision :** le modèle est fixé dans [photo_vers_texte.py](photo_vers_texte.py) (`qwen2.5vl:7b`) ; la variable `VISION_MODEL` de [config.py](config.py) (`qwen2.5vl:3b`) n'est pas utilisée.
 - **Traces du modèle de cours :** le Swagger et la collection ChromaDB parlent encore d'« histoire » (`story`). Sans effet sur le fonctionnement.
 
-## 8. Tableau récapitulatif
+## 9. Biais
 
-| Livrable | Preuves dans le dépôt |
-|---|---|
-| 1. Données | [base_scent_journey.txt](base_scent_journey.txt), [catalogue_givaudan_complet.csv](catalogue_givaudan_complet.csv), [photo_test/](evaluation_LLM/ask_photo/photo_test/) |
-| 2. Pipeline | [config.py](config.py), [ingest.py](ingest.py), [list.py](list.py), [clean.py](clean.py), [rag.py](rag.py), [requirements.txt](requirements.txt) |
-| 3. Modèle | [benchmark_llm.pdf](benchmark_llm.pdf), [bench.py](bench.py), [api.py](api.py) (`SYSTEM_PROMPT`, `verifier()`), [photo_vers_texte.py](photo_vers_texte.py) |
-| 4. Métriques | [eval_2.py](eval_2.py), [cas_test_2.json](cas_test_2.json), [evaluation_LLM/ask/](evaluation_LLM/ask/), [evaluation_LLM/ask_photo/](evaluation_LLM/ask_photo/) |
-| 5. API | [api.py](api.py), Swagger `/docs` |
+| Biais | D'où il vient | Effet observé ou attendu | Piste |
+|---|---|---|---|
+| **Catalogue déséquilibré** | 54 ingrédients Floral sur 157, 2 Marine, 3 Aldehydic | Les profils penchent vers le floral ; un souvenir marin n'a que 2 ingrédients possibles | Signaler la famille sous-représentée dans `limites_catalogue` |
+| **Sources culturelles** | Base rédigée surtout à partir de publications et de sites occidentaux et anglophones | Les lieux couverts (Thaïlande, Japon…) sont vus par des voyageurs ; un souvenir local d'une autre culture est moins bien compris (cas C10 « lieu absent de la base ») | Ajouter des sources locales |
+| **Universalité des émotions** | Le LLM associe une émotion à une odeur | La base elle-même rappelle qu'aucune source ne relie une odeur précise à la tristesse pour tout le monde (chapitre 50) | Le brief demande au client de préciser (champ `informations_manquantes`) |
+| **Vision qui complète** | Le modèle de vision décrit ce qu'il suppose, pas seulement ce qu'il voit | Météo « solaire » et odeurs « épicé », « terreux » sans indice visible sur la photo du marché | Demander un récit avec la photo ; mesurer l'exactitude vision sur les 7 cas photo |
+| **Recherche qui oriente** | Les 4 passages retrouvés guident tout le profil | Marché aux fruits → passages « crème solaire » et « mousson », d'où une « terre humide » ajoutée | Augmenter les fiches « lieu » dans la base ; afficher les scores |
+| **Langue** | Prompt et base en français, catalogue en anglais | Réponses moins fiables en anglais ou en style SMS (cas C12 à C16, à mesurer) | Robustesse mesurée par Jaccard (section 4) |
+| **Juge plus petit que le modèle évalué** | La pertinence est notée par qwen3.5:3b, plus petit que ministral-3:8b | Le juge peut mal repérer les erreurs fines ou être indulgent | Contrôler un échantillon de notes à la main |
+| **Évaluation par mots-clés** | Exactitude mesurée par mots-clés attendus | Une bonne réponse formulée autrement est comptée fausse | LLM juge en complément (pertinence) |
+
+## 10. Reproduire les résultats
+
+Depuis la racine du dépôt, sur macOS, après l'installation de la section 2 :
+
+```bash
+# 1. Reconstruire la base vectorielle
+python clean.py && python ingest.py        # attendu : 288 morceaux
+
+# 2. Lancer le service
+uvicorn api:app --port 8000 --env-file .env
+curl http://localhost:8000/health          # attendu : 288 morceaux, modèles utilisés
+
+# 3. Rejouer un exemple de la section 4
+curl -X POST http://localhost:8000/ask \
+  -H "Content-Type: application/json" -H "X-API-Key: $API_KEY" \
+  -d '{"question": "Je veux retrouver l'\''odeur du marché de Thaïlande après une averse.", "top_k": 4}'
+
+# 4. Rejouer l'évaluation complète (section 4)
+PYTHONPATH=. python evaluation_LLM/ask_photo/eval_2.py --cas evaluation_LLM/ask_photo/cas_test_2.json --juge qwen3.5:3b
+
+# 5. Rejouer le benchmark des LLM (section 3) — nécessite questions_test.csv (voir limites)
+python bench.py
+```
+
+Les sorties du LLM varient légèrement d'un run à l'autre (température 0,2) : les chiffres de factualité et de raisonnement restent comparables, le texte exact de la signature et du brief change.
+
+## 11. Tableau récapitulatif des livrables
+
+| Jour | Livrable demandé | Où dans ce document | Preuves dans le dépôt |
+|---|---|---|---|
+| Lundi | Inventaire des sources et accès | §1 Sources | [base_scent_journey.txt](base_scent_journey.txt), [catalogue_givaudan_complet.csv](catalogue_givaudan_complet.csv) |
+| Lundi | Premier échantillon, qualité des données | §1 Qualité des colonnes | [photo_test/](evaluation_LLM/ask_photo/photo_test/) |
+| Lundi | Solution alternative | §1 Solution de repli | — |
+| Mardi | Dataset exploitable, baseline, preuve de faisabilité | §1, §2, §3 Benchmark | [ingest.py](ingest.py), [bench.py](bench.py), [benchmark_llm.pdf](benchmark_llm.pdf) |
+| Mardi | Swagger/OpenAPI, endpoint via ngrok | §5 API | [api.py](api.py), `/docs` |
+| Jeudi | Données préparées, pipeline fonctionnel | §1 Préparation, §2 Pipeline | [config.py](config.py), [ingest.py](ingest.py), [rag.py](rag.py), [list.py](list.py), [clean.py](clean.py), [requirements.txt](requirements.txt) |
+| Jeudi | Modèle V2 publié | §3 Modèle | [api.py](api.py) (`SYSTEM_PROMPT`, `verifier()`), [photo_vers_texte.py](photo_vers_texte.py) |
+| Jeudi | Métriques et protocole sur 30 cas | §4 Métriques | [eval_2.py](evaluation_LLM/ask_photo/eval_2.py), [cas_test_2.json](evaluation_LLM/ask_photo/cas_test_2.json), [evaluation_LLM/](evaluation_LLM/) |
+| Jeudi | API renvoyant les résultats réels | §4 Exemples complets, §5 | [evaluation_LLM/ask/resultats_eval_ministral-3-8b.csv](evaluation_LLM/ask/resultats_eval_ministral-3-8b.csv) |
+| Vendredi | Code et documentation finalisés | Ce document | Tout le dépôt |
+| Vendredi | Procédure de reproduction | §2 Installation, §10 | — |
+| Vendredi | Comparaison V1/V2 avec métriques | §7 | [evaluation_LLM/ask/](evaluation_LLM/ask/), [evaluation_LLM/ask_photo/](evaluation_LLM/ask_photo/) |
+| Vendredi | Limites et biais | §8, §9 | — |
+| Vendredi | Résultats intégrés à la démo | §6 | [hackathon-app](https://github.com/6OnTheBeach/hackathon-app) |
 
 | Suivi | Lien |
 |---|---|
-| Dépôt Data/IA | https://github.com/danelquentin04/rag-g24 |
+| Dépôt Data/IA | https://github.com/FiveOnTheBeach/rag-g24 |
 | Application web | https://github.com/6OnTheBeach/hackathon-app |
