@@ -12,7 +12,7 @@ flowchart LR
     B[Photo + récit] --> V[qwen2.5vl:7b<br/>description de la photo] --> C
     C[bge-m3<br/>recherche des 4 passages] --> D[(ChromaDB<br/>288 morceaux)]
     D --> E[ministral-3:8b<br/>analyse JSON]
-    E --> F[verifier&#40;&#41;<br/>contrôle par le catalogue]
+    E --> F["verifier()<br/>contrôle par le catalogue"]
     F --> G[Signature · roue · profil · brief]
 ```
 
