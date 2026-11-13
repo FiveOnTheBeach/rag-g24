@@ -10,7 +10,7 @@ Document de synthèse de la brique Data/IA. Chaque chiffre renvoie à un fichier
 flowchart LR
     A[Souvenir texte] --> C
     B[Photo + récit] --> V[qwen2.5vl:7b<br/>description de la photo] --> C
-    C[bge-m3<br/>recherche des 4 passages] --> D[(ChromaDB<br/>288 morceaux)]
+    C[bge-m3<br/>recherche des 4 passages] --> D[(ChromaDB<br/>384 morceaux)]
     D --> E[ministral-3:8b<br/>analyse JSON]
     E --> F["verifier()<br/>contrôle par le catalogue"]
     F --> G[Signature · roue · profil · brief]
